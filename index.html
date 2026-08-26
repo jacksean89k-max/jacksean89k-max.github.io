@@ -1,1 +1,448 @@
-Pramila Store
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pramila Store — Fresh Groceries & Daily Essentials | Imadol, Lalitpur</title>
+  <meta name="description" content="Pramila Store — Your trusted neighborhood grocery store at Maharjan Chowk, Imadol-03. Fresh fruits, vegetables, dairy, spices, beverages & daily essentials at the best prices.">
+  <meta name="keywords" content="Pramila Store, grocery store, Imadol, Lalitpur, fresh vegetables, fruits, dairy, spices, beverages, daily essentials">
+  <meta property="og:title" content="Pramila Store — Fresh Groceries & Daily Essentials">
+  <meta property="og:description" content="Your trusted neighborhood grocery store at Maharjan Chowk, Imadol-03. Fresh produce, dairy, spices & more.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛒</text></svg>">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="#home" class="logo" id="logo-link">
+        <div class="logo-icon">🛒</div>
+        <span>Pramila Store</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home" id="nav-home">Home</a></li>
+          <li><a href="#features" id="nav-features">Why Us</a></li>
+          <li><a href="#menu" id="nav-menu">Our Products</a></li>
+          <li><a href="#testimonials" id="nav-testimonials">Reviews</a></li>
+          <li><a href="#location" id="nav-location">Find Us</a></li>
+          <li><a href="#location" class="nav-cta" id="nav-visit-cta">Visit Store</a></li>
+        </ul>
+      </nav>
+
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="images/hero.png" alt="Pramila Store — Fresh grocery display with vibrant fruits, vegetables and organic products" width="1920" height="1080" loading="eager" fetchpriority="high">
+    </div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          🌿 Trusted Since Day One
+        </div>
+
+        <h1 class="hero-title">
+          Fresh. Local.<br>
+          <span>Always Quality.</span>
+        </h1>
+
+        <p class="hero-description">
+          Welcome to <strong>Pramila Store</strong> — your friendly neighborhood grocery store at Maharjan Chowk, Imadol-03. We bring you the freshest produce, dairy, spices, and daily essentials every single day.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary" id="hero-explore-btn">
+            🛍️ Explore Products
+          </a>
+          <a href="#location" class="btn btn-secondary" id="hero-find-btn">
+            📍 Find Our Store
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Products</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">1000+</div>
+            <div class="stat-label">Happy Customers</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">7</div>
+            <div class="stat-label">Days Open</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES ============ -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-badge">✨ Why Choose Us</div>
+        <h2 class="section-title">Your Neighborhood's<br>Favorite Store</h2>
+        <p class="section-subtitle">We believe in quality, freshness, and building lasting relationships with our community.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card fade-in">
+          <div class="feature-icon">🌾</div>
+          <h3>Farm Fresh Daily</h3>
+          <p>We source our fruits and vegetables directly from local farms, ensuring you get the freshest produce every morning.</p>
+        </div>
+
+        <div class="feature-card fade-in">
+          <div class="feature-icon">💰</div>
+          <h3>Best Prices</h3>
+          <p>We keep our prices competitive and affordable so you never have to compromise on quality for your family.</p>
+        </div>
+
+        <div class="feature-card fade-in">
+          <div class="feature-icon">🤝</div>
+          <h3>Friendly Service</h3>
+          <p>Our team knows every customer by name. Experience warm, personal service that makes shopping a joy.</p>
+        </div>
+
+        <div class="feature-card fade-in">
+          <div class="feature-icon">📦</div>
+          <h3>Wide Selection</h3>
+          <p>From daily staples to specialty items, we stock everything you need under one roof — over 500+ products.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MENU / PRODUCTS ============ -->
+  <section class="menu" id="menu">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-badge">🛒 Our Products</div>
+        <h2 class="section-title">What We Offer</h2>
+        <p class="section-subtitle">Browse our carefully curated categories of fresh, high-quality products for your daily needs.</p>
+      </div>
+
+      <div class="menu-grid">
+
+        <!-- Fruits -->
+        <div class="menu-card fade-in" id="card-fruits">
+          <div class="menu-card-image">
+            <img src="images/fruits.png" alt="Fresh assorted fruits including apples, bananas, oranges, grapes, and mangoes" width="640" height="440" loading="lazy">
+            <span class="category-tag">Fresh</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>Fresh Fruits</h3>
+            <p>Hand-picked seasonal fruits sourced daily from local farms. Always ripe, always delicious.</p>
+            <div class="menu-items-list">
+              <span class="menu-item-tag">Apples</span>
+              <span class="menu-item-tag">Bananas</span>
+              <span class="menu-item-tag">Oranges</span>
+              <span class="menu-item-tag">Grapes</span>
+              <span class="menu-item-tag">Mangoes</span>
+              <span class="menu-item-tag">Pomegranates</span>
+              <span class="menu-item-tag">Watermelon</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vegetables -->
+        <div class="menu-card fade-in" id="card-vegetables">
+          <div class="menu-card-image">
+            <img src="images/vegetables.png" alt="Fresh assorted vegetables including tomatoes, carrots, broccoli, and peppers" width="640" height="440" loading="lazy">
+            <span class="category-tag">Farm Fresh</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>Fresh Vegetables</h3>
+            <p>Farm-to-store vegetables delivered every morning. Crisp, nutritious, and bursting with flavor.</p>
+            <div class="menu-items-list">
+              <span class="menu-item-tag">Tomatoes</span>
+              <span class="menu-item-tag">Potatoes</span>
+              <span class="menu-item-tag">Onions</span>
+              <span class="menu-item-tag">Carrots</span>
+              <span class="menu-item-tag">Spinach</span>
+              <span class="menu-item-tag">Cauliflower</span>
+              <span class="menu-item-tag">Beans</span>
+              <span class="menu-item-tag">Peppers</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dairy -->
+        <div class="menu-card fade-in" id="card-dairy">
+          <div class="menu-card-image">
+            <img src="images/dairy.png" alt="Fresh dairy products including milk, cheese, yogurt, and butter" width="640" height="440" loading="lazy">
+            <span class="category-tag">Daily</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>Dairy Products</h3>
+            <p>Premium quality milk, curd, paneer, ghee, and more from trusted local dairies.</p>
+            <div class="menu-items-list">
+              <span class="menu-item-tag">Fresh Milk</span>
+              <span class="menu-item-tag">Curd / Dahi</span>
+              <span class="menu-item-tag">Paneer</span>
+              <span class="menu-item-tag">Ghee</span>
+              <span class="menu-item-tag">Butter</span>
+              <span class="menu-item-tag">Cheese</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Spices -->
+        <div class="menu-card fade-in" id="card-spices">
+          <div class="menu-card-image">
+            <img src="images/spices.png" alt="Colorful spices in wooden bowls including turmeric, chili, cumin, and cinnamon" width="640" height="440" loading="lazy">
+            <span class="category-tag">Essential</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>Spices & Masala</h3>
+            <p>Authentic Nepali and Indian spices — whole, ground, and ready-made masala blends for every dish.</p>
+            <div class="menu-items-list">
+              <span class="menu-item-tag">Turmeric</span>
+              <span class="menu-item-tag">Cumin</span>
+              <span class="menu-item-tag">Chili Powder</span>
+              <span class="menu-item-tag">Coriander</span>
+              <span class="menu-item-tag">Garam Masala</span>
+              <span class="menu-item-tag">Cinnamon</span>
+              <span class="menu-item-tag">Cardamom</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Beverages -->
+        <div class="menu-card fade-in" id="card-beverages">
+          <div class="menu-card-image">
+            <img src="images/beverages.png" alt="Assorted beverages including juices, tea, coffee, and sparkling water" width="640" height="440" loading="lazy">
+            <span class="category-tag">Refreshing</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>Beverages</h3>
+            <p>From classic Nepali tea to fresh juices and cold drinks — stay refreshed with our wide selection.</p>
+            <div class="menu-items-list">
+              <span class="menu-item-tag">Tea / Chiya</span>
+              <span class="menu-item-tag">Coffee</span>
+              <span class="menu-item-tag">Fresh Juice</span>
+              <span class="menu-item-tag">Soft Drinks</span>
+              <span class="menu-item-tag">Water</span>
+              <span class="menu-item-tag">Energy Drinks</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Snacks -->
+        <div class="menu-card fade-in" id="card-snacks">
+          <div class="menu-card-image">
+            <img src="images/snacks.png" alt="Assorted snacks including cookies, nuts, dried fruits, and granola bars" width="640" height="440" loading="lazy">
+            <span class="category-tag">Favorites</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>Snacks & Treats</h3>
+            <p>Crunchy, sweet, and savory — discover our curated collection of snacks for every craving.</p>
+            <div class="menu-items-list">
+              <span class="menu-item-tag">Biscuits</span>
+              <span class="menu-item-tag">Chips</span>
+              <span class="menu-item-tag">Noodles</span>
+              <span class="menu-item-tag">Nuts</span>
+              <span class="menu-item-tag">Dried Fruits</span>
+              <span class="menu-item-tag">Chocolates</span>
+              <span class="menu-item-tag">Namkeen</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SPECIAL OFFERS BANNER ============ -->
+  <section class="offers-banner fade-in" id="offers">
+    <div class="container">
+      <div class="offers-content">
+        <h2>🎉 Daily Deals & Festival Offers</h2>
+        <p>We love celebrating with our community! Visit us for special discounts during Dashain, Tihar, and other festivals. New deals available every week!</p>
+        <a href="#location" class="btn btn-accent" id="offers-visit-btn">
+          🏪 Visit Us Today
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-badge">💬 Customer Love</div>
+        <h2 class="section-title">What Our Customers Say</h2>
+        <p class="section-subtitle">Don't just take our word for it — hear from the families who shop with us every day.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card fade-in" id="testimonial-1">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote>"Pramila Store is our go-to for everything. The vegetables are always so fresh, and didi always gives us the best prices. We wouldn't shop anywhere else!"</blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">S</div>
+            <div class="testimonial-author-info">
+              <span class="author-name">Srijana Maharjan</span>
+              <span class="author-role">Regular Customer, Imadol</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card fade-in" id="testimonial-2">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote>"I moved to the area recently and Pramila Store made me feel at home. Great selection of spices and they always have everything I need for cooking!"</blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">R</div>
+            <div class="testimonial-author-info">
+              <span class="author-name">Rajesh Shrestha</span>
+              <span class="author-role">Neighbor, Imadol-03</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card fade-in" id="testimonial-3">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote>"The quality of dairy products here is unmatched. Fresh paneer and dahi every single day! My family loves shopping at Pramila Store."</blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">A</div>
+            <div class="testimonial-author-info">
+              <span class="author-name">Anita Tamrakar</span>
+              <span class="author-role">Loyal Customer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LOCATION / MAP ============ -->
+  <section class="location" id="location">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-badge">📍 Find Us</div>
+        <h2 class="section-title">Visit Pramila Store</h2>
+        <p class="section-subtitle">We're conveniently located at Maharjan Chowk, Imadol-03. Come say hi!</p>
+      </div>
+
+      <div class="location-grid fade-in">
+        <div class="location-info">
+          <h3>Store Details</h3>
+
+          <div class="info-item">
+            <div class="info-icon">📍</div>
+            <div class="info-details">
+              <h4>Address</h4>
+              <p>Maharjan Chowk, Imadol-03<br>Lalitpur, Nepal</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">🕐</div>
+            <div class="info-details">
+              <h4>Opening Hours</h4>
+              <p>Sunday – Friday: 6:00 AM – 9:00 PM<br>Saturday: 7:00 AM – 8:00 PM</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">📞</div>
+            <div class="info-details">
+              <h4>Contact</h4>
+              <p>Phone: +977-01-XXXXXXX<br>Walk-ins always welcome!</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">🚗</div>
+            <div class="info-details">
+              <h4>Getting Here</h4>
+              <p>Located on the main road at Maharjan Chowk. Easy access from Imadol ring road. Parking available nearby.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-wrapper" id="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.6!2d85.335!3d27.6567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDM5JzI0LjEiTiA4NcKwMjAnMDYuMCJF!5e0!3m2!1sen!2snp!4v1693000000000!5m2!1sen!2snp"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Pramila Store location map — Maharjan Chowk, Imadol-03, Lalitpur">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <div class="logo-icon">🛒</div>
+            <span>Pramila Store</span>
+          </a>
+          <p>Your trusted neighborhood grocery store at Maharjan Chowk, Imadol-03. Serving our community with fresh, quality products every day.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Facebook" id="social-facebook">📘</a>
+            <a href="#" class="social-link" aria-label="Instagram" id="social-instagram">📷</a>
+            <a href="#" class="social-link" aria-label="WhatsApp" id="social-whatsapp">💬</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <a href="#home">Home</a>
+          <a href="#features">Why Choose Us</a>
+          <a href="#menu">Our Products</a>
+          <a href="#testimonials">Reviews</a>
+          <a href="#location">Find Us</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Categories</h4>
+          <a href="#card-fruits">Fresh Fruits</a>
+          <a href="#card-vegetables">Vegetables</a>
+          <a href="#card-dairy">Dairy Products</a>
+          <a href="#card-spices">Spices & Masala</a>
+          <a href="#card-beverages">Beverages</a>
+          <a href="#card-snacks">Snacks</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Store Info</h4>
+          <a href="#location">Maharjan Chowk, Imadol-03</a>
+          <a href="#location">Lalitpur, Nepal</a>
+          <a href="#location">Sun-Fri: 6AM – 9PM</a>
+          <a href="#location">Sat: 7AM – 8PM</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Pramila Store. All rights reserved.</p>
+        <p>Made with ❤️ in Imadol, Nepal</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ SCROLL TO TOP ============ -->
+  <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">↑</button>
+
+  <!-- ============ JAVASCRIPT ============ -->
+  <script src="script.js"></script>
+</body>
+</html>
