@@ -670,6 +670,26 @@ ul, ol {
   transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
+/* Cover third-party watermark/logo with clean store brand badge */
+.banner-img-box::after {
+  content: "🌿 Pramila Store";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(10, 117, 78, 0.95);
+  color: #ffffff;
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 4px 10px;
+  border-radius: 999px;
+  z-index: 4;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+}
+
 .banner-card:hover .banner-img-box {
   border-color: #bce6cd;
   box-shadow: 0 10px 24px rgba(10, 117, 78, 0.12);
@@ -733,7 +753,7 @@ ul, ol {
 }
 
 /* ============================================
-   OUR CATEGORIES (VHANDAR STYLE)
+   OUR CATEGORIES (CIRCULAR COLLECTIONS STYLE)
    ============================================ */
 .vhandar-categories-section {
   padding: var(--space-xl) 0 var(--space-3xl);
@@ -751,9 +771,9 @@ ul, ol {
 
 .vhandar-divider-line {
   flex: 1;
-  height: 1px;
+  height: 1.5px;
   background: #bce6cd;
-  opacity: 0.75;
+  opacity: 0.85;
 }
 
 .vhandar-title-link {
@@ -761,11 +781,11 @@ ul, ol {
 }
 
 .vhandar-categories-title {
-  font-family: var(--font-sans);
-  font-size: clamp(0.85rem, 2vw, 1.05rem);
+  font-family: var(--font-serif);
+  font-size: clamp(1.1rem, 2.5vw, 1.45rem);
   font-weight: 700;
   color: #0a754e;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   margin: 0 var(--space-xl);
   white-space: nowrap;
@@ -777,26 +797,27 @@ ul, ol {
 }
 
 .vhandar-categories-grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 12px;
-  align-items: start;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 20px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-sm);
 }
 
 .vhandar-cat-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   background: none;
   border: none;
   text-decoration: none;
   cursor: pointer;
-  padding: 4px;
-  border-radius: 14px;
+  padding: 6px;
   transition: transform var(--transition-base);
-  width: 100%;
+  width: 96px;
 }
 
 .vhandar-cat-item:hover,
@@ -805,30 +826,36 @@ ul, ol {
 }
 
 .cat-img-box {
-  width: 100%;
-  aspect-ratio: 1 / 1;
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
   background-color: #f0fdf4;
-  border: 1px solid #dcfce7;
-  border-radius: 16px;
+  border: 2px solid #e2e8f0;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all var(--transition-base);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
-.vhandar-cat-item:hover .cat-img-box,
+.vhandar-cat-item:hover .cat-img-box {
+  border-color: #22c55e;
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.25), 0 8px 18px rgba(10, 117, 78, 0.15);
+  transform: scale(1.05);
+}
+
 .vhandar-cat-item.active .cat-img-box {
-  border-color: #0a754e;
-  background-color: #e7f1ed;
-  box-shadow: 0 8px 20px rgba(10, 117, 78, 0.18);
+  border-color: #16a34a;
+  box-shadow: 0 0 0 3.5px rgba(22, 163, 74, 0.35), 0 8px 20px rgba(10, 117, 78, 0.22);
+  transform: scale(1.06);
 }
 
 .cat-img-box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 50%;
   transition: transform var(--transition-base);
 }
 
@@ -839,18 +866,19 @@ ul, ol {
 
 .cat-name-label {
   font-family: var(--font-sans);
-  font-size: 0.78rem;
-  font-weight: 600;
+  font-size: 0.74rem;
+  font-weight: 700;
   color: #374151;
   text-align: center;
-  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1.25;
   transition: color var(--transition-fast);
 }
 
 .vhandar-cat-item:hover .cat-name-label,
 .vhandar-cat-item.active .cat-name-label {
-  color: #0a754e;
-  font-weight: 700;
+  color: #16a34a;
 }
 
 /* ============================================

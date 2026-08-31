@@ -55,8 +55,9 @@
     <div class="container">
       <ul class="nav-links" id="nav-links">
         <li><a href="#home" id="nav-home" class="nav-active">Home</a></li>
+        <li><a href="#menu" id="nav-menu">Our Categories</a></li>
+        <li><a href="#products" id="nav-products">Products</a></li>
         <li><a href="#features" id="nav-features">Why Us</a></li>
-        <li><a href="#menu" id="nav-menu">Our Products</a></li>
         <li><a href="#testimonials" id="nav-testimonials">Reviews</a></li>
         <li><a href="#location" id="nav-location">Find Us</a></li>
         <li><a href="tel:+9779813160679" id="nav-contact">Contact Us</a></li>
@@ -117,42 +118,6 @@
     </div>
   </section>
 
-  <!-- ============ FEATURES ============ -->
-  <section class="features" id="features">
-    <div class="container">
-      <div class="section-header fade-in">
-        <h2 class="section-title">Why Choose <span class="text-green">Pramila Store</span></h2>
-        <p class="section-subtitle">We believe in quality, freshness, and building lasting relationships with our community.</p>
-      </div>
-
-      <div class="features-grid">
-        <div class="feature-card fade-in">
-          <div class="feature-icon">🌾</div>
-          <h3>Farm Fresh Daily</h3>
-          <p>We source our fruits and vegetables directly from local farms, ensuring you get the freshest produce every morning.</p>
-        </div>
-
-        <div class="feature-card fade-in">
-          <div class="feature-icon">💰</div>
-          <h3>Best Prices</h3>
-          <p>We keep our prices competitive and affordable so you never have to compromise on quality for your family.</p>
-        </div>
-
-        <div class="feature-card fade-in">
-          <div class="feature-icon">🤝</div>
-          <h3>Friendly Service</h3>
-          <p>Our team knows every customer by name. Experience warm, personal service that makes shopping a joy.</p>
-        </div>
-
-        <div class="feature-card fade-in">
-          <div class="feature-icon">📦</div>
-          <h3>Wide Selection</h3>
-          <p>From daily staples to specialty items, we stock everything you need under one roof — over 500+ products.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- ============ PROMO BANNERS CAROUSEL (VHANDAR STYLE) ============ -->
   <section class="vhandar-promo-section" id="promos">
     <div class="container promo-container">
@@ -163,16 +128,7 @@
 
         <div class="banner-carousel" id="promo-carousel">
           
-          <!-- Banner 1: Pet Care -->
-          <div class="banner-card fade-in" data-category="pet-care">
-            <a href="#products" class="banner-card-link" data-filter="pet-care" aria-label="Pet Care Supplies">
-              <div class="banner-img-box">
-                <img src="images/banner-pets.avif" alt="Pet Care Supplies in minutes — Food, treats, toys & more" loading="eager" width="700" height="400">
-              </div>
-            </a>
-          </div>
-
-          <!-- Banner 2: Oral & Personal Care -->
+          <!-- Banner 1: Oral & Personal Care -->
           <div class="banner-card fade-in" data-category="personal-care">
             <a href="#products" class="banner-card-link" data-filter="personal-care" aria-label="Bright Smiles & Fresh Faces">
               <div class="banner-img-box">
@@ -254,7 +210,7 @@
         <!-- 1. All Items -->
         <button class="vhandar-cat-item fade-in active" data-category="all" aria-label="All Categories">
           <div class="cat-img-box">
-            <img src="images/cat-vegetables.jpg" alt="All Categories" width="120" height="120" loading="lazy">
+            <img src="images/vegetables.png" alt="All Categories" width="120" height="120" loading="lazy">
           </div>
           <span class="cat-name-label">All Items</span>
         </button>
@@ -278,7 +234,7 @@
         <!-- 4. Spices & Masalas -->
         <button class="vhandar-cat-item fade-in" data-category="spices" aria-label="Spices and Masalas">
           <div class="cat-img-box">
-            <img src="images/prod-honey.jpg" alt="Spices & Masalas" width="120" height="120" loading="lazy">
+            <img src="images/spices.png" alt="Spices & Masalas" width="120" height="120" loading="lazy">
           </div>
           <span class="cat-name-label">Spices & Masala</span>
         </button>
@@ -310,7 +266,7 @@
         <!-- 8. Tea, Coffee & Drinks -->
         <button class="vhandar-cat-item fade-in" data-category="beverages" aria-label="Tea, Coffee & Drinks">
           <div class="cat-img-box">
-            <img src="images/cat-beverages.jpg" alt="Tea, Coffee & Drinks" width="120" height="120" loading="lazy">
+            <img src="images/beverages.png" alt="Tea, Coffee & Drinks" width="120" height="120" loading="lazy">
           </div>
           <span class="cat-name-label">Drinks & Chiya</span>
         </button>
@@ -337,14 +293,6 @@
             <img src="images/banner-oral-care.avif" alt="Personal Care & Hygiene" width="120" height="120" loading="lazy">
           </div>
           <span class="cat-name-label">Personal Care</span>
-        </button>
-
-        <!-- 12. Pet Care Supplies -->
-        <button class="vhandar-cat-item fade-in" data-category="pet-care" aria-label="Pet Care Supplies">
-          <div class="cat-img-box">
-            <img src="images/banner-pets.avif" alt="Pet Care Supplies" width="120" height="120" loading="lazy">
-          </div>
-          <span class="cat-name-label">Pet Care</span>
         </button>
 
       </div>
@@ -375,7 +323,6 @@
         <button class="filter-tab" data-filter="fresh-produce">🥬 Fresh Produce</button>
         <button class="filter-tab" data-filter="cleaning">🧼 Cleaning Care</button>
         <button class="filter-tab" data-filter="personal-care">🧴 Personal Care</button>
-        <button class="filter-tab" data-filter="pet-care">🐶 Pet Care</button>
       </div>
 
       <!-- Products Grid -->
@@ -901,37 +848,6 @@
           </div>
         </div>
 
-        <!-- ================= 11. PET CARE SUPPLIES ================= -->
-        <div class="ko-product-card fade-in" data-category="pet-care">
-          <div class="ko-product-img-wrapper">
-            <img src="images/banner-pets.avif" alt="Pedigree Adult Chicken & Vegetables Dog Food" width="400" height="400" loading="lazy">
-            <span class="product-badge badge-popular">Pet Favorite</span>
-          </div>
-          <div class="ko-product-info">
-            <h3 class="ko-product-name">Pedigree Adult Dog Food (Chicken & Veg) - 1.2kg</h3>
-          </div>
-        </div>
-
-        <div class="ko-product-card fade-in" data-category="pet-care">
-          <div class="ko-product-img-wrapper">
-            <img src="images/banner-pets.avif" alt="Whiskas Ocean Fish Cat Food" width="400" height="400" loading="lazy">
-            <span class="product-badge badge-fresh">Tasty Bites</span>
-          </div>
-          <div class="ko-product-info">
-            <h3 class="ko-product-name">Whiskas Ocean Fish Dry Cat Food - 1.1kg</h3>
-          </div>
-        </div>
-
-        <div class="ko-product-card fade-in" data-category="pet-care">
-          <div class="ko-product-img-wrapper">
-            <img src="images/banner-pets.avif" alt="Drools Real Chicken Dog Biscuit Treats" width="400" height="400" loading="lazy">
-            <span class="product-badge badge-fresh">Pet Treats</span>
-          </div>
-          <div class="ko-product-info">
-            <h3 class="ko-product-name">Drools Real Chicken Dog Biscuit Treats - 500g</h3>
-          </div>
-        </div>
-
       </div>
 
     </div>
@@ -949,6 +865,42 @@
       </a>
     </div>
   </div>
+
+  <!-- ============ FEATURES ============ -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title">Why Choose <span class="text-green">Pramila Store</span></h2>
+        <p class="section-subtitle">We believe in quality, freshness, and building lasting relationships with our community.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card fade-in">
+          <div class="feature-icon">🌾</div>
+          <h3>Farm Fresh Daily</h3>
+          <p>We source our fruits and vegetables directly from local farms, ensuring you get the freshest produce every morning.</p>
+        </div>
+
+        <div class="feature-card fade-in">
+          <div class="feature-icon">💰</div>
+          <h3>Best Prices</h3>
+          <p>We keep our prices competitive and affordable so you never have to compromise on quality for your family.</p>
+        </div>
+
+        <div class="feature-card fade-in">
+          <div class="feature-icon">🤝</div>
+          <h3>Friendly Service</h3>
+          <p>Our team knows every customer by name. Experience warm, personal service that makes shopping a joy.</p>
+        </div>
+
+        <div class="feature-card fade-in">
+          <div class="feature-icon">📦</div>
+          <h3>Wide Selection</h3>
+          <p>From daily staples to specialty items, we stock everything you need under one roof — over 500+ products.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- ============ SPECIAL OFFERS BANNER ============ -->
   <section class="offers-banner fade-in" id="offers">
