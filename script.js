@@ -1,88 +1,129 @@
 /* ============================================
    PRAMILA STORE — Interactive Behaviors
+   Kathmandu Organics Product Catalog & WhatsApp Cart
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
 
   // ---- Header scroll effect ----
-  const header = document.getElementById('header');
-  const scrollTop = document.getElementById('scroll-top');
+  const topBar = document.getElementById('top-bar');
+  const scrollTopBtn = document.getElementById('scroll-top');
 
+  let ticking = false;
   const handleScroll = () => {
-    const y = window.scrollY;
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => {
+      const y = window.scrollY;
 
-    // Header glassmorphism intensifies on scroll
-    if (y > 50) {
-      header.classList.add('scrolled');
-    } else {
-      header.classList.remove('scrolled');
-    }
+      if (y > 30) {
+        topBar.classList.add('scrolled');
+      } else {
+        topBar.classList.remove('scrolled');
+      }
 
-    // Show/hide scroll-to-top button
-    if (y > 600) {
-      scrollTop.classList.add('visible');
-    } else {
-      scrollTop.classList.remove('visible');
-    }
+      if (y > 400) {
+        scrollTopBtn.classList.add('visible');
+      } else {
+        scrollTopBtn.classList.remove('visible');
+      }
+
+      ticking = false;
+    });
   };
 
   window.addEventListener('scroll', handleScroll, { passive: true });
-  handleScroll(); // initial check
+  handleScroll();
 
   // ---- Scroll to top ----
-  scrollTop.addEventListener('click', () => {
+  scrollTopBtn.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
   // ---- Mobile navigation toggle ----
   const mobileToggle = document.getElementById('mobile-toggle');
+  const navBar = document.getElementById('nav-bar');
   const navLinks = document.getElementById('nav-links');
+  let scrollPos = 0;
+
+  const openNav = () => {
+    navBar.classList.add('active');
+    mobileToggle.classList.add('active');
+    scrollPos = window.scrollY;
+    document.body.classList.add('nav-open');
+    document.body.style.top = `-${scrollPos}px`;
+    const spans = mobileToggle.querySelectorAll('span');
+    spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+    spans[1].style.opacity = '0';
+    spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
+  };
+
+  const closeNav = () => {
+    navBar.classList.remove('active');
+    mobileToggle.classList.remove('active');
+    document.body.classList.remove('nav-open');
+    document.body.style.top = '';
+    window.scrollTo(0, scrollPos);
+    const spans = mobileToggle.querySelectorAll('span');
+    spans[0].style.transform = '';
+    spans[1].style.opacity = '';
+    spans[2].style.transform = '';
+  };
 
   mobileToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    mobileToggle.classList.toggle('active');
-
-    // Animate hamburger → X
-    const spans = mobileToggle.querySelectorAll('span');
-    if (navLinks.classList.contains('active')) {
-      spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
-      spans[1].style.opacity = '0';
-      spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
+    if (navBar.classList.contains('active')) {
+      closeNav();
     } else {
-      spans[0].style.transform = '';
-      spans[1].style.opacity = '';
-      spans[2].style.transform = '';
+      openNav();
     }
   });
 
-  // Close mobile nav on link click
+  // Close nav on link click
   navLinks.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
-      navLinks.classList.remove('active');
-      mobileToggle.classList.remove('active');
-      const spans = mobileToggle.querySelectorAll('span');
-      spans[0].style.transform = '';
-      spans[1].style.opacity = '';
-      spans[2].style.transform = '';
+      if (navBar.classList.contains('active')) {
+        closeNav();
+      }
+    });
+  });
+
+  // Close on resize
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768 && navBar.classList.contains('active')) {
+      closeNav();
+    }
+  });
+
+  // ---- Smooth scroll for anchor links ----
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', (e) => {
+      const targetId = anchor.getAttribute('href');
+      if (targetId === '#' || !targetId) return;
+      const targetEl = document.querySelector(targetId);
+      if (!targetEl) return;
+
+      e.preventDefault();
+
+      const isMobile = window.innerWidth <= 768;
+      const headerH = isMobile ? 64 : 120;
+      const targetPosition = targetEl.getBoundingClientRect().top + window.scrollY - headerH - 16;
+
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+      });
     });
   });
 
   // ---- Intersection Observer for fade-in animations ----
   const fadeElements = document.querySelectorAll('.fade-in');
 
-  const observerOptions = {
-    root: null,
-    rootMargin: '0px 0px -80px 0px',
-    threshold: 0.15
-  };
-
   const fadeObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry, index) => {
+    entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        // Stagger siblings for a cascading reveal
         const siblings = entry.target.parentElement.querySelectorAll('.fade-in');
         const siblingIndex = Array.from(siblings).indexOf(entry.target);
-        const delay = siblingIndex * 100; // 100ms stagger
+        const delay = siblingIndex * 60;
 
         setTimeout(() => {
           entry.target.classList.add('visible');
@@ -91,27 +132,31 @@ document.addEventListener('DOMContentLoaded', () => {
         fadeObserver.unobserve(entry.target);
       }
     });
-  }, observerOptions);
+  }, {
+    root: null,
+    rootMargin: '0px 0px -40px 0px',
+    threshold: 0.08
+  });
 
   fadeElements.forEach(el => fadeObserver.observe(el));
 
   // ---- Active nav link highlighting on scroll ----
   const sections = document.querySelectorAll('section[id]');
-  const navLinkElements = document.querySelectorAll('.nav-links a:not(.nav-cta)');
+  const navLinkElements = document.querySelectorAll('.nav-links a');
 
   const highlightNav = () => {
-    const scrollPos = window.scrollY + 120;
+    const scrollY = window.scrollY + 150;
 
     sections.forEach(section => {
       const top = section.offsetTop;
       const height = section.offsetHeight;
       const id = section.getAttribute('id');
 
-      if (scrollPos >= top && scrollPos < top + height) {
+      if (scrollY >= top && scrollY < top + height) {
         navLinkElements.forEach(link => {
-          link.style.color = '';
+          link.classList.remove('nav-active');
           if (link.getAttribute('href') === `#${id}`) {
-            link.style.color = 'var(--color-primary)';
+            link.classList.add('nav-active');
           }
         });
       }
@@ -120,22 +165,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('scroll', highlightNav, { passive: true });
 
-  // ---- Animate stat numbers on hero visibility ----
+  // ---- Animate stat numbers ----
   const statNumbers = document.querySelectorAll('.stat-number');
   let statsAnimated = false;
 
   const animateCountUp = (el, target) => {
-    const duration = 1500;
+    const duration = 1200;
     const increment = target / (duration / 16);
     let current = 0;
 
     const tick = () => {
       current += increment;
       if (current >= target) {
-        el.textContent = target + (el.dataset.suffix || '+');
+        el.textContent = target + (el.dataset.suffix || '');
         return;
       }
-      el.textContent = Math.floor(current) + (el.dataset.suffix || '+');
+      el.textContent = Math.floor(current) + (el.dataset.suffix || '');
       requestAnimationFrame(tick);
     };
 
@@ -149,6 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
         statNumbers.forEach(el => {
           const text = el.textContent;
           const num = parseInt(text.replace(/[^0-9]/g, ''), 10);
+          if (isNaN(num)) return;
           const suffix = text.includes('+') ? '+' : '';
           el.dataset.suffix = suffix;
           el.textContent = '0' + suffix;
@@ -158,19 +204,214 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, { threshold: 0.5 });
 
-  const heroStats = document.querySelector('.hero-stats');
-  if (heroStats) statsObserver.observe(heroStats);
+  const statsBar = document.getElementById('stats-bar');
+  if (statsBar) statsObserver.observe(statsBar);
 
-  // ---- Subtle parallax on hero background ----
-  const heroBg = document.querySelector('.hero-bg img');
+  // ============================================
+  // PRODUCT CATEGORY FILTERING & COLLECTIONS
+  // ============================================
+  const filterTabs = document.querySelectorAll('.filter-tab');
+  const collectionButtons = document.querySelectorAll('.collection-item');
+  const productCards = document.querySelectorAll('.ko-product-card');
 
-  if (heroBg && window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
-    window.addEventListener('scroll', () => {
-      const y = window.scrollY;
-      if (y < window.innerHeight) {
-        heroBg.style.transform = `scale(1.05) translateY(${y * 0.15}px)`;
+  const filterProducts = (category) => {
+    // Update active state on filter tabs
+    filterTabs.forEach(tab => {
+      if (tab.dataset.filter === category) {
+        tab.classList.add('active');
+      } else {
+        tab.classList.remove('active');
       }
-    }, { passive: true });
+    });
+
+    // Update active state on collection circles
+    collectionButtons.forEach(btn => {
+      if (btn.dataset.category === category) {
+        btn.classList.add('active-collection');
+      } else {
+        btn.classList.remove('active-collection');
+      }
+    });
+
+    // Filter cards
+    productCards.forEach(card => {
+      const cardCat = card.dataset.category;
+      if (category === 'all' || cardCat === category) {
+        card.style.display = 'flex';
+        setTimeout(() => {
+          card.classList.add('visible');
+        }, 30);
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  };
+
+  filterTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const cat = tab.dataset.filter;
+      filterProducts(cat);
+    });
+  });
+
+  collectionButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const cat = btn.dataset.category;
+      filterProducts(cat);
+      // Smooth scroll down to products showcase
+      const productsSection = document.getElementById('products');
+      if (productsSection) {
+        const headerH = window.innerWidth <= 768 ? 64 : 120;
+        const pos = productsSection.getBoundingClientRect().top + window.scrollY - headerH - 10;
+        window.scrollTo({ top: pos, behavior: 'smooth' });
+      }
+    });
+  });
+
+  // ============================================
+  // QUANTITY STEPPERS (- 1 +)
+  // ============================================
+  document.querySelectorAll('.ko-product-card').forEach(card => {
+    const minusBtn = card.querySelector('.qty-minus');
+    const plusBtn = card.querySelector('.qty-plus');
+    const qtyInput = card.querySelector('.qty-input');
+
+    if (minusBtn && plusBtn && qtyInput) {
+      minusBtn.addEventListener('click', () => {
+        let val = parseInt(qtyInput.value, 10) || 1;
+        if (val > 1) {
+          qtyInput.value = val - 1;
+        }
+      });
+
+      plusBtn.addEventListener('click', () => {
+        let val = parseInt(qtyInput.value, 10) || 1;
+        if (val < 50) {
+          qtyInput.value = val + 1;
+        }
+      });
+
+      qtyInput.addEventListener('change', () => {
+        let val = parseInt(qtyInput.value, 10);
+        if (isNaN(val) || val < 1) qtyInput.value = 1;
+        if (val > 50) qtyInput.value = 50;
+      });
+    }
+  });
+
+  // ============================================
+  // SHOPPING CART & WHATSAPP CHECKOUT
+  // ============================================
+  const cart = {};
+  const floatingCartBar = document.getElementById('floating-cart-bar');
+  const cartItemCount = document.getElementById('cart-item-count');
+  const cartTotalAmount = document.getElementById('cart-total-amount');
+  const whatsappCheckoutBtn = document.getElementById('btn-whatsapp-checkout');
+
+  const updateCartUI = () => {
+    let totalItems = 0;
+    let totalPrice = 0;
+    let itemsListText = '';
+
+    for (const [name, item] of Object.entries(cart)) {
+      totalItems += item.qty;
+      totalPrice += item.qty * item.price;
+      itemsListText += `• ${item.qty}x ${name} - NPR ${item.qty * item.price}\n`;
+    }
+
+    if (cartItemCount) cartItemCount.textContent = totalItems;
+    if (cartTotalAmount) cartTotalAmount.textContent = totalPrice.toLocaleString('en-US', { minimumFractionDigits: 2 });
+
+    if (totalItems > 0) {
+      floatingCartBar.classList.add('active');
+    } else {
+      floatingCartBar.classList.remove('active');
+    }
+
+    // Build WhatsApp Order Link
+    if (whatsappCheckoutBtn) {
+      const message = `Namaste Pramila Store! 🌿\n\nI would like to order the following items:\n${itemsListText}\n💰 Total Order Value: NPR ${totalPrice}\n\n📍 Delivery / Pickup: Maharjan Chowk, Imadol-03\nThank you!`;
+      const encodedMsg = encodeURIComponent(message);
+      whatsappCheckoutBtn.href = `https://wa.me/9779813160679?text=${encodedMsg}`;
+    }
+  };
+
+  document.querySelectorAll('.ko-add-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const card = btn.closest('.ko-product-card');
+      const name = btn.dataset.name;
+      const price = parseFloat(btn.dataset.price);
+      const qtyInput = card.querySelector('.qty-input');
+      const qty = parseInt(qtyInput ? qtyInput.value : '1', 10) || 1;
+
+      if (!cart[name]) {
+        cart[name] = { price, qty: 0 };
+      }
+      cart[name].qty += qty;
+
+      // Feedback animation on button
+      btn.classList.add('added');
+      btn.textContent = '✓ Added!';
+      setTimeout(() => {
+        btn.classList.remove('added');
+        btn.textContent = 'Add to Cart';
+      }, 1200);
+
+      updateCartUI();
+    });
+  });
+
+  // ============================================
+  // SEARCH BAR INTERACTION
+  // ============================================
+  const searchInput = document.getElementById('search-input');
+  const searchBtn = document.getElementById('search-btn');
+
+  const handleSearch = () => {
+    const query = searchInput.value.trim().toLowerCase();
+    if (!query) return;
+
+    // Switch to all category
+    filterProducts('all');
+
+    // Scroll to products section
+    const productsSection = document.getElementById('products');
+    if (productsSection) {
+      const headerH = window.innerWidth <= 768 ? 64 : 120;
+      const pos = productsSection.getBoundingClientRect().top + window.scrollY - headerH - 10;
+      window.scrollTo({ top: pos, behavior: 'smooth' });
+    }
+
+    let matchCount = 0;
+    productCards.forEach(card => {
+      const text = card.textContent.toLowerCase();
+      if (text.includes(query)) {
+        card.style.display = 'flex';
+        card.style.outline = '2.5px solid var(--color-primary)';
+        card.style.outlineOffset = '3px';
+        matchCount++;
+      } else {
+        card.style.display = 'none';
+        card.style.outline = '';
+      }
+    });
+
+    setTimeout(() => {
+      productCards.forEach(card => {
+        card.style.outline = '';
+        card.style.outlineOffset = '';
+      });
+    }, 4500);
+  };
+
+  if (searchBtn) {
+    searchBtn.addEventListener('click', handleSearch);
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') handleSearch();
+    });
   }
 
 });
