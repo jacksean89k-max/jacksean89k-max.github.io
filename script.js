@@ -208,10 +208,60 @@ document.addEventListener('DOMContentLoaded', () => {
   if (statsBar) statsObserver.observe(statsBar);
 
   // ============================================
-  // PRODUCT CATEGORY FILTERING & COLLECTIONS
+  // PROMO BANNERS CAROUSEL CONTROLS
+  // ============================================
+  const promoCarousel = document.getElementById('promo-carousel');
+  const promoPrevBtn = document.getElementById('promo-prev-btn');
+  const promoNextBtn = document.getElementById('promo-next-btn');
+
+  if (promoCarousel && promoPrevBtn && promoNextBtn) {
+    const scrollAmount = 360;
+
+    promoPrevBtn.addEventListener('click', () => {
+      promoCarousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    });
+
+    promoNextBtn.addEventListener('click', () => {
+      promoCarousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    });
+
+    // Mouse drag scrolling support for desktop
+    let isDown = false;
+    let startX = 0;
+    let scrollLeft = 0;
+
+    promoCarousel.addEventListener('mousedown', (e) => {
+      isDown = true;
+      promoCarousel.classList.add('active-drag');
+      startX = e.pageX - promoCarousel.offsetLeft;
+      scrollLeft = promoCarousel.scrollLeft;
+    });
+
+    promoCarousel.addEventListener('mouseleave', () => {
+      isDown = false;
+      promoCarousel.classList.remove('active-drag');
+    });
+
+    promoCarousel.addEventListener('mouseup', () => {
+      isDown = false;
+      promoCarousel.classList.remove('active-drag');
+    });
+
+    promoCarousel.addEventListener('mousemove', (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - promoCarousel.offsetLeft;
+      const walk = (x - startX) * 1.5;
+      promoCarousel.scrollLeft = scrollLeft - walk;
+    });
+  }
+
+  // ============================================
+  // PRODUCT CATEGORY FILTERING & VHANDAR CATEGORIES
   // ============================================
   const filterTabs = document.querySelectorAll('.filter-tab');
-  const collectionButtons = document.querySelectorAll('.collection-item');
+  const vhandarCatButtons = document.querySelectorAll('.vhandar-cat-item');
+  const bannerLinks = document.querySelectorAll('.banner-card-link');
   const productCards = document.querySelectorAll('.ko-product-card');
 
   const filterProducts = (category) => {
@@ -224,16 +274,16 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // Update active state on collection circles
-    collectionButtons.forEach(btn => {
+    // Update active state on Vhandar category items
+    vhandarCatButtons.forEach(btn => {
       if (btn.dataset.category === category) {
-        btn.classList.add('active-collection');
+        btn.classList.add('active');
       } else {
-        btn.classList.remove('active-collection');
+        btn.classList.remove('active');
       }
     });
 
-    // Filter cards
+    // Filter product cards
     productCards.forEach(card => {
       const cardCat = card.dataset.category;
       if (category === 'all' || cardCat === category) {
@@ -247,6 +297,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
 
+  const scrollToProducts = () => {
+    const productsSection = document.getElementById('products');
+    if (productsSection) {
+      const headerH = window.innerWidth <= 768 ? 64 : 120;
+      const pos = productsSection.getBoundingClientRect().top + window.scrollY - headerH - 10;
+      window.scrollTo({ top: pos, behavior: 'smooth' });
+    }
+  };
+
   filterTabs.forEach(tab => {
     tab.addEventListener('click', () => {
       const cat = tab.dataset.filter;
@@ -254,17 +313,23 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  collectionButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
+  vhandarCatButtons.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
       const cat = btn.dataset.category;
       filterProducts(cat);
-      // Smooth scroll down to products showcase
-      const productsSection = document.getElementById('products');
-      if (productsSection) {
-        const headerH = window.innerWidth <= 768 ? 64 : 120;
-        const pos = productsSection.getBoundingClientRect().top + window.scrollY - headerH - 10;
-        window.scrollTo({ top: pos, behavior: 'smooth' });
+      scrollToProducts();
+    });
+  });
+
+  bannerLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const cat = link.dataset.filter;
+      if (cat) {
+        filterProducts(cat);
       }
+      scrollToProducts();
     });
   });
 
@@ -310,17 +375,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const updateCartUI = () => {
     let totalItems = 0;
-    let totalPrice = 0;
     let itemsListText = '';
 
     for (const [name, item] of Object.entries(cart)) {
       totalItems += item.qty;
-      totalPrice += item.qty * item.price;
-      itemsListText += `• ${item.qty}x ${name} - NPR ${item.qty * item.price}\n`;
+      itemsListText += `• ${item.qty}x ${name}\n`;
     }
 
     if (cartItemCount) cartItemCount.textContent = totalItems;
-    if (cartTotalAmount) cartTotalAmount.textContent = totalPrice.toLocaleString('en-US', { minimumFractionDigits: 2 });
 
     if (totalItems > 0) {
       floatingCartBar.classList.add('active');
@@ -330,7 +392,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Build WhatsApp Order Link
     if (whatsappCheckoutBtn) {
-      const message = `Namaste Pramila Store! 🌿\n\nI would like to order the following items:\n${itemsListText}\n💰 Total Order Value: NPR ${totalPrice}\n\n📍 Delivery / Pickup: Maharjan Chowk, Imadol-03\nThank you!`;
+      const message = `Namaste Pramila Store! 🌿\n\nI would like to order the following items:\n${itemsListText}\n📍 Delivery / Pickup: Maharjan Chowk, Imadol-03\nThank you!`;
       const encodedMsg = encodeURIComponent(message);
       whatsappCheckoutBtn.href = `https://wa.me/9779813160679?text=${encodedMsg}`;
     }

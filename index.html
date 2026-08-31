@@ -153,62 +153,200 @@
     </div>
   </section>
 
-  <!-- ============ EXPLORE COLLECTIONS ============ -->
-  <section class="collections" id="menu">
+  <!-- ============ PROMO BANNERS CAROUSEL (VHANDAR STYLE) ============ -->
+  <section class="vhandar-promo-section" id="promos">
+    <div class="container promo-container">
+      <div class="banner-carousel-wrapper">
+        <button class="carousel-nav-btn prev-btn" id="promo-prev-btn" aria-label="Previous promo banner">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+
+        <div class="banner-carousel" id="promo-carousel">
+          
+          <!-- Banner 1: Pet Care -->
+          <div class="banner-card fade-in" data-category="pet-care">
+            <a href="#products" class="banner-card-link" data-filter="pet-care" aria-label="Pet Care Supplies">
+              <div class="banner-img-box">
+                <img src="images/banner-pets.avif" alt="Pet Care Supplies in minutes — Food, treats, toys & more" loading="eager" width="700" height="400">
+              </div>
+            </a>
+          </div>
+
+          <!-- Banner 2: Oral & Personal Care -->
+          <div class="banner-card fade-in" data-category="personal-care">
+            <a href="#products" class="banner-card-link" data-filter="personal-care" aria-label="Bright Smiles & Fresh Faces">
+              <div class="banner-img-box">
+                <img src="images/banner-oral-care.avif" alt="Bright Smiles & Fresh Faces — Toothpaste, face wash & hygiene" loading="eager" width="700" height="400">
+              </div>
+            </a>
+          </div>
+
+          <!-- Banner 3: Cleaning Essentials -->
+          <div class="banner-card fade-in" data-category="cleaning">
+            <a href="#products" class="banner-card-link" data-filter="cleaning" aria-label="Sparkle & Shine Cleaning Essentials">
+              <div class="banner-img-box">
+                <img src="images/banner-cleaning.avif" alt="Sparkle & Shine — Detergents, surface cleaners & disinfectants" loading="lazy" width="700" height="400">
+              </div>
+            </a>
+          </div>
+
+          <!-- Banner 4: Cold Drinks & Juice -->
+          <div class="banner-card fade-in" data-category="beverages">
+            <a href="#products" class="banner-card-link" data-filter="beverages" aria-label="Cold Drinks & Juice">
+              <div class="banner-img-box">
+                <img src="images/banner-cold-drinks.avif" alt="Cold Drinks & Juice — Refreshing chilled beverages & sodas" loading="lazy" width="700" height="400">
+              </div>
+            </a>
+          </div>
+
+          <!-- Banner 5: Snacks & Munchies -->
+          <div class="banner-card fade-in" data-category="snacks">
+            <a href="#products" class="banner-card-link" data-filter="snacks" aria-label="Snacks & Munchies">
+              <div class="banner-img-box">
+                <img src="images/banner-snack.avif" alt="Snacks & Munchies — Crispy chips, namkeen & instant snacks" loading="lazy" width="700" height="400">
+              </div>
+            </a>
+          </div>
+
+          <!-- Banner 6: Instant & Packaged Foods -->
+          <div class="banner-card fade-in" data-category="instant-foods">
+            <a href="#products" class="banner-card-link" data-filter="instant-foods" aria-label="Instant & Packaged Foods">
+              <div class="banner-img-box">
+                <img src="images/banner-instant-foods.avif" alt="Instant & Packaged Foods — Quick meals, noodles & breakfast" loading="lazy" width="700" height="400">
+              </div>
+            </a>
+          </div>
+
+          <!-- Banner 7: Personal Care & Grooming -->
+          <div class="banner-card fade-in" data-category="personal-care">
+            <a href="#products" class="banner-card-link" data-filter="personal-care" aria-label="Personal Care">
+              <div class="banner-img-box">
+                <img src="images/banner-personal-care.avif" alt="Personal Care — Shampoos, soaps & body care" loading="lazy" width="700" height="400">
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+        <button class="carousel-nav-btn next-btn" id="promo-next-btn" aria-label="Next promo banner">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OUR CATEGORIES (VHANDAR STYLE) ============ -->
+  <section class="vhandar-categories-section" id="menu">
     <div class="container">
-      <div class="section-header fade-in">
-        <h2 class="section-title collections-title">Explore<br><span class="text-green">Collections</span></h2>
+      
+      <!-- Vhandar Centered Header with Flanking Lines -->
+      <div class="vhandar-categories-header fade-in">
+        <span class="vhandar-divider-line"></span>
+        <a href="#products" class="vhandar-title-link" aria-label="Browse Our Categories">
+          <h2 class="vhandar-categories-title">OUR CATEGORIES</h2>
+        </a>
+        <span class="vhandar-divider-line"></span>
       </div>
 
-      <div class="collections-grid">
-        <button class="collection-item fade-in active-collection" data-category="all" aria-label="View all products">
-          <div class="collection-circle">
-            <img src="images/cat-vegetables.jpg" alt="All Collections" width="160" height="160" loading="lazy">
+      <!-- Categories Grid (11 Categories + All) -->
+      <div class="vhandar-categories-grid">
+        
+        <!-- 1. All Items -->
+        <button class="vhandar-cat-item fade-in active" data-category="all" aria-label="All Categories">
+          <div class="cat-img-box">
+            <img src="images/cat-vegetables.jpg" alt="All Categories" width="120" height="120" loading="lazy">
           </div>
-          <span class="collection-label">All Items</span>
+          <span class="cat-name-label">All Items</span>
         </button>
 
-        <button class="collection-item fade-in" data-category="vegetables" aria-label="View Vegetables">
-          <div class="collection-circle">
-            <img src="images/prod-spinach.jpg" alt="Fresh Greens & Vegetables" width="160" height="160" loading="lazy">
+        <!-- 2. Rice, Atta & Dals -->
+        <button class="vhandar-cat-item fade-in" data-category="rice-dals" aria-label="Rice, Atta & Dals">
+          <div class="cat-img-box">
+            <img src="images/snacks.png" alt="Rice, Atta & Dals" width="120" height="120" loading="lazy">
           </div>
-          <span class="collection-label">Greens & Veggies</span>
+          <span class="cat-name-label">Rice & Dals</span>
         </button>
 
-        <button class="collection-item fade-in" data-category="fruits" aria-label="View Fruits">
-          <div class="collection-circle">
-            <img src="images/prod-apples.jpg" alt="Fresh Fruits" width="160" height="160" loading="lazy">
+        <!-- 3. Oil, Ghee & Salt -->
+        <button class="vhandar-cat-item fade-in" data-category="oil-ghee" aria-label="Oil, Ghee & Salt">
+          <div class="cat-img-box">
+            <img src="images/dairy.png" alt="Oil, Ghee & Salt" width="120" height="120" loading="lazy">
           </div>
-          <span class="collection-label">Fresh Fruits</span>
+          <span class="cat-name-label">Oil & Ghee</span>
         </button>
 
-        <button class="collection-item fade-in" data-category="dairy" aria-label="View Dairy">
-          <div class="collection-circle">
-            <img src="images/prod-paneer.jpg" alt="Dairy Products" width="160" height="160" loading="lazy">
+        <!-- 4. Spices & Masalas -->
+        <button class="vhandar-cat-item fade-in" data-category="spices" aria-label="Spices and Masalas">
+          <div class="cat-img-box">
+            <img src="images/prod-honey.jpg" alt="Spices & Masalas" width="120" height="120" loading="lazy">
           </div>
-          <span class="collection-label">Dairy Products</span>
+          <span class="cat-name-label">Spices & Masala</span>
         </button>
 
-        <button class="collection-item fade-in" data-category="spices" aria-label="View Spices">
-          <div class="collection-circle">
-            <img src="images/prod-honey.jpg" alt="Spices & Honey" width="160" height="160" loading="lazy">
+        <!-- 5. Dairy, Bread & Eggs -->
+        <button class="vhandar-cat-item fade-in" data-category="dairy" aria-label="Dairy, Bread & Eggs">
+          <div class="cat-img-box">
+            <img src="images/prod-paneer.jpg" alt="Dairy, Bread & Eggs" width="120" height="120" loading="lazy">
           </div>
-          <span class="collection-label">Spices & Honey</span>
+          <span class="cat-name-label">Dairy & Eggs</span>
         </button>
 
-        <button class="collection-item fade-in" data-category="beverages" aria-label="View Beverages">
-          <div class="collection-circle">
-            <img src="images/cat-beverages.jpg" alt="Chiya & Drinks" width="160" height="160" loading="lazy">
+        <!-- 6. Instant Foods & Noodles -->
+        <button class="vhandar-cat-item fade-in" data-category="instant-foods" aria-label="Instant Foods & Noodles">
+          <div class="cat-img-box">
+            <img src="images/banner-instant-foods.avif" alt="Instant Foods & Noodles" width="120" height="120" loading="lazy">
           </div>
-          <span class="collection-label">Tea & Chiya</span>
+          <span class="cat-name-label">Instant Foods</span>
         </button>
 
-        <button class="collection-item fade-in" data-category="snacks" aria-label="View Snacks">
-          <div class="collection-circle">
-            <img src="images/cat-snacks.jpg" alt="Snacks & Bakery" width="160" height="160" loading="lazy">
+        <!-- 7. Snacks & Biscuits -->
+        <button class="vhandar-cat-item fade-in" data-category="snacks" aria-label="Snacks and Biscuits">
+          <div class="cat-img-box">
+            <img src="images/cat-snacks.jpg" alt="Snacks & Biscuits" width="120" height="120" loading="lazy">
           </div>
-          <span class="collection-label">Daily Snacks</span>
+          <span class="cat-name-label">Snacks & Bakery</span>
         </button>
+
+        <!-- 8. Tea, Coffee & Drinks -->
+        <button class="vhandar-cat-item fade-in" data-category="beverages" aria-label="Tea, Coffee & Drinks">
+          <div class="cat-img-box">
+            <img src="images/cat-beverages.jpg" alt="Tea, Coffee & Drinks" width="120" height="120" loading="lazy">
+          </div>
+          <span class="cat-name-label">Drinks & Chiya</span>
+        </button>
+
+        <!-- 9. Fresh Produce & Fruits -->
+        <button class="vhandar-cat-item fade-in" data-category="fresh-produce" aria-label="Fresh Fruits & Veggies">
+          <div class="cat-img-box">
+            <img src="images/prod-spinach.jpg" alt="Fresh Fruits & Vegetables" width="120" height="120" loading="lazy">
+          </div>
+          <span class="cat-name-label">Fresh Produce</span>
+        </button>
+
+        <!-- 10. Cleaning & Home Essentials -->
+        <button class="vhandar-cat-item fade-in" data-category="cleaning" aria-label="Cleaning & Home Essentials">
+          <div class="cat-img-box">
+            <img src="images/banner-cleaning.avif" alt="Cleaning & Home Essentials" width="120" height="120" loading="lazy">
+          </div>
+          <span class="cat-name-label">Cleaning Care</span>
+        </button>
+
+        <!-- 11. Personal Care & Hygiene -->
+        <button class="vhandar-cat-item fade-in" data-category="personal-care" aria-label="Personal Care & Hygiene">
+          <div class="cat-img-box">
+            <img src="images/banner-oral-care.avif" alt="Personal Care & Hygiene" width="120" height="120" loading="lazy">
+          </div>
+          <span class="cat-name-label">Personal Care</span>
+        </button>
+
+        <!-- 12. Pet Care Supplies -->
+        <button class="vhandar-cat-item fade-in" data-category="pet-care" aria-label="Pet Care Supplies">
+          <div class="cat-img-box">
+            <img src="images/banner-pets.avif" alt="Pet Care Supplies" width="120" height="120" loading="lazy">
+          </div>
+          <span class="cat-name-label">Pet Care</span>
+        </button>
+
       </div>
     </div>
   </section>
@@ -219,262 +357,578 @@
       
       <!-- Category Banner Header -->
       <div class="category-banner-header fade-in">
-        <span class="banner-subtitle">Direct From Farm • Sourced Daily</span>
-        <h2 class="banner-title">FRESH PRODUCE & <span class="text-green">ORGANIC ESSENTIALS</span></h2>
-        <p class="banner-desc">We work with local farm partners to source high-quality, fresh, and daily essentials for your kitchen. Available daily at Maharjan Chowk, Imadol.</p>
+        <span class="banner-subtitle">Daily Grocery & Mini Mart Essentials</span>
+        <h2 class="banner-title">EXPLORE OUR <span class="text-green">PRODUCT CATALOG</span></h2>
+        <p class="banner-desc">Quality staples, farm fresh produce, daily dairy, snacks, beverages and household essentials available at Pramila Store, Maharjan Chowk, Imadol.</p>
       </div>
 
       <!-- Filter Tabs Bar -->
       <div class="catalog-filter-bar fade-in">
         <button class="filter-tab active" data-filter="all">All Products</button>
-        <button class="filter-tab" data-filter="vegetables">🥬 Greens & Veggies</button>
-        <button class="filter-tab" data-filter="fruits">🍎 Fresh Fruits</button>
-        <button class="filter-tab" data-filter="dairy">🥛 Dairy & Paneer</button>
-        <button class="filter-tab" data-filter="spices">🌶️ Spices & Honey</button>
-        <button class="filter-tab" data-filter="beverages">🍵 Tea & Chiya</button>
-        <button class="filter-tab" data-filter="snacks">🍪 Snacks & Staples</button>
+        <button class="filter-tab" data-filter="rice-dals">🍚 Rice, Atta & Dals</button>
+        <button class="filter-tab" data-filter="oil-ghee">🛢️ Oil & Ghee</button>
+        <button class="filter-tab" data-filter="spices">🌶️ Spices & Masala</button>
+        <button class="filter-tab" data-filter="dairy">🥛 Dairy & Eggs</button>
+        <button class="filter-tab" data-filter="instant-foods">🍜 Instant Foods</button>
+        <button class="filter-tab" data-filter="snacks">🍪 Snacks & Biscuits</button>
+        <button class="filter-tab" data-filter="beverages">🍵 Drinks & Chiya</button>
+        <button class="filter-tab" data-filter="fresh-produce">🥬 Fresh Produce</button>
+        <button class="filter-tab" data-filter="cleaning">🧼 Cleaning Care</button>
+        <button class="filter-tab" data-filter="personal-care">🧴 Personal Care</button>
+        <button class="filter-tab" data-filter="pet-care">🐶 Pet Care</button>
       </div>
 
       <!-- Products Grid -->
       <div class="ko-products-grid" id="products-container">
         
-        <!-- 1. Spinach / Palungo -->
-        <div class="ko-product-card fade-in" data-category="vegetables" id="card-vegetables">
+        <!-- ================= 1. RICE, ATTA & DALS ================= -->
+        <div class="ko-product-card fade-in" data-category="rice-dals">
           <div class="ko-product-img-wrapper">
-            <img src="images/prod-spinach.jpg" alt="Palungo Saag - Fresh Local Spinach" width="400" height="400" loading="lazy">
-            <span class="product-badge badge-fresh">Farm Fresh</span>
-          </div>
-          <div class="ko-product-info">
-            <h3 class="ko-product-name">Palungo Saag / Spinach - 500g</h3>
-            <hr class="ko-product-divider">
-            <div class="ko-price-row">
-              <span class="ko-price-label">Price</span>
-              <span class="ko-price-val">NPR 60.00</span>
-            </div>
-            <div class="ko-card-actions">
-              <div class="qty-counter">
-                <button class="qty-btn qty-minus" aria-label="Decrease quantity">−</button>
-                <input type="number" class="qty-input" value="1" min="1" max="50" aria-label="Quantity">
-                <button class="qty-btn qty-plus" aria-label="Increase quantity">+</button>
-              </div>
-              <button class="ko-add-btn" data-name="Palungo Saag (500g)" data-price="60">Add to Cart</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- 2. Local Tomatoes -->
-        <div class="ko-product-card fade-in" data-category="vegetables">
-          <div class="ko-product-img-wrapper">
-            <img src="images/prod-tomatoes.jpg" alt="Local Fresh Red Tomatoes" width="400" height="400" loading="lazy">
-            <span class="product-badge badge-popular">Popular</span>
-          </div>
-          <div class="ko-product-info">
-            <h3 class="ko-product-name">Local Fresh Tomatoes - 1kg</h3>
-            <hr class="ko-product-divider">
-            <div class="ko-price-row">
-              <span class="ko-price-label">Price</span>
-              <span class="ko-price-val">NPR 90.00</span>
-            </div>
-            <div class="ko-card-actions">
-              <div class="qty-counter">
-                <button class="qty-btn qty-minus" aria-label="Decrease quantity">−</button>
-                <input type="number" class="qty-input" value="1" min="1" max="50" aria-label="Quantity">
-                <button class="qty-btn qty-plus" aria-label="Increase quantity">+</button>
-              </div>
-              <button class="ko-add-btn" data-name="Local Tomatoes (1kg)" data-price="90">Add to Cart</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- 3. Button / Shiitake Mushroom -->
-        <div class="ko-product-card fade-in" data-category="vegetables">
-          <div class="ko-product-img-wrapper">
-            <img src="images/prod-mushroom.jpg" alt="Button & Shiitake Mushrooms" width="400" height="400" loading="lazy">
-            <span class="product-badge badge-fresh">Fresh Pick</span>
-          </div>
-          <div class="ko-product-info">
-            <h3 class="ko-product-name">Fresh Button Mushroom - 500g</h3>
-            <hr class="ko-product-divider">
-            <div class="ko-price-row">
-              <span class="ko-price-label">Price</span>
-              <span class="ko-price-val">NPR 350.00</span>
-            </div>
-            <div class="ko-card-actions">
-              <div class="qty-counter">
-                <button class="qty-btn qty-minus" aria-label="Decrease quantity">−</button>
-                <input type="number" class="qty-input" value="1" min="1" max="50" aria-label="Quantity">
-                <button class="qty-btn qty-plus" aria-label="Increase quantity">+</button>
-              </div>
-              <button class="ko-add-btn" data-name="Button Mushroom (500g)" data-price="350">Add to Cart</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- 4. Fresh Paneer -->
-        <div class="ko-product-card fade-in" data-category="dairy" id="card-dairy">
-          <div class="ko-product-img-wrapper">
-            <img src="images/prod-paneer.jpg" alt="Fresh Organic Dairy Paneer" width="400" height="400" loading="lazy">
-            <span class="product-badge badge-fresh">Daily Dairy</span>
-          </div>
-          <div class="ko-product-info">
-            <h3 class="ko-product-name">Fresh Dairy Paneer - 500g</h3>
-            <hr class="ko-product-divider">
-            <div class="ko-price-row">
-              <span class="ko-price-label">Price</span>
-              <span class="ko-price-val">NPR 450.00</span>
-            </div>
-            <div class="ko-card-actions">
-              <div class="qty-counter">
-                <button class="qty-btn qty-minus" aria-label="Decrease quantity">−</button>
-                <input type="number" class="qty-input" value="1" min="1" max="50" aria-label="Quantity">
-                <button class="qty-btn qty-plus" aria-label="Increase quantity">+</button>
-              </div>
-              <button class="ko-add-btn" data-name="Fresh Dairy Paneer (500g)" data-price="450">Add to Cart</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- 5. Royal Gala Apples -->
-        <div class="ko-product-card fade-in" data-category="fruits" id="card-fruits">
-          <div class="ko-product-img-wrapper">
-            <img src="images/prod-apples.jpg" alt="Fresh Crisp Apples" width="400" height="400" loading="lazy">
-            <span class="product-badge badge-fresh">Crisp & Sweet</span>
-          </div>
-          <div class="ko-product-info">
-            <h3 class="ko-product-name">Royal Gala Apples - 1kg</h3>
-            <hr class="ko-product-divider">
-            <div class="ko-price-row">
-              <span class="ko-price-label">Price</span>
-              <span class="ko-price-val">NPR 280.00</span>
-            </div>
-            <div class="ko-card-actions">
-              <div class="qty-counter">
-                <button class="qty-btn qty-minus" aria-label="Decrease quantity">−</button>
-                <input type="number" class="qty-input" value="1" min="1" max="50" aria-label="Quantity">
-                <button class="qty-btn qty-plus" aria-label="Increase quantity">+</button>
-              </div>
-              <button class="ko-add-btn" data-name="Royal Gala Apples (1kg)" data-price="280">Add to Cart</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- 6. Raw Mountain Honey -->
-        <div class="ko-product-card fade-in" data-category="spices" id="card-spices">
-          <div class="ko-product-img-wrapper">
-            <img src="images/prod-honey.jpg" alt="Pure Raw Mountain Honey" width="400" height="400" loading="lazy">
-            <span class="product-badge badge-popular">100% Pure</span>
-          </div>
-          <div class="ko-product-info">
-            <h3 class="ko-product-name">Pure Raw Mountain Honey - 500g</h3>
-            <hr class="ko-product-divider">
-            <div class="ko-price-row">
-              <span class="ko-price-label">Price</span>
-              <span class="ko-price-val">NPR 650.00</span>
-            </div>
-            <div class="ko-card-actions">
-              <div class="qty-counter">
-                <button class="qty-btn qty-minus" aria-label="Decrease quantity">−</button>
-                <input type="number" class="qty-input" value="1" min="1" max="50" aria-label="Quantity">
-                <button class="qty-btn qty-plus" aria-label="Increase quantity">+</button>
-              </div>
-              <button class="ko-add-btn" data-name="Raw Mountain Honey (500g)" data-price="650">Add to Cart</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- 7. Cow Milk -->
-        <div class="ko-product-card fade-in" data-category="dairy">
-          <div class="ko-product-img-wrapper">
-            <img src="images/dairy.png" alt="Fresh Cow Milk" width="400" height="400" loading="lazy">
-            <span class="product-badge badge-fresh">Daily Fresh</span>
-          </div>
-          <div class="ko-product-info">
-            <h3 class="ko-product-name">Pure Farm Cow Milk - 1 Litre</h3>
-            <hr class="ko-product-divider">
-            <div class="ko-price-row">
-              <span class="ko-price-label">Price</span>
-              <span class="ko-price-val">NPR 110.00</span>
-            </div>
-            <div class="ko-card-actions">
-              <div class="qty-counter">
-                <button class="qty-btn qty-minus" aria-label="Decrease quantity">−</button>
-                <input type="number" class="qty-input" value="1" min="1" max="50" aria-label="Quantity">
-                <button class="qty-btn qty-plus" aria-label="Increase quantity">+</button>
-              </div>
-              <button class="ko-add-btn" data-name="Pure Cow Milk (1L)" data-price="110">Add to Cart</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- 8. Spices & Garam Masala -->
-        <div class="ko-product-card fade-in" data-category="spices">
-          <div class="ko-product-img-wrapper">
-            <img src="images/spices.png" alt="Authentic Spices & Masala" width="400" height="400" loading="lazy">
-            <span class="product-badge badge-fresh">Aromatic</span>
-          </div>
-          <div class="ko-product-info">
-            <h3 class="ko-product-name">Organic Besar / Turmeric - 250g</h3>
-            <hr class="ko-product-divider">
-            <div class="ko-price-row">
-              <span class="ko-price-label">Price</span>
-              <span class="ko-price-val">NPR 150.00</span>
-            </div>
-            <div class="ko-card-actions">
-              <div class="qty-counter">
-                <button class="qty-btn qty-minus" aria-label="Decrease quantity">−</button>
-                <input type="number" class="qty-input" value="1" min="1" max="50" aria-label="Quantity">
-                <button class="qty-btn qty-plus" aria-label="Increase quantity">+</button>
-              </div>
-              <button class="ko-add-btn" data-name="Organic Turmeric Besar (250g)" data-price="150">Add to Cart</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- 9. Ilam Chiya -->
-        <div class="ko-product-card fade-in" data-category="beverages" id="card-beverages">
-          <div class="ko-product-img-wrapper">
-            <img src="images/beverages.png" alt="Ilam Organic Tea / Chiya" width="400" height="400" loading="lazy">
+            <img src="images/snacks.png" alt="India Gate Premium Basmati Rice" width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Best Seller</span>
           </div>
           <div class="ko-product-info">
-            <h3 class="ko-product-name">Ilam CTC Premium Black Tea - 500g</h3>
-            <hr class="ko-product-divider">
-            <div class="ko-price-row">
-              <span class="ko-price-label">Price</span>
-              <span class="ko-price-val">NPR 320.00</span>
-            </div>
-            <div class="ko-card-actions">
-              <div class="qty-counter">
-                <button class="qty-btn qty-minus" aria-label="Decrease quantity">−</button>
-                <input type="number" class="qty-input" value="1" min="1" max="50" aria-label="Quantity">
-                <button class="qty-btn qty-plus" aria-label="Increase quantity">+</button>
-              </div>
-              <button class="ko-add-btn" data-name="Ilam CTC Tea (500g)" data-price="320">Add to Cart</button>
-            </div>
+            <h3 class="ko-product-name">India Gate Premium Basmati Rice - 5kg</h3>
           </div>
         </div>
 
-        <!-- 10. Snacks & Namkeen -->
-        <div class="ko-product-card fade-in" data-category="snacks" id="card-snacks">
+        <div class="ko-product-card fade-in" data-category="rice-dals">
           <div class="ko-product-img-wrapper">
-            <img src="images/snacks.png" alt="Fresh Snacks & Daily Staples" width="400" height="400" loading="lazy">
+            <img src="images/cat-snacks.jpg" alt="Aashirvaad Shudh Chakki Atta" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-fresh">Staple</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Aashirvaad Shudh Chakki Atta - 5kg</h3>
+          </div>
+        </div>
+
+        <div class="ko-product-card fade-in" data-category="rice-dals">
+          <div class="ko-product-img-wrapper">
+            <img src="images/cat-snacks.jpg" alt="Nepali Roasted Taichin Chiura" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-popular">Local Favorite</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Gyan Taichin Chiura (Beaten Rice) - 1kg</h3>
+          </div>
+        </div>
+
+        <div class="ko-product-card fade-in" data-category="rice-dals">
+          <div class="ko-product-img-wrapper">
+            <img src="images/cat-spices.jpg" alt="Nepali Musuro Dal" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-fresh">Daily Dal</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Nepali Musuro Dal (Red Lentils) - 1kg</h3>
+          </div>
+        </div>
+
+        <div class="ko-product-card fade-in" data-category="rice-dals">
+          <div class="ko-product-img-wrapper">
+            <img src="images/cat-spices.jpg" alt="Local Kalo Dal Black Lentil" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-fresh">High Protein</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Local Himalayan Kalo Dal (Black Lentils) - 1kg</h3>
+          </div>
+        </div>
+
+        <div class="ko-product-card fade-in" data-category="rice-dals">
+          <div class="ko-product-img-wrapper">
+            <img src="images/cat-spices.jpg" alt="Premium Rahar Dal" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-fresh">Premium</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Premium Rahar Dal (Toor Dal) - 1kg</h3>
+          </div>
+        </div>
+
+        <!-- ================= 2. OIL, GHEE & ESSENTIALS ================= -->
+        <div class="ko-product-card fade-in" data-category="oil-ghee">
+          <div class="ko-product-img-wrapper">
+            <img src="images/dairy.png" alt="Dhara Pure Mustard Oil" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-popular">Pure Mustard</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Dhara Pure Mustard Oil (तोरीको तेल) - 1L</h3>
+          </div>
+        </div>
+
+        <div class="ko-product-card fade-in" data-category="oil-ghee">
+          <div class="ko-product-img-wrapper">
+            <img src="images/dairy.png" alt="Sunflow Refined Sunflower Oil" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-fresh">Refined</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Sunflow Refined Sunflower Oil - 1L</h3>
+          </div>
+        </div>
+
+        <div class="ko-product-card fade-in" data-category="oil-ghee">
+          <div class="ko-product-img-wrapper">
+            <img src="images/dairy.png" alt="DDC Pure Cow Ghee" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-popular">100% Pure</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">DDC Pure Cow Ghee (गाईको घिउ) - 500ml</h3>
+          </div>
+        </div>
+
+        <div class="ko-product-card fade-in" data-category="oil-ghee">
+          <div class="ko-product-img-wrapper">
+            <img src="images/cat-dairy.jpg" alt="Aayo Iodized Salt" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-fresh">Essential</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Aayo Iodized Salt (आयोनुन) - 1kg</h3>
+          </div>
+        </div>
+
+        <div class="ko-product-card fade-in" data-category="oil-ghee">
+          <div class="ko-product-img-wrapper">
+            <img src="images/cat-dairy.jpg" alt="Pure White Sugar" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-fresh">Pure</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Pure White Refined Sugar - 1kg</h3>
+          </div>
+        </div>
+
+        <!-- ================= 3. SPICES & MASALAS ================= -->
+        <div class="ko-product-card fade-in" data-category="spices">
+          <div class="ko-product-img-wrapper">
+            <img src="images/spices.png" alt="Organic Turmeric Besar" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-fresh">Aromatic</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Organic Besar (Turmeric Powder) - 250g</h3>
+          </div>
+        </div>
+
+        <div class="ko-product-card fade-in" data-category="spices">
+          <div class="ko-product-img-wrapper">
+            <img src="images/spices.png" alt="Everest Super Garam Masala" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-popular">Rich Blend</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Everest Super Garam Masala - 100g</h3>
+          </div>
+        </div>
+
+        <div class="ko-product-card fade-in" data-category="spices">
+          <div class="ko-product-img-wrapper">
+            <img src="images/cat-spices.jpg" alt="Aromatic Jeera Cumin Powder" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-fresh">Fresh Ground</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Aromatic Jeera (Cumin Powder) - 250g</h3>
+          </div>
+        </div>
+
+        <div class="ko-product-card fade-in" data-category="spices">
+          <div class="ko-product-img-wrapper">
+            <img src="images/cat-spices.jpg" alt="Century Meat & Chicken Masala" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-popular">Special Masala</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Century Meat & Chicken Masala - 100g</h3>
+          </div>
+        </div>
+
+        <div class="ko-product-card fade-in" data-category="spices">
+          <div class="ko-product-img-wrapper">
+            <img src="images/prod-honey.jpg" alt="Pure Raw Himalayan Honey" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-fresh">100% Pure</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Himalayan Wild Raw Honey - 500g</h3>
+          </div>
+        </div>
+
+        <!-- ================= 4. DAIRY, BREAD & EGGS ================= -->
+        <div class="ko-product-card fade-in" data-category="dairy">
+          <div class="ko-product-img-wrapper">
+            <img src="images/prod-paneer.jpg" alt="Fresh Farm Dairy Paneer" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-fresh">Daily Fresh</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Fresh Dairy Paneer - 500g</h3>
+          </div>
+        </div>
+
+        <div class="ko-product-card fade-in" data-category="dairy">
+          <div class="ko-product-img-wrapper">
+            <img src="images/dairy.png" alt="DDC Fresh Cow Milk" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-popular">Daily Milk</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">DDC Standardized Milk - 1 Litre</h3>
+          </div>
+        </div>
+
+        <div class="ko-product-card fade-in" data-category="dairy">
+          <div class="ko-product-img-wrapper">
+            <img src="images/cat-dairy.jpg" alt="Amul Pure Table Butter" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-fresh">Creamy</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Amul Pure Table Butter - 100g</h3>
+          </div>
+        </div>
+
+        <div class="ko-product-card fade-in" data-category="dairy">
+          <div class="ko-product-img-wrapper">
+            <img src="images/cat-dairy.jpg" alt="Nebico Fresh Sliced Bread" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-fresh">Baked Daily</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Nebico Fresh White & Brown Bread</h3>
+          </div>
+        </div>
+
+        <div class="ko-product-card fade-in" data-category="dairy">
+          <div class="ko-product-img-wrapper">
+            <img src="images/cat-dairy.jpg" alt="Fresh Farm Organic Brown Eggs" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-popular">Farm Fresh</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Fresh Farm Brown Eggs (Crate of 30)</h3>
+          </div>
+        </div>
+
+        <!-- ================= 5. INSTANT FOODS & NOODLES ================= -->
+        <div class="ko-product-card fade-in" data-category="instant-foods">
+          <div class="ko-product-img-wrapper">
+            <img src="images/banner-instant-foods.avif" alt="Wai Wai Instant Noodles" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-popular">All-Time Favorite</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Wai Wai Instant Chicken & Veg Noodles</h3>
+          </div>
+        </div>
+
+        <div class="ko-product-card fade-in" data-category="instant-foods">
+          <div class="ko-product-img-wrapper">
+            <img src="images/banner-instant-foods.avif" alt="Current 2X Spicy Korean Noodles" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-popular">Extra Spicy</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Current 2X Hot & Spicy Noodles</h3>
+          </div>
+        </div>
+
+        <div class="ko-product-card fade-in" data-category="instant-foods">
+          <div class="ko-product-img-wrapper">
+            <img src="images/banner-instant-foods.avif" alt="Maggi 2-Minute Masala Noodles" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-fresh">Classic</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Maggi 2-Minute Masala Noodles (Pack of 4)</h3>
+          </div>
+        </div>
+
+        <div class="ko-product-card fade-in" data-category="instant-foods">
+          <div class="ko-product-img-wrapper">
+            <img src="images/banner-instant-foods.avif" alt="Bambino Roasted Vermicelli" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-fresh">Quick Meal</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Bambino Roasted Vermicelli / Macaroni - 500g</h3>
+          </div>
+        </div>
+
+        <div class="ko-product-card fade-in" data-category="instant-foods">
+          <div class="ko-product-img-wrapper">
+            <img src="images/prod-honey.jpg" alt="Dalle Khursani Spicy Pickle" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-popular">Spicy Achar</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Akabare Dalle Khursani Pickle (अचार) - 380g</h3>
+          </div>
+        </div>
+
+        <!-- ================= 6. SNACKS, BISCUITS & MUNCHIES ================= -->
+        <div class="ko-product-card fade-in" data-category="snacks">
+          <div class="ko-product-img-wrapper">
+            <img src="images/banner-snack.avif" alt="Haldiram All In One Namkeen" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-popular">Top Seller</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Haldiram's All-In-One Bhujia & Namkeen - 400g</h3>
+          </div>
+        </div>
+
+        <div class="ko-product-card fade-in" data-category="snacks">
+          <div class="ko-product-img-wrapper">
+            <img src="images/banner-snack.avif" alt="Lays India Magic Masala Chips" width="400" height="400" loading="lazy">
             <span class="product-badge badge-fresh">Crispy</span>
           </div>
           <div class="ko-product-info">
-            <h3 class="ko-product-name">Nepali Roasted Chiura (Beaten Rice) - 1kg</h3>
-            <hr class="ko-product-divider">
-            <div class="ko-price-row">
-              <span class="ko-price-label">Price</span>
-              <span class="ko-price-val">NPR 120.00</span>
-            </div>
-            <div class="ko-card-actions">
-              <div class="qty-counter">
-                <button class="qty-btn qty-minus" aria-label="Decrease quantity">−</button>
-                <input type="number" class="qty-input" value="1" min="1" max="50" aria-label="Quantity">
-                <button class="qty-btn qty-plus" aria-label="Increase quantity">+</button>
-              </div>
-              <button class="ko-add-btn" data-name="Taichin Chiura (1kg)" data-price="120">Add to Cart</button>
-            </div>
+            <h3 class="ko-product-name">Lay's India's Magic Masala Potato Chips</h3>
+          </div>
+        </div>
+
+        <div class="ko-product-card fade-in" data-category="snacks">
+          <div class="ko-product-img-wrapper">
+            <img src="images/cat-snacks.jpg" alt="Britannia Good Day Butter Cookies" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-popular">Rich Butter</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Britannia Good Day Butter Cookies (Pack of 3)</h3>
+          </div>
+        </div>
+
+        <div class="ko-product-card fade-in" data-category="snacks">
+          <div class="ko-product-img-wrapper">
+            <img src="images/cat-snacks.jpg" alt="Parle-G Original Glucose Biscuits" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-fresh">Chiya Partner</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Parle-G Original Glucose Biscuits (Mega Pack)</h3>
+          </div>
+        </div>
+
+        <div class="ko-product-card fade-in" data-category="snacks">
+          <div class="ko-product-img-wrapper">
+            <img src="images/banner-snack.avif" alt="Kurkure Masala Munch" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-popular">Crunchy</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Kurkure Masala Munch Crunchy Snacks</h3>
+          </div>
+        </div>
+
+        <!-- ================= 7. TEA, COFFEE & BEVERAGES ================= -->
+        <div class="ko-product-card fade-in" data-category="beverages">
+          <div class="ko-product-img-wrapper">
+            <img src="images/beverages.png" alt="Ilam CTC Organic Black Tea" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-popular">Best Seller</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Ilam CTC Premium Organic Black Tea - 500g</h3>
+          </div>
+        </div>
+
+        <div class="ko-product-card fade-in" data-category="beverages">
+          <div class="ko-product-img-wrapper">
+            <img src="images/cat-beverages.jpg" alt="Tokla Gold Garden Tea" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-fresh">Rich Aroma</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Tokla Gold Premium Garden Tea - 500g</h3>
+          </div>
+        </div>
+
+        <div class="ko-product-card fade-in" data-category="beverages">
+          <div class="ko-product-img-wrapper">
+            <img src="images/cat-beverages.jpg" alt="Nescafe Classic Pure Coffee Jar" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-fresh">100% Coffee</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Nescafé Classic Instant Coffee Jar - 100g</h3>
+          </div>
+        </div>
+
+        <div class="ko-product-card fade-in" data-category="beverages">
+          <div class="ko-product-img-wrapper">
+            <img src="images/banner-cold-drinks.avif" alt="Real Mixed Fruit Juice" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-popular">Chilled Juice</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Real 100% Mixed Fruit & Mango Juice - 1L</h3>
+          </div>
+        </div>
+
+        <div class="ko-product-card fade-in" data-category="beverages">
+          <div class="ko-product-img-wrapper">
+            <img src="images/banner-cold-drinks.avif" alt="Coca-Cola & Sprite Chilled Drinks" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-fresh">Refreshing</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Coca-Cola & Sprite Chilled Beverages - 750ml</h3>
+          </div>
+        </div>
+
+        <!-- ================= 8. FRESH FRUITS & PRODUCE ================= -->
+        <div class="ko-product-card fade-in" data-category="fresh-produce">
+          <div class="ko-product-img-wrapper">
+            <img src="images/prod-spinach.jpg" alt="Palungo Saag Fresh Spinach" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-fresh">Farm Fresh</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Palungo Saag / Fresh Local Spinach - 500g</h3>
+          </div>
+        </div>
+
+        <div class="ko-product-card fade-in" data-category="fresh-produce">
+          <div class="ko-product-img-wrapper">
+            <img src="images/prod-tomatoes.jpg" alt="Local Fresh Red Tomatoes" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-popular">Daily Pick</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Local Fresh Red Farm Tomatoes (गोलभेडा) - 1kg</h3>
+          </div>
+        </div>
+
+        <div class="ko-product-card fade-in" data-category="fresh-produce">
+          <div class="ko-product-img-wrapper">
+            <img src="images/prod-apples.jpg" alt="Royal Gala Mountain Apples" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-fresh">Crisp & Sweet</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Royal Gala Fresh Crisp Mountain Apples - 1kg</h3>
+          </div>
+        </div>
+
+        <div class="ko-product-card fade-in" data-category="fresh-produce">
+          <div class="ko-product-img-wrapper">
+            <img src="images/prod-mushroom.jpg" alt="Fresh White Button Mushrooms" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-fresh">Fresh Pick</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Fresh Button & Shiitake Mushrooms (च्याउ) - 500g</h3>
+          </div>
+        </div>
+
+        <div class="ko-product-card fade-in" data-category="fresh-produce">
+          <div class="ko-product-img-wrapper">
+            <img src="images/vegetables.png" alt="Fresh Ginger & Garlic Combo" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-fresh">Aromatics</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Fresh Aduwa Lasun (Ginger & Garlic Combo) - 500g</h3>
+          </div>
+        </div>
+
+        <!-- ================= 9. CLEANING & HOME ESSENTIALS ================= -->
+        <div class="ko-product-card fade-in" data-category="cleaning">
+          <div class="ko-product-img-wrapper">
+            <img src="images/banner-cleaning.avif" alt="Surf Excel Matic Liquid Detergent" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-popular">Best Value</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Surf Excel Matic Top Load Liquid Detergent - 1L</h3>
+          </div>
+        </div>
+
+        <div class="ko-product-card fade-in" data-category="cleaning">
+          <div class="ko-product-img-wrapper">
+            <img src="images/banner-cleaning.avif" alt="Harpic Power Plus Toilet Cleaner" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-fresh">Disinfectant</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Harpic Power Plus Disinfectant Toilet Cleaner - 500ml</h3>
+          </div>
+        </div>
+
+        <div class="ko-product-card fade-in" data-category="cleaning">
+          <div class="ko-product-img-wrapper">
+            <img src="images/banner-cleaning.avif" alt="Vim Dishwash Gel with Lemon" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-fresh">Lemon Clean</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Vim Dishwash Gel with Lemon - 500ml</h3>
+          </div>
+        </div>
+
+        <div class="ko-product-card fade-in" data-category="cleaning">
+          <div class="ko-product-img-wrapper">
+            <img src="images/banner-cleaning.avif" alt="Lizol Citrus Surface & Floor Cleaner" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-fresh">Floor Cleaner</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Lizol Citrus Surface & Floor Disinfectant - 500ml</h3>
+          </div>
+        </div>
+
+        <div class="ko-product-card fade-in" data-category="cleaning">
+          <div class="ko-product-img-wrapper">
+            <img src="images/banner-cleaning.avif" alt="GoodKnight Gold Flash Mosquito Vaporizer Set" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-popular">Home Protection</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">GoodKnight Gold Flash Mosquito Vaporizer Set</h3>
+          </div>
+        </div>
+
+        <!-- ================= 10. PERSONAL CARE & HYGIENE ================= -->
+        <div class="ko-product-card fade-in" data-category="personal-care">
+          <div class="ko-product-img-wrapper">
+            <img src="images/banner-oral-care.avif" alt="Colgate MaxFresh Spicy Fresh Toothpaste" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-popular">Daily Fresh</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Colgate MaxFresh Spicy Fresh Gel Toothpaste - 150g</h3>
+          </div>
+        </div>
+
+        <div class="ko-product-card fade-in" data-category="personal-care">
+          <div class="ko-product-img-wrapper">
+            <img src="images/banner-oral-care.avif" alt="Himalaya Purifying Neem Face Wash" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-fresh">Herbal</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Himalaya Purifying Neem Face Wash - 150ml</h3>
+          </div>
+        </div>
+
+        <div class="ko-product-card fade-in" data-category="personal-care">
+          <div class="ko-product-img-wrapper">
+            <img src="images/banner-personal-care.avif" alt="Dettol Original Bathing Soap" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-popular">Antibacterial</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Dettol Original Antiseptic Bathing Soap (Pack of 3)</h3>
+          </div>
+        </div>
+
+        <div class="ko-product-card fade-in" data-category="personal-care">
+          <div class="ko-product-img-wrapper">
+            <img src="images/banner-personal-care.avif" alt="Head & Shoulders Smooth Shampoo" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-fresh">Hair Care</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Head & Shoulders Anti-Dandruff Shampoo - 340ml</h3>
+          </div>
+        </div>
+
+        <div class="ko-product-card fade-in" data-category="personal-care">
+          <div class="ko-product-img-wrapper">
+            <img src="images/banner-personal-care.avif" alt="Nivea Nourishing Body Milk Lotion" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-fresh">Skin Nourish</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Nivea Nourishing Body Milk Lotion - 200ml</h3>
+          </div>
+        </div>
+
+        <!-- ================= 11. PET CARE SUPPLIES ================= -->
+        <div class="ko-product-card fade-in" data-category="pet-care">
+          <div class="ko-product-img-wrapper">
+            <img src="images/banner-pets.avif" alt="Pedigree Adult Chicken & Vegetables Dog Food" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-popular">Pet Favorite</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Pedigree Adult Dog Food (Chicken & Veg) - 1.2kg</h3>
+          </div>
+        </div>
+
+        <div class="ko-product-card fade-in" data-category="pet-care">
+          <div class="ko-product-img-wrapper">
+            <img src="images/banner-pets.avif" alt="Whiskas Ocean Fish Cat Food" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-fresh">Tasty Bites</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Whiskas Ocean Fish Dry Cat Food - 1.1kg</h3>
+          </div>
+        </div>
+
+        <div class="ko-product-card fade-in" data-category="pet-care">
+          <div class="ko-product-img-wrapper">
+            <img src="images/banner-pets.avif" alt="Drools Real Chicken Dog Biscuit Treats" width="400" height="400" loading="lazy">
+            <span class="product-badge badge-fresh">Pet Treats</span>
+          </div>
+          <div class="ko-product-info">
+            <h3 class="ko-product-name">Drools Real Chicken Dog Biscuit Treats - 500g</h3>
           </div>
         </div>
 
