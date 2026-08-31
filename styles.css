@@ -1058,6 +1058,60 @@ ul, ol {
   display: none;
 }
 
+/* ============================================
+   NO PRODUCTS FOUND EMPTY STATE
+   ============================================ */
+.no-products-found {
+  text-align: center;
+  padding: var(--space-3xl) var(--space-xl);
+  background: #ffffff;
+  border-radius: 20px;
+  border: 2px dashed #cbd5e1;
+  margin: var(--space-xl) auto;
+  max-width: 520px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.no-products-icon {
+  font-size: 3.2rem;
+  margin-bottom: var(--space-sm);
+  display: inline-block;
+  animation: bounceSlow 2s ease-in-out infinite;
+}
+
+@keyframes bounceSlow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.no-products-title {
+  font-family: var(--font-sans);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: var(--space-xs);
+}
+
+.no-products-desc {
+  font-size: 0.92rem;
+  color: #64748b;
+  margin-bottom: var(--space-xl);
+  line-height: 1.5;
+}
+
+.no-products-desc span {
+  font-weight: 700;
+  color: #0a754e;
+}
+
+#btn-reset-search {
+  padding: 0.75rem 1.6rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
 .qty-counter {
   display: none;
 }

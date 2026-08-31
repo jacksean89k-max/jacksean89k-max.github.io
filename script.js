@@ -424,24 +424,37 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ============================================
-  // SEARCH BAR INTERACTION
+  // SEARCH BAR INTERACTION & NO PRODUCT FOUND
   // ============================================
   const searchInput = document.getElementById('search-input');
   const searchBtn = document.getElementById('search-btn');
+  const noProductsFound = document.getElementById('no-products-found');
+  const searchedQueryText = document.getElementById('searched-query-text');
+  const btnResetSearch = document.getElementById('btn-reset-search');
 
-  const handleSearch = () => {
-    const query = searchInput.value.trim().toLowerCase();
-    if (!query) return;
+  const hideNoProductsFound = () => {
+    if (noProductsFound) {
+      noProductsFound.style.display = 'none';
+    }
+  };
 
-    // Switch to all category
-    filterProducts('all');
+  const handleSearch = (shouldScroll = true) => {
+    const rawQuery = searchInput.value.trim();
+    const query = rawQuery.toLowerCase();
 
-    // Scroll to products section
-    const productsSection = document.getElementById('products');
-    if (productsSection) {
-      const headerH = window.innerWidth <= 768 ? 64 : 120;
-      const pos = productsSection.getBoundingClientRect().top + window.scrollY - headerH - 10;
-      window.scrollTo({ top: pos, behavior: 'smooth' });
+    if (!query) {
+      hideNoProductsFound();
+      filterProducts('all');
+      return;
+    }
+
+    // De-select category tabs
+    filterTabs.forEach(tab => tab.classList.remove('active'));
+    vhandarCatButtons.forEach(btn => btn.classList.remove('active'));
+
+    // Scroll to products section if initiated by button/enter
+    if (shouldScroll) {
+      scrollToProducts();
     }
 
     let matchCount = 0;
@@ -449,31 +462,76 @@ document.addEventListener('DOMContentLoaded', () => {
       const text = card.textContent.toLowerCase();
       if (text.includes(query)) {
         card.style.display = 'flex';
-        card.style.outline = '2.5px solid var(--color-primary)';
-        card.style.outlineOffset = '3px';
+        card.classList.add('visible');
         matchCount++;
       } else {
         card.style.display = 'none';
-        card.style.outline = '';
       }
     });
 
-    setTimeout(() => {
-      productCards.forEach(card => {
-        card.style.outline = '';
-        card.style.outlineOffset = '';
-      });
-    }, 4500);
+    if (matchCount === 0) {
+      if (searchedQueryText) {
+        searchedQueryText.textContent = rawQuery;
+      }
+      if (noProductsFound) {
+        noProductsFound.style.display = 'block';
+      }
+    } else {
+      hideNoProductsFound();
+    }
   };
 
   if (searchBtn) {
-    searchBtn.addEventListener('click', handleSearch);
+    searchBtn.addEventListener('click', () => handleSearch(true));
   }
 
   if (searchInput) {
     searchInput.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter') handleSearch();
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        handleSearch(true);
+      }
+    });
+
+    searchInput.addEventListener('input', () => {
+      if (searchInput.value.trim() === '') {
+        hideNoProductsFound();
+        filterProducts('all');
+      } else {
+        handleSearch(false);
+      }
     });
   }
+
+  if (btnResetSearch) {
+    btnResetSearch.addEventListener('click', () => {
+      if (searchInput) searchInput.value = '';
+      hideNoProductsFound();
+      filterProducts('all');
+      scrollToProducts();
+    });
+  }
+
+  // Hide empty state when switching categories
+  filterTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      if (searchInput) searchInput.value = '';
+      hideNoProductsFound();
+    });
+  });
+
+  vhandarCatButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (searchInput) searchInput.value = '';
+      hideNoProductsFound();
+    });
+  });
+
+  bannerLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (searchInput) searchInput.value = '';
+      hideNoProductsFound();
+    });
+  });
 
 });
