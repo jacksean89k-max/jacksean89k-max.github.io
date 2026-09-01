@@ -335,6 +335,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // Footer category links
+  document.querySelectorAll('[data-footer-filter]').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const cat = link.dataset.footerFilter;
+      if (cat) {
+        filterProducts(cat);
+      }
+      scrollToProducts();
+    });
+  });
+
   // ============================================
   // QUANTITY STEPPERS (- 1 +)
   // ============================================
@@ -394,7 +406,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Build WhatsApp Order Link
     if (whatsappCheckoutBtn) {
-      const message = `Namaste Pramila Store! 🌿\n\nI would like to order the following items:\n${itemsListText}\n📍 Delivery / Pickup: Maharjan Chowk, Imadol-03\nThank you!`;
+      const message = `Namaste Pramila Store! 🌿\n\nI would like to order the following items:\n${itemsListText}\n📍 Delivery / Pickup: Maharjan-chowk, imadol-03\nThank you!`;
       const encodedMsg = encodeURIComponent(message);
       whatsappCheckoutBtn.href = `https://wa.me/9779813160679?text=${encodedMsg}`;
     }

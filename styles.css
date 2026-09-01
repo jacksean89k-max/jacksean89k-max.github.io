@@ -1559,6 +1559,31 @@ ul, ol {
   color: var(--green-400);
 }
 
+.footer-payment-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: var(--space-sm);
+}
+
+.pay-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 8px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+  letter-spacing: 0.02em;
+}
+
+.footer-phone-link {
+  font-weight: 700;
+  color: var(--green-400) !important;
+}
+
 .footer-bottom {
   display: flex;
   justify-content: space-between;
