@@ -1,0 +1,119 @@
+[
+  {
+    "name": "Current 2X Spicy Korean Noodles",
+    "code": "current_2x_spicy",
+    "file": "images/prod-current_2x_spicy.png",
+    "url": "https://yashodafoods.com.np/wp-content/uploads/2024/03/current-2xnoodles.png",
+    "desc": "Elevate your taste buds with 2X Spicy Hot Noodles, delivering extra heat and irresistible flavor.",
+    "badge": "2X Spicy",
+    "size": 180064
+  },
+  {
+    "name": "Current 3X Spicy Hot Chicken Noodles",
+    "code": "current_3x_spicy",
+    "file": "images/prod-current_3x_spicy.png",
+    "url": "https://yashodafoods.com.np/wp-content/uploads/2024/03/current-hotchicken-3x-1.png",
+    "desc": "Fiery 3X spicy hot chicken flavor Korean-style noodles for true spice lovers.",
+    "badge": "3X Fiery",
+    "size": 206090
+  },
+  {
+    "name": "Current Cheese & Butter Hot Chicken",
+    "code": "current_cheese_butter",
+    "file": "images/prod-current_cheese_butter.png",
+    "url": "https://yashodafoods.com.np/wp-content/uploads/2024/03/Current_Noodles_Cheese-Butter.png",
+    "desc": "Creamy instant noodles with cheese and butter, boasting a delightful hot chicken flavor.",
+    "badge": "Cheese & Butter",
+    "size": 210187
+  },
+  {
+    "name": "Current Spicy Akabare Chilli Noodles",
+    "code": "current_akabare",
+    "file": "images/prod-current_akabare.png",
+    "url": "https://yashodafoods.com.np/wp-content/uploads/2024/03/Current_Noodles_Spicy-Akabare-Chilli.png",
+    "desc": "Akabare Chili-infused noodles\u2014spicy yet sweet, seasoned perfectly for an irresistible flavor.",
+    "badge": "Akabare Hot",
+    "size": 205290
+  },
+  {
+    "name": "Current Mushroom Instant Noodles",
+    "code": "current_mushroom",
+    "file": "images/prod-current_mushroom.png",
+    "url": "https://yashodafoods.com.np/wp-content/uploads/2024/03/Current_Noodles_Mushroom.png",
+    "desc": "Nepal's debut savory mushroom instant noodles, rich and aromatic.",
+    "badge": "Mushroom",
+    "size": 204311
+  },
+  {
+    "name": "Current Hot & Lemon Veggie Noodles",
+    "code": "current_hot_lemon",
+    "file": "images/prod-current_hot_lemon.png",
+    "url": "https://yashodafoods.com.np/wp-content/uploads/2024/03/Current_Noodles_Hot-n-Lemon.png",
+    "desc": "Zesty combination of fiery heat and tangy lemon that tingles your taste buds.",
+    "badge": "Hot & Lemon",
+    "size": 211184
+  },
+  {
+    "name": "Current 2in1 Chatpat Veg Noodles",
+    "code": "current_chatpat_veg",
+    "file": "images/prod-current_chatpat_veg.png",
+    "url": "https://yashodafoods.com.np/wp-content/uploads/2025/10/Current-2in1-Chatpat-Veg.3-1-1.png",
+    "desc": "Nepal's finest chatpate flavors in every delightful slurp, crafted with quality ingredients.",
+    "badge": "Chatpate",
+    "size": 228452
+  },
+  {
+    "name": "Current Cheese Chicken Pizza Noodles",
+    "code": "current_pizza",
+    "file": "images/prod-current_pizza.png",
+    "url": "https://yashodafoods.com.np/wp-content/uploads/2024/03/Current-Chicken-Pizza.png",
+    "desc": "Cheese Chicken Pizza flavored instant noodles that tingle your taste buds.",
+    "badge": "Pizza Flavor",
+    "size": 207146
+  },
+  {
+    "name": "Current 2X Spicy Veg Noodles",
+    "code": "current_2x_veg",
+    "file": "images/prod-current_2x_veg.png",
+    "url": "https://yashodafoods.com.np/wp-content/uploads/2024/03/CURRENT-2X-SPICY-VEG-NOODLES.png",
+    "desc": "Pure vegetarian 2X spicy hot noodles delivering rich heat and savory flavor.",
+    "badge": "Veg 2X Spicy",
+    "size": 194367
+  },
+  {
+    "name": "Current Masala Curry Noodles",
+    "code": "current_masala_curry",
+    "file": "images/prod-current_masala_curry.png",
+    "url": "https://yashodafoods.com.np/wp-content/uploads/2025/12/Current-Masala-Curry-1.png",
+    "desc": "Rich and aromatic masala curry instant noodles.",
+    "badge": "Masala Curry",
+    "size": 219474
+  },
+  {
+    "name": "Current Schezwan Spicy Noodles",
+    "code": "current_schezwan",
+    "file": "images/prod-current_schezwan.png",
+    "url": "https://yashodafoods.com.np/wp-content/uploads/2024/03/Rectangle-158.png",
+    "desc": "Delight in the yummy, easy-to-eat Schezwan flavored hot and spicy noodles.",
+    "badge": "Schezwan",
+    "size": 69419
+  },
+  {
+    "name": "Current Instant Chicken Noodles",
+    "code": "current_chicken",
+    "file": "images/prod-current_chicken.png",
+    "url": "https://yashodafoods.com.np/wp-content/uploads/2024/03/Rectangle-170.png",
+    "desc": "Pre-cooked chicken-flavored noodles, a swift and savory meal option.",
+    "badge": "Chicken",
+    "size": 80397
+  },
+  {
+    "name": "Current Instant Veg Noodles",
+    "code": "current_veg",
+    "file": "images/prod-current_veg.png",
+    "url": "https://yashodafoods.com.np/wp-content/uploads/2024/03/current-instant-noodle-1.png",
+    "desc": "Flavorful blend of vegetables for a quick, tasty meal.",
+    "badge": "Veggie",
+    "size": 223287
+  }
+]

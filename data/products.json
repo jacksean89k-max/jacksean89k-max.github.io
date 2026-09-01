@@ -118,29 +118,29 @@
   },
   {
     "id": "prod_10",
-    "name": "Wai Wai Quick Chicken / Veg Noodles (Box of 30)",
+    "name": "Wai Wai Chicken Instant Noodles (75g)",
     "category": "snacks",
-    "price": 750,
-    "unit": "box",
+    "price": 25,
+    "unit": "packet",
     "badge": "Bestseller",
-    "image": "images/prod-snacks.jpg",
+    "image": "images/prod-waiwai_chicken.png",
     "inStock": true,
     "description": "Nepal's iconic instant ready-to-eat spiced noodles.",
     "createdAt": "2026-08-31T11:45:00.000Z",
-    "updatedAt": "2026-08-31T11:45:00.000Z"
+    "updatedAt": "2026-09-01T15:45:00.000Z"
   },
   {
     "id": "prod_11",
-    "name": "Current Hot & Spicy 2X Noodles (Box of 20)",
+    "name": "Current Hot & Spicy 2X Noodles (100g)",
     "category": "snacks",
-    "price": 1100,
-    "unit": "box",
-    "badge": "Spicy Hit",
-    "image": "images/prod-snacks.jpg",
+    "price": 55,
+    "unit": "packet",
+    "badge": "2X Spicy",
+    "image": "images/prod-current_2x_spicy.png",
     "inStock": true,
     "description": "Extreme spicy Korean-style Nepali chili noodles.",
     "createdAt": "2026-08-31T11:45:00.000Z",
-    "updatedAt": "2026-08-31T11:45:00.000Z"
+    "updatedAt": "2026-09-01T15:52:00.000Z"
   },
   {
     "id": "prod_12",
