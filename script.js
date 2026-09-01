@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const statNumbers = document.querySelectorAll('.stat-number');
   let statsAnimated = false;
 
-  const animateCountUp = (el, target) => {
+  const animateCountUp = (el, target, suffix = '') => {
     const duration = 1200;
     const increment = target / (duration / 16);
     let current = 0;
@@ -177,10 +177,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const tick = () => {
       current += increment;
       if (current >= target) {
-        el.textContent = target + (el.dataset.suffix || '');
+        el.textContent = target + suffix;
         return;
       }
-      el.textContent = Math.floor(current) + (el.dataset.suffix || '');
+      el.textContent = Math.floor(current) + suffix;
       requestAnimationFrame(tick);
     };
 
@@ -192,17 +192,19 @@ document.addEventListener('DOMContentLoaded', () => {
       if (entry.isIntersecting && !statsAnimated) {
         statsAnimated = true;
         statNumbers.forEach(el => {
-          const text = el.textContent;
-          const num = parseInt(text.replace(/[^0-9]/g, ''), 10);
-          if (isNaN(num)) return;
-          const suffix = text.includes('+') ? '+' : '';
-          el.dataset.suffix = suffix;
+          if (el.dataset.static === 'true') {
+            // Keep static text untouched (e.g. 6AM – 10PM)
+            return;
+          }
+          const target = el.dataset.target ? parseInt(el.dataset.target, 10) : parseInt(el.textContent.replace(/[^0-9]/g, ''), 10);
+          if (isNaN(target)) return;
+          const suffix = el.dataset.suffix !== undefined ? el.dataset.suffix : (el.textContent.includes('+') ? '+' : '');
           el.textContent = '0' + suffix;
-          animateCountUp(el, num);
+          animateCountUp(el, target, suffix);
         });
       }
     });
-  }, { threshold: 0.5 });
+  }, { threshold: 0.4 });
 
   const statsBar = document.getElementById('stats-bar');
   if (statsBar) statsObserver.observe(statsBar);
