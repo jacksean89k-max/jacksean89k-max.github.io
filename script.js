@@ -527,11 +527,82 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  bannerLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      if (searchInput) searchInput.value = '';
-      hideNoProductsFound();
+  // ============================================
+  // DIRECT WHATSAPP CHAT WIDGET
+  // ============================================
+  const waLauncherBtn = document.getElementById('wa-launcher-btn');
+  const waChatCard = document.getElementById('wa-chat-card');
+  const waCardClose = document.getElementById('wa-card-close');
+  const waCustomInput = document.getElementById('wa-custom-input');
+  const waSendBtn = document.getElementById('wa-send-btn');
+  const waChips = document.querySelectorAll('.wa-chip');
+  const waPhone = '9779813160679';
+
+  const sendWhatsAppMessage = (text) => {
+    const cleanMsg = (text || '').trim();
+    if (!cleanMsg) return;
+    const url = `https://wa.me/${waPhone}?text=${encodeURIComponent(cleanMsg)}`;
+    window.open(url, '_blank');
+  };
+
+  if (waLauncherBtn && waChatCard) {
+    waLauncherBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      waChatCard.classList.toggle('active');
+      if (waChatCard.classList.contains('active') && waCustomInput) {
+        setTimeout(() => waCustomInput.focus(), 250);
+      }
+    });
+  }
+
+  if (waCardClose && waChatCard) {
+    waCardClose.addEventListener('click', (e) => {
+      e.stopPropagation();
+      waChatCard.classList.remove('active');
+    });
+  }
+
+  // Click outside to close WhatsApp popup
+  document.addEventListener('click', (e) => {
+    if (waChatCard && waChatCard.classList.contains('active')) {
+      if (!waChatCard.contains(e.target) && !waLauncherBtn.contains(e.target)) {
+        waChatCard.classList.remove('active');
+      }
+    }
+  });
+
+  // Prompt chips
+  waChips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      const msg = chip.dataset.msg || chip.textContent;
+      sendWhatsAppMessage(msg);
+      if (waChatCard) waChatCard.classList.remove('active');
     });
   });
 
+  // Send custom typed message
+  if (waSendBtn && waCustomInput) {
+    waSendBtn.addEventListener('click', () => {
+      const msg = waCustomInput.value;
+      if (msg && msg.trim()) {
+        sendWhatsAppMessage(msg);
+        waCustomInput.value = '';
+        if (waChatCard) waChatCard.classList.remove('active');
+      }
+    });
+
+    waCustomInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' && !e.shiftKey) {
+        e.preventDefault();
+        const msg = waCustomInput.value;
+        if (msg && msg.trim()) {
+          sendWhatsAppMessage(msg);
+          waCustomInput.value = '';
+          if (waChatCard) waChatCard.classList.remove('active');
+        }
+      }
+    });
+  }
+
 });
+

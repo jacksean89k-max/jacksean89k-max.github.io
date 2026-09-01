@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pramila Store — Fresh Groceries & Daily Essentials | Imadol, Lalitpur</title>
-  <meta name="description" content="Pramila Store — Your trusted neighborhood grocery store at Maharjan Chowk, Imadol-03. Fresh fruits, vegetables, dairy, spices, beverages & daily essentials at the best prices.">
-  <meta name="keywords" content="Pramila Store, grocery store, Imadol, Lalitpur, fresh vegetables, fruits, dairy, spices, beverages, daily essentials">
+  <meta name="description"
+    content="Pramila Store — Your trusted neighborhood grocery store at Maharjan Chowk, Imadol-03. Fresh fruits, vegetables, dairy, spices, beverages & daily essentials at the best prices.">
+  <meta name="keywords"
+    content="Pramila Store, grocery store, Imadol, Lalitpur, fresh vegetables, fruits, dairy, spices, beverages, daily essentials">
   <meta property="og:title" content="Pramila Store — Fresh Groceries & Daily Essentials">
-  <meta property="og:description" content="Your trusted neighborhood grocery store at Maharjan Chowk, Imadol-03. Fresh produce, dairy, spices & more.">
+  <meta property="og:description"
+    content="Your trusted neighborhood grocery store at Maharjan Chowk, Imadol-03. Fresh produce, dairy, spices & more.">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" href="images/logo.png">
 </head>
+
 <body>
 
   <!-- ============ TOP BAR ============ -->
@@ -28,18 +33,73 @@
       <div class="search-bar" id="search-bar">
         <input type="text" placeholder="Search products here..." id="search-input" aria-label="Search products">
         <button class="search-btn" id="search-btn" aria-label="Search">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+          </svg>
         </button>
       </div>
 
       <div class="top-bar-right">
-        <a href="tel:+9779813160679" class="top-bar-contact" id="top-bar-phone">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <a href="tel:+9779813160679" class="top-bar-contact" id="top-bar-phone" title="Call Pramila Store: 9813160679">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+          </svg>
           <span>9813160679</span>
         </a>
-        <a href="#location" class="top-bar-link" id="top-bar-location" aria-label="Store location">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+
+        <a href="#location" class="top-bar-link" id="top-bar-location" aria-label="Store location"
+          title="Store Location: Maharjan Chowk, Imadol">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+            <circle cx="12" cy="10" r="3" />
+          </svg>
         </a>
+
+        <!-- Social Media & Direct WhatsApp Links -->
+        <div class="top-bar-socials">
+          <a href="https://www.facebook.com/profile.php?id=61593646409341" target="_blank" rel="noopener noreferrer"
+            class="top-social-btn social-fb" aria-label="Visit our Facebook page" title="Facebook (@pramilastore)">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            </svg>
+          </a>
+
+          <a href="https://www.tiktok.com/@pramilastore" target="_blank" rel="noopener noreferrer"
+            class="top-social-btn social-tiktok" aria-label="Visit our TikTok @pramilastore"
+            title="TikTok (@pramilastore)">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.298-.002.595.042.88.13V9.4a6.33 6.33 0 0 0-1-.08A6.34 6.34 0 0 0 3 15.66a6.34 6.34 0 0 0 10.86 4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-3.04-1.52V6.69z" />
+            </svg>
+          </a>
+
+          <a href="https://www.instagram.com/pramila.store?igsi=MXByanNiZXgwYXE5" target="_blank" rel="noopener noreferrer"
+            class="top-social-btn social-ig" aria-label="Visit our Instagram @pramila.store"
+            title="Instagram (@pramila.store)">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
+          </a>
+
+          <a href="https://wa.me/9779813160679?text=Namaste%20Pramila%20Store!%20I%20am%20messaging%20directly%20from%20your%20website."
+            target="_blank" rel="noopener noreferrer" class="top-social-btn social-wa top-wa-badge"
+            aria-label="Chat on WhatsApp" title="Direct WhatsApp Chat">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            <span class="wa-label">WhatsApp</span>
+          </a>
+        </div>
       </div>
 
       <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
@@ -68,7 +128,9 @@
   <!-- ============ HERO BANNER ============ -->
   <section class="hero" id="home">
     <div class="hero-bg">
-      <img src="images/hero.png" alt="Pramila Store — vibrant fresh produce display with vegetables, fruits, spices and daily groceries" width="1920" height="1080" loading="eager" fetchpriority="high">
+      <img src="images/hero.png"
+        alt="Pramila Store — vibrant fresh produce display with vegetables, fruits, spices and daily groceries"
+        width="1920" height="1080" loading="eager" fetchpriority="high">
     </div>
 
     <div class="container">
@@ -123,16 +185,20 @@
     <div class="container promo-container">
       <div class="banner-carousel-wrapper">
         <button class="carousel-nav-btn prev-btn" id="promo-prev-btn" aria-label="Previous promo banner">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 18l-6-6 6-6" />
+          </svg>
         </button>
 
         <div class="banner-carousel" id="promo-carousel">
-          
+
           <!-- Banner 1: Snacks & Noodles -->
           <div class="banner-card fade-in" data-category="snacks">
             <a href="#products" class="banner-card-link" data-filter="snacks" aria-label="Snacks & Noodles">
               <div class="banner-img-box">
-                <img src="images/banner-snack.avif" alt="Snacks, Wai Wai & Munchies" loading="eager" width="700" height="400">
+                <img src="images/banner-snack.avif" alt="Snacks, Wai Wai & Munchies" loading="eager" width="700"
+                  height="400">
               </div>
             </a>
           </div>
@@ -141,16 +207,19 @@
           <div class="banner-card fade-in" data-category="beverages">
             <a href="#products" class="banner-card-link" data-filter="beverages" aria-label="Cold Drinks & Juices">
               <div class="banner-img-box">
-                <img src="images/banner-cold-drinks.avif" alt="Cold Drinks & Juice — Refreshing chilled sodas & juices" loading="lazy" width="700" height="400">
+                <img src="images/banner-cold-drinks.avif" alt="Cold Drinks & Juice — Refreshing chilled sodas & juices"
+                  loading="lazy" width="700" height="400">
               </div>
             </a>
           </div>
 
           <!-- Banner 3: Chocolates & Confectionery -->
           <div class="banner-card fade-in" data-category="chocolates">
-            <a href="#products" class="banner-card-link" data-filter="chocolates" aria-label="Chocolates & Sweet Treats">
+            <a href="#products" class="banner-card-link" data-filter="chocolates"
+              aria-label="Chocolates & Sweet Treats">
               <div class="banner-img-box">
-                <img src="images/prod-chocolates.jpg" alt="Chocolates — Cadbury Silk, KitKat, Snickers & Amul Dark" loading="lazy" width="700" height="400">
+                <img src="images/prod-chocolates.jpg" alt="Chocolates — Cadbury Silk, KitKat, Snickers & Amul Dark"
+                  loading="lazy" width="700" height="400">
               </div>
             </a>
           </div>
@@ -159,7 +228,8 @@
           <div class="banner-card fade-in" data-category="snacks">
             <a href="#products" class="banner-card-link" data-filter="snacks" aria-label="Instant Foods & Noodles">
               <div class="banner-img-box">
-                <img src="images/banner-instant-foods.avif" alt="Instant Noodles — Wai Wai, Current 2X, Rara & 2PM" loading="lazy" width="700" height="400">
+                <img src="images/banner-instant-foods.avif" alt="Instant Noodles — Wai Wai, Current 2X, Rara & 2PM"
+                  loading="lazy" width="700" height="400">
               </div>
             </a>
           </div>
@@ -168,7 +238,8 @@
           <div class="banner-card fade-in" data-category="sanitary">
             <a href="#products" class="banner-card-link" data-filter="sanitary" aria-label="Sanitary & Toiletries">
               <div class="banner-img-box">
-                <img src="images/banner-oral-care.avif" alt="Sanitary & Personal Care — Soaps, Toothpaste & Hygiene" loading="lazy" width="700" height="400">
+                <img src="images/banner-oral-care.avif" alt="Sanitary & Personal Care — Soaps, Toothpaste & Hygiene"
+                  loading="lazy" width="700" height="400">
               </div>
             </a>
           </div>
@@ -177,7 +248,8 @@
           <div class="banner-card fade-in" data-category="liquor">
             <a href="#products" class="banner-card-link" data-filter="liquor" aria-label="Alcoholic Drinks & Spirits">
               <div class="banner-img-box">
-                <img src="images/prod-liquor.jpg" alt="Nepali Spirits & Beers — Khukuri Rum, Old Durbar, Nepal Ice" loading="lazy" width="700" height="400">
+                <img src="images/prod-liquor.jpg" alt="Nepali Spirits & Beers — Khukuri Rum, Old Durbar, Nepal Ice"
+                  loading="lazy" width="700" height="400">
               </div>
             </a>
           </div>
@@ -185,7 +257,10 @@
         </div>
 
         <button class="carousel-nav-btn next-btn" id="promo-next-btn" aria-label="Next promo banner">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 18l6-6-6-6" />
+          </svg>
         </button>
       </div>
     </div>
@@ -194,7 +269,7 @@
   <!-- ============ OUR CATEGORIES (CIRCULAR COLLECTIONS STYLE) ============ -->
   <section class="vhandar-categories-section" id="menu">
     <div class="container">
-      
+
       <!-- Centered Header with Flanking Lines -->
       <div class="vhandar-categories-header fade-in">
         <span class="vhandar-divider-line"></span>
@@ -216,35 +291,40 @@
         <!-- Rice (चामल) -->
         <button class="vhandar-cat-item fade-in" data-category="rice" aria-label="Rice (चामल)">
           <div class="cat-img-box">
-            <img src="images/sanchit/2795d5c2-c6e1-416c-a1a8-ab8e2f589761.webp" alt="Rice (चामल)" width="120" height="120" loading="lazy">
+            <img src="images/sanchit/2795d5c2-c6e1-416c-a1a8-ab8e2f589761.webp" alt="Rice (चामल)" width="120"
+              height="120" loading="lazy">
           </div>
           <span class="cat-name-label">Rice (चामल)</span>
         </button>
         <!-- Dals & Lentils -->
         <button class="vhandar-cat-item fade-in" data-category="dals" aria-label="Dals & Lentils">
           <div class="cat-img-box">
-            <img src="images/sanchit/2262e029-71f8-4176-bf44-07191aa48221.webp" alt="Dals & Lentils" width="120" height="120" loading="lazy">
+            <img src="images/sanchit/2262e029-71f8-4176-bf44-07191aa48221.webp" alt="Dals & Lentils" width="120"
+              height="120" loading="lazy">
           </div>
           <span class="cat-name-label">Dals & Lentils</span>
         </button>
         <!-- Cooking Oil & Ghee -->
         <button class="vhandar-cat-item fade-in" data-category="oil-ghee" aria-label="Cooking Oil & Ghee">
           <div class="cat-img-box">
-            <img src="images/sanchit/648d1980-b15b-45d4-aa53-bb2a8cc37058.webp" alt="Cooking Oil & Ghee" width="120" height="120" loading="lazy">
+            <img src="images/sanchit/648d1980-b15b-45d4-aa53-bb2a8cc37058.webp" alt="Cooking Oil & Ghee" width="120"
+              height="120" loading="lazy">
           </div>
           <span class="cat-name-label">Cooking Oil & Ghee</span>
         </button>
         <!-- Atta & Flour -->
         <button class="vhandar-cat-item fade-in" data-category="flour" aria-label="Atta & Flour">
           <div class="cat-img-box">
-            <img src="images/sanchit/a5a22312-2fb5-4671-9a1f-dad4b7f9e7c4.webp" alt="Atta & Flour" width="120" height="120" loading="lazy">
+            <img src="images/sanchit/a5a22312-2fb5-4671-9a1f-dad4b7f9e7c4.webp" alt="Atta & Flour" width="120"
+              height="120" loading="lazy">
           </div>
           <span class="cat-name-label">Atta & Flour</span>
         </button>
         <!-- Sugar & Salt -->
         <button class="vhandar-cat-item fade-in" data-category="sugar-salt" aria-label="Sugar & Salt">
           <div class="cat-img-box">
-            <img src="images/sanchit/af59e529-11a4-4c1e-9403-7218acc85d7d.webp" alt="Sugar & Salt" width="120" height="120" loading="lazy">
+            <img src="images/sanchit/af59e529-11a4-4c1e-9403-7218acc85d7d.webp" alt="Sugar & Salt" width="120"
+              height="120" loading="lazy">
           </div>
           <span class="cat-name-label">Sugar & Salt</span>
         </button>
@@ -325,12 +405,13 @@
   <!-- ============ PRODUCT SHOWCASE (KATHMANDU ORGANICS STYLE) ============ -->
   <section class="product-gallery-section" id="products">
     <div class="container">
-      
+
       <!-- Category Banner Header -->
       <div class="category-banner-header fade-in">
         <span class="banner-subtitle">Daily Grocery & Mini Mart Essentials</span>
         <h2 class="banner-title">EXPLORE OUR <span class="text-green">PRODUCT CATALOG</span></h2>
-        <p class="banner-desc">Quality staples, authentic lentils, daily snacks, beverages, sanitary items, LPG gas and household essentials available at Pramila Store, Maharjan Chowk, Imadol.</p>
+        <p class="banner-desc">Quality staples, authentic lentils, daily snacks, beverages, sanitary items, LPG gas and
+          household essentials available at Pramila Store, Maharjan Chowk, Imadol.</p>
       </div>
 
       <!-- Filter Tabs Bar -->
@@ -358,7 +439,8 @@
         <!-- ================= 1. RICE (चामल) ================= -->
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/a2a865ea-a884-414c-ba25-d52623a589f9.webp" alt="Aarati Rice" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/a2a865ea-a884-414c-ba25-d52623a589f9.webp" alt="Aarati Rice" width="400"
+              height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -367,7 +449,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/e7fed818-4069-4e55-8130-f644092ad31c.webp" alt="Aashiyana Green Label Basmati Rice 20 kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/e7fed818-4069-4e55-8130-f644092ad31c.webp"
+              alt="Aashiyana Green Label Basmati Rice 20 kg" width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -376,7 +459,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/7e01ec3a-c1b2-4511-aa4f-e0251f91e459.webp" alt="Aashiyana Gold Label Basmati Rice 20 kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/7e01ec3a-c1b2-4511-aa4f-e0251f91e459.webp"
+              alt="Aashiyana Gold Label Basmati Rice 20 kg" width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -385,7 +469,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/1884f04b-0093-49f6-b1f4-47190a287ce1.webp" alt="Aashiyana Blue Label Basmati Rice 20 kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/1884f04b-0093-49f6-b1f4-47190a287ce1.webp"
+              alt="Aashiyana Blue Label Basmati Rice 20 kg" width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -394,7 +479,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/1c07986c-89e2-4913-bea9-45af893d0eb1.webp" alt="Aashiyana Red Label Basmati Rice 20 kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/1c07986c-89e2-4913-bea9-45af893d0eb1.webp"
+              alt="Aashiyana Red Label Basmati Rice 20 kg" width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -403,7 +489,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/bced6c6d-3e36-412d-8c99-e8d2286afc93.webp" alt="Aashiyana Basmati Rice 20 kg (TOFA)" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/bced6c6d-3e36-412d-8c99-e8d2286afc93.webp"
+              alt="Aashiyana Basmati Rice 20 kg (TOFA)" width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -412,7 +499,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/966c7206-ee67-4f17-8f7a-63b900bd79af.webp" alt="Bhansaghar Long Grain Rice 20 kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/966c7206-ee67-4f17-8f7a-63b900bd79af.webp" alt="Bhansaghar Long Grain Rice 20 kg"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -421,7 +509,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/0a2441d4-0c12-4c01-b742-3034577bb9f6.webp" alt="GoodLuck Angoori Jeera 25kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/0a2441d4-0c12-4c01-b742-3034577bb9f6.webp" alt="GoodLuck Angoori Jeera 25kg"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -430,7 +519,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/50539223-2f61-4362-81d9-d8f38ae74232.webp" alt="Pearl Katarni Jeera Rice 25kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/50539223-2f61-4362-81d9-d8f38ae74232.webp" alt="Pearl Katarni Jeera Rice 25kg"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -439,7 +529,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/bd6b081b-75f1-4106-87a8-a6f0e2fee1c6.webp" alt="Gyan Solti Jeera Rice 25kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/bd6b081b-75f1-4106-87a8-a6f0e2fee1c6.webp" alt="Gyan Solti Jeera Rice 25kg"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -448,7 +539,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/3b273608-3df4-4363-a5b4-36ea9560b01c.webp" alt="Jai Ho Premium Sonam Jeera Rice 25kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/3b273608-3df4-4363-a5b4-36ea9560b01c.webp"
+              alt="Jai Ho Premium Sonam Jeera Rice 25kg" width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -457,7 +549,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/5ff3c994-6928-4b61-9152-7f3e0b0ad0c4.webp" alt="Mangalam Premium Jeera Rice 25kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/5ff3c994-6928-4b61-9152-7f3e0b0ad0c4.webp" alt="Mangalam Premium Jeera Rice 25kg"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -466,7 +559,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/4a6ea1d8-0d94-4304-85f5-f67f7881a8c0.webp" alt="Urja Jeera Masino Rice 25kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/4a6ea1d8-0d94-4304-85f5-f67f7881a8c0.webp" alt="Urja Jeera Masino Rice 25kg"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -475,7 +569,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/007f1c00-198d-4025-9006-352e7fda632f.webp" alt="Subhamurat Jeera Ricce 25kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/007f1c00-198d-4025-9006-352e7fda632f.webp" alt="Subhamurat Jeera Ricce 25kg"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -484,7 +579,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/520abc4d-26f0-421b-a962-917271368f11.webp" alt="Taleju Jeera Rice 25kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/520abc4d-26f0-421b-a962-917271368f11.webp" alt="Taleju Jeera Rice 25kg" width="400"
+              height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -493,7 +589,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/bc7aa533-4b2d-4f1c-b559-06dedc40c1e9.webp" alt="Pearl Basmati Rice 20kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/bc7aa533-4b2d-4f1c-b559-06dedc40c1e9.webp" alt="Pearl Basmati Rice 20kg"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -502,7 +599,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/2038d341-610d-4dd4-ac18-248b49170f4f.webp" alt="Thakali Long Grain Rice 20kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/2038d341-610d-4dd4-ac18-248b49170f4f.webp" alt="Thakali Long Grain Rice 20kg"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -511,7 +609,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/4f4ddf59-301f-4588-b735-d0c701307a3e.webp" alt="Rajhans Premium Jeera Masino Rice 25kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/4f4ddf59-301f-4588-b735-d0c701307a3e.webp"
+              alt="Rajhans Premium Jeera Masino Rice 25kg" width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -520,7 +619,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/8d882d26-f6bb-433a-8716-c22ec56a9b96.webp" alt="Newari Shahi Pulao Basmati Rice 20 kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/8d882d26-f6bb-433a-8716-c22ec56a9b96.webp"
+              alt="Newari Shahi Pulao Basmati Rice 20 kg" width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -529,7 +629,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/5f14f194-2f93-43c6-be04-fe4f5ccd9953.webp" alt="Newari Pokhareli Jeera Rice 25kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/5f14f194-2f93-43c6-be04-fe4f5ccd9953.webp" alt="Newari Pokhareli Jeera Rice 25kg"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -538,7 +639,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/9e7b9a16-6fd7-490f-bf54-146276dc54a8.webp" alt="Hulas Basmati Rice 20kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/9e7b9a16-6fd7-490f-bf54-146276dc54a8.webp" alt="Hulas Basmati Rice 20kg"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -547,7 +649,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/e96d4fef-d645-4431-b5f5-885dfcc67250.webp" alt="Aarati Basmati Rice 20 kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/e96d4fef-d645-4431-b5f5-885dfcc67250.webp" alt="Aarati Basmati Rice 20 kg"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -556,7 +659,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/11db0f9b-b08e-4b23-a80d-5c9748b39daf.webp" alt="Arpan Jeera Masino Rice 25 kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/11db0f9b-b08e-4b23-a80d-5c9748b39daf.webp" alt="Arpan Jeera Masino Rice 25 kg"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -565,7 +669,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/125b062a-43ea-4603-80a4-ed06d2cd45b0.webp" alt="Aashiyana Green Label Basmati Rice 5kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/125b062a-43ea-4603-80a4-ed06d2cd45b0.webp"
+              alt="Aashiyana Green Label Basmati Rice 5kg" width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -574,7 +679,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/590559bf-f9f1-4f74-a28d-aa140a6e1423.webp" alt="Budget Jeera Masino 25 kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/590559bf-f9f1-4f74-a28d-aa140a6e1423.webp" alt="Budget Jeera Masino 25 kg"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -583,7 +689,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/5fec3e7f-0b9e-461d-a1d4-517efacedd6d.webp" alt="Ghaila Sona Mansuli Rice 30kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/5fec3e7f-0b9e-461d-a1d4-517efacedd6d.webp" alt="Ghaila Sona Mansuli Rice 30kg"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -592,7 +699,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/f9587c1c-bf92-4242-b84b-a1454a048c0b.webp" alt="Good Luck 3 Star Long grain Rice 20 kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/f9587c1c-bf92-4242-b84b-a1454a048c0b.webp"
+              alt="Good Luck 3 Star Long grain Rice 20 kg" width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -601,7 +709,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/94b86ccd-66fd-4478-b78b-43417f416fa2.webp" alt="Good Luck 7 Star Long Grain Rice 20 kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/94b86ccd-66fd-4478-b78b-43417f416fa2.webp"
+              alt="Good Luck 7 Star Long Grain Rice 20 kg" width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -610,16 +719,18 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/d0771f25-c4d2-494c-ad36-d6d41953ae1e.webp" alt="Gyan Solti Jute  Jeera Rice 25kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/d0771f25-c4d2-494c-ad36-d6d41953ae1e.webp" alt="Gyan Solti Jute  Jeera Rice 25kg"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
-            <h3 class="ko-product-name">Gyan Solti Jute  Jeera Rice 25kg</h3>
+            <h3 class="ko-product-name">Gyan Solti Jute Jeera Rice 25kg</h3>
           </div>
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/5dc7123f-e106-4088-841a-09901a2d4682.webp" alt="Harpal Usina Basmati Rice 20kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/5dc7123f-e106-4088-841a-09901a2d4682.webp" alt="Harpal Usina Basmati Rice 20kg"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -628,7 +739,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/1d7a583b-a7e7-448c-8aef-15b0366dd3c8.webp" alt="Harpal Basmati 20kg Regular" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/1d7a583b-a7e7-448c-8aef-15b0366dd3c8.webp" alt="Harpal Basmati 20kg Regular"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -637,7 +749,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/836bab8d-2cde-47cb-8488-1042bf935661.webp" alt="Himanchal Jeera Rice 25 kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/836bab8d-2cde-47cb-8488-1042bf935661.webp" alt="Himanchal Jeera Rice 25 kg"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -646,7 +759,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/fc394919-c05d-4d14-901b-bbdb4f2c5354.webp" alt="Hulas Basmati Rice 5kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/fc394919-c05d-4d14-901b-bbdb4f2c5354.webp" alt="Hulas Basmati Rice 5kg" width="400"
+              height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -655,7 +769,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/d93301f5-f370-4669-9ada-a7cf5d830b27.webp" alt="Hulas Basmati Rice 20kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/d93301f5-f370-4669-9ada-a7cf5d830b27.webp" alt="Hulas Basmati Rice 20kg"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -664,7 +779,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/9f2af050-292c-4a30-bee5-152fbe28e736.webp" alt="Hulas Jeera Masino Rice 25kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/9f2af050-292c-4a30-bee5-152fbe28e736.webp" alt="Hulas Jeera Masino Rice 25kg"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -673,7 +789,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/5787dfc0-e4c7-401f-8b8f-cceba94ce242.webp" alt="Hulas Jeera Masino Rice 5kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/5787dfc0-e4c7-401f-8b8f-cceba94ce242.webp" alt="Hulas Jeera Masino Rice 5kg"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -682,7 +799,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/429d8991-24ac-4a57-a89a-e15d797c712d.webp" alt="Hulas Shahi Premium Basmati Rice 20 kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/429d8991-24ac-4a57-a89a-e15d797c712d.webp"
+              alt="Hulas Shahi Premium Basmati Rice 20 kg" width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -691,7 +809,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/12c91231-a15f-4e33-bab1-96eac50cea03.webp" alt="Kamalashree Katarni Rice 25kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/12c91231-a15f-4e33-bab1-96eac50cea03.webp" alt="Kamalashree Katarni Rice 25kg"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -700,7 +819,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/0c310cd3-1601-4b35-8494-1e678a3643a0.webp" alt="Kathmandu Gate Jeera Masino Rice 25kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/0c310cd3-1601-4b35-8494-1e678a3643a0.webp"
+              alt="Kathmandu Gate Jeera Masino Rice 25kg" width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -709,7 +829,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/0a048fef-2933-4c06-a846-0fcb0bc6fc4d.webp" alt="Kook Usina Basmati Rice 20kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/0a048fef-2933-4c06-a846-0fcb0bc6fc4d.webp" alt="Kook Usina Basmati Rice 20kg"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -718,16 +839,18 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/78857d5f-4cdc-4ece-a992-8ebb020a3936.webp" alt="Koseli Special sonam  Jeera Rice 25 kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/78857d5f-4cdc-4ece-a992-8ebb020a3936.webp"
+              alt="Koseli Special sonam  Jeera Rice 25 kg" width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
-            <h3 class="ko-product-name">Koseli Special sonam  Jeera Rice 25 kg</h3>
+            <h3 class="ko-product-name">Koseli Special sonam Jeera Rice 25 kg</h3>
           </div>
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/474d1efb-6fee-494f-8978-606dd17b254f.webp" alt="Koseli Extra Premium Sonam Jeera Rice 20kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/474d1efb-6fee-494f-8978-606dd17b254f.webp"
+              alt="Koseli Extra Premium Sonam Jeera Rice 20kg" width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -736,7 +859,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/c9eaa693-ca03-4101-8705-cff47294f4b0.webp" alt="Krishna Bhog Jeera Masino Rice 25kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/c9eaa693-ca03-4101-8705-cff47294f4b0.webp"
+              alt="Krishna Bhog Jeera Masino Rice 25kg" width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -745,7 +869,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/7f8feeb1-1c11-4093-8a55-8b12162ce64d.webp" alt="Lekhali Jeera Masino Rice 25kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/7f8feeb1-1c11-4093-8a55-8b12162ce64d.webp" alt="Lekhali Jeera Masino Rice 25kg"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -754,7 +879,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/1843a6a0-3374-4e82-a0b0-e7e74941a036.webp" alt="Newari Shahi Pulao Basmati Rice 1 kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/1843a6a0-3374-4e82-a0b0-e7e74941a036.webp"
+              alt="Newari Shahi Pulao Basmati Rice 1 kg" width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -763,7 +889,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/77d68207-5307-483f-9a86-1d0ac72e0e82.webp" alt="Newari Shahi Pulao Basmati Rice 5 kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/77d68207-5307-483f-9a86-1d0ac72e0e82.webp"
+              alt="Newari Shahi Pulao Basmati Rice 5 kg" width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -772,7 +899,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/084f4511-ba21-465d-98ab-c9f5ff74377b.webp" alt="Pearl Basmati Rice 20kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/084f4511-ba21-465d-98ab-c9f5ff74377b.webp" alt="Pearl Basmati Rice 20kg"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -781,7 +909,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/ed5e55d6-fc63-47c9-8755-f58a143f0d67.webp" alt="Pearl Shakti Sonam Jeera Rice 25kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/ed5e55d6-fc63-47c9-8755-f58a143f0d67.webp" alt="Pearl Shakti Sonam Jeera Rice 25kg"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -790,7 +919,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/73bef81d-9710-4208-9df5-a7b8ee1cd18d.webp" alt="Pearl Usina Katarni Rice 25kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/73bef81d-9710-4208-9df5-a7b8ee1cd18d.webp" alt="Pearl Usina Katarni Rice 25kg"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -799,7 +929,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/4799f19c-ffe2-4d75-9619-69392e27b135.webp" alt="Ripuraj Sona Shakti Sonam Rice 20 kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/4799f19c-ffe2-4d75-9619-69392e27b135.webp"
+              alt="Ripuraj Sona Shakti Sonam Rice 20 kg" width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -808,7 +939,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/7d24e3ea-6212-4846-a282-f7da9d732fff.webp" alt="Royal Basmati Rice 20 kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/7d24e3ea-6212-4846-a282-f7da9d732fff.webp" alt="Royal Basmati Rice 20 kg"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -817,7 +949,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/ee9ce4ce-b9b5-48d1-9dfd-47e4e3338cfb.webp" alt="Rtc Jeera Masino rice 25kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/ee9ce4ce-b9b5-48d1-9dfd-47e4e3338cfb.webp" alt="Rtc Jeera Masino rice 25kg"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -826,7 +959,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/b3528788-5f26-4ce4-8276-d537c8dad1a7.webp" alt="Sona Mansuli Rice 30kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/b3528788-5f26-4ce4-8276-d537c8dad1a7.webp" alt="Sona Mansuli Rice 30kg" width="400"
+              height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -835,7 +969,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/2795d5c2-c6e1-416c-a1a8-ab8e2f589761.webp" alt="Thakali Long Grain Rice 20kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/2795d5c2-c6e1-416c-a1a8-ab8e2f589761.webp" alt="Thakali Long Grain Rice 20kg"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -844,7 +979,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/00b2a4f0-37d0-437a-8a3c-80872d0397e9.webp" alt="Thakali Usina Basmati Rice 5kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/00b2a4f0-37d0-437a-8a3c-80872d0397e9.webp" alt="Thakali Usina Basmati Rice 5kg"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -853,7 +989,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="rice">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/e113b229-44c5-4fe6-bd93-b962d0602746.webp" alt="Urja Jeera Masino Rice 25kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/e113b229-44c5-4fe6-bd93-b962d0602746.webp" alt="Urja Jeera Masino Rice 25kg"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Rice Special</span>
           </div>
           <div class="ko-product-info">
@@ -864,7 +1001,8 @@
         <!-- ================= 2. DALS & LENTILS (दाल तथा गेडागुडी) ================= -->
         <div class="ko-product-card fade-in" data-category="dals">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/bdcbacf6-fa2d-48fe-9fbb-c1f170fc54e2.webp" alt="Bodi Geda Per kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/bdcbacf6-fa2d-48fe-9fbb-c1f170fc54e2.webp" alt="Bodi Geda Per kg" width="400"
+              height="400" loading="lazy">
             <span class="product-badge badge-popular">Fresh Dal</span>
           </div>
           <div class="ko-product-info">
@@ -873,7 +1011,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="dals">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/bcfd8b48-a5f2-46dd-813f-a894fa284e06.webp" alt="Chana Daal Per Kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/bcfd8b48-a5f2-46dd-813f-a894fa284e06.webp" alt="Chana Daal Per Kg" width="400"
+              height="400" loading="lazy">
             <span class="product-badge badge-popular">Fresh Dal</span>
           </div>
           <div class="ko-product-info">
@@ -882,7 +1021,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="dals">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/41fb8653-536e-407b-bd49-c93321d76290.webp" alt="Chana Geda ( Yellow) Per Kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/41fb8653-536e-407b-bd49-c93321d76290.webp" alt="Chana Geda ( Yellow) Per Kg"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Fresh Dal</span>
           </div>
           <div class="ko-product-info">
@@ -891,7 +1031,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="dals">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/f5a52918-1c7d-4374-bcbd-b347795b5fd6.webp" alt="Kabuli Chana Geda Per Kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/f5a52918-1c7d-4374-bcbd-b347795b5fd6.webp" alt="Kabuli Chana Geda Per Kg"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Fresh Dal</span>
           </div>
           <div class="ko-product-info">
@@ -900,7 +1041,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="dals">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/4c28c2ca-bf82-47c0-90a4-8dff4cd8061a.webp" alt="Black Bhatmas Geda Per Kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/4c28c2ca-bf82-47c0-90a4-8dff4cd8061a.webp" alt="Black Bhatmas Geda Per Kg"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Fresh Dal</span>
           </div>
           <div class="ko-product-info">
@@ -909,7 +1051,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="dals">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/b6ea932a-3217-4b47-8262-703dc3638c2e.webp" alt="Mixed Daal Per Kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/b6ea932a-3217-4b47-8262-703dc3638c2e.webp" alt="Mixed Daal Per Kg" width="400"
+              height="400" loading="lazy">
             <span class="product-badge badge-popular">Fresh Dal</span>
           </div>
           <div class="ko-product-info">
@@ -918,7 +1061,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="dals">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/bfd9598f-b4fb-4d37-943f-32284d87d130.webp" alt="Moong Khosta ( Juneli Brand ) Per kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/bfd9598f-b4fb-4d37-943f-32284d87d130.webp"
+              alt="Moong Khosta ( Juneli Brand ) Per kg" width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Fresh Dal</span>
           </div>
           <div class="ko-product-info">
@@ -927,7 +1071,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="dals">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/2262e029-71f8-4176-bf44-07191aa48221.webp" alt="Rahar Dal ( Non- Polished) Per Kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/2262e029-71f8-4176-bf44-07191aa48221.webp" alt="Rahar Dal ( Non- Polished) Per Kg"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Fresh Dal</span>
           </div>
           <div class="ko-product-info">
@@ -936,7 +1081,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="dals">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/c4c10f06-f85c-4530-8c62-b29e1fc13472.webp" alt="Masoor Dal Per kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/c4c10f06-f85c-4530-8c62-b29e1fc13472.webp" alt="Masoor Dal Per kg" width="400"
+              height="400" loading="lazy">
             <span class="product-badge badge-popular">Fresh Dal</span>
           </div>
           <div class="ko-product-info">
@@ -945,7 +1091,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="dals">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/433a00da-aed2-4d23-84e2-22db12545435.webp" alt="Maas Dal Per Kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/433a00da-aed2-4d23-84e2-22db12545435.webp" alt="Maas Dal Per Kg" width="400"
+              height="400" loading="lazy">
             <span class="product-badge badge-popular">Fresh Dal</span>
           </div>
           <div class="ko-product-info">
@@ -954,7 +1101,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="dals">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/1f9bc8c4-9bed-4d9d-940b-0201266907bd.webp" alt="Masoor Dal Per kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/1f9bc8c4-9bed-4d9d-940b-0201266907bd.webp" alt="Masoor Dal Per kg" width="400"
+              height="400" loading="lazy">
             <span class="product-badge badge-popular">Fresh Dal</span>
           </div>
           <div class="ko-product-info">
@@ -963,7 +1111,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="dals">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/2b7c3c9e-d089-47a9-9235-adea8d6ab055.webp" alt="Masoor Dal Per kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/2b7c3c9e-d089-47a9-9235-adea8d6ab055.webp" alt="Masoor Dal Per kg" width="400"
+              height="400" loading="lazy">
             <span class="product-badge badge-popular">Fresh Dal</span>
           </div>
           <div class="ko-product-info">
@@ -972,16 +1121,18 @@
         </div>
         <div class="ko-product-card fade-in" data-category="dals">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/6e34d288-e458-4a61-bf4b-55b683a3a033.webp" alt="Moong Khosta  Per kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/6e34d288-e458-4a61-bf4b-55b683a3a033.webp" alt="Moong Khosta  Per kg" width="400"
+              height="400" loading="lazy">
             <span class="product-badge badge-popular">Fresh Dal</span>
           </div>
           <div class="ko-product-info">
-            <h3 class="ko-product-name">Moong Khosta  Per kg</h3>
+            <h3 class="ko-product-name">Moong Khosta Per kg</h3>
           </div>
         </div>
         <div class="ko-product-card fade-in" data-category="dals">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/a6cdd8e0-185b-4064-bb76-9a67c26c2757.webp" alt="Rajma Geda Chirke per Kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/a6cdd8e0-185b-4064-bb76-9a67c26c2757.webp" alt="Rajma Geda Chirke per Kg"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Fresh Dal</span>
           </div>
           <div class="ko-product-info">
@@ -990,7 +1141,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="dals">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/a3aa85ef-3d94-41cf-a733-cd49018a804e.webp" alt="Nepali Local Rajma Geda Per Kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/a3aa85ef-3d94-41cf-a733-cd49018a804e.webp" alt="Nepali Local Rajma Geda Per Kg"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Fresh Dal</span>
           </div>
           <div class="ko-product-info">
@@ -999,7 +1151,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="dals">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/0ae33ec3-f496-480e-9ff4-574e56588e42.webp" alt="Chana Daal Per Kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/0ae33ec3-f496-480e-9ff4-574e56588e42.webp" alt="Chana Daal Per Kg" width="400"
+              height="400" loading="lazy">
             <span class="product-badge badge-popular">Fresh Dal</span>
           </div>
           <div class="ko-product-info">
@@ -1008,7 +1161,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="dals">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/bc08ba2f-237b-41b4-b6a0-dedf312deb84.webp" alt="Kwati Geda Per kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/bc08ba2f-237b-41b4-b6a0-dedf312deb84.webp" alt="Kwati Geda Per kg" width="400"
+              height="400" loading="lazy">
             <span class="product-badge badge-popular">Fresh Dal</span>
           </div>
           <div class="ko-product-info">
@@ -1017,7 +1171,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="dals">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/d8200bae-2a9f-441d-8f6b-1866ab9ff0bb.webp" alt="Bakkula Geda Per Kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/d8200bae-2a9f-441d-8f6b-1866ab9ff0bb.webp" alt="Bakkula Geda Per Kg" width="400"
+              height="400" loading="lazy">
             <span class="product-badge badge-popular">Fresh Dal</span>
           </div>
           <div class="ko-product-info">
@@ -1028,7 +1183,8 @@
         <!-- ================= 3. COOKING OIL & GHEE (तेल तथा घिउ) ================= -->
         <div class="ko-product-card fade-in" data-category="oil-ghee">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/84470a16-b38f-425c-b00b-3c17516ab75d.webp" alt="Sunflower Oil Pcs" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/84470a16-b38f-425c-b00b-3c17516ab75d.webp" alt="Sunflower Oil Pcs" width="400"
+              height="400" loading="lazy">
             <span class="product-badge badge-popular">Pure Oil/Ghee</span>
           </div>
           <div class="ko-product-info">
@@ -1037,16 +1193,18 @@
         </div>
         <div class="ko-product-card fade-in" data-category="oil-ghee">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/b88bd305-9045-4431-b917-e088b147e76d.webp" alt="Dhara Health  Sunflower Oil  Per Box (10Ltr)" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/b88bd305-9045-4431-b917-e088b147e76d.webp"
+              alt="Dhara Health  Sunflower Oil  Per Box (10Ltr)" width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Pure Oil/Ghee</span>
           </div>
           <div class="ko-product-info">
-            <h3 class="ko-product-name">Dhara Health  Sunflower Oil  Per Box (10Ltr)</h3>
+            <h3 class="ko-product-name">Dhara Health Sunflower Oil Per Box (10Ltr)</h3>
           </div>
         </div>
         <div class="ko-product-card fade-in" data-category="oil-ghee">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/70ca8de5-9f1c-4d2e-95f1-844191c8e212.webp" alt="Sunflow Oil Per Box/ 10Ltr" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/70ca8de5-9f1c-4d2e-95f1-844191c8e212.webp" alt="Sunflow Oil Per Box/ 10Ltr"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Pure Oil/Ghee</span>
           </div>
           <div class="ko-product-info">
@@ -1055,7 +1213,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="oil-ghee">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/8b727bd9-5add-4a53-9946-6f688c6eb490.webp" alt="Dhara Mustard Oil Per Box /10 Ltr" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/8b727bd9-5add-4a53-9946-6f688c6eb490.webp" alt="Dhara Mustard Oil Per Box /10 Ltr"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Pure Oil/Ghee</span>
           </div>
           <div class="ko-product-info">
@@ -1064,16 +1223,18 @@
         </div>
         <div class="ko-product-card fade-in" data-category="oil-ghee">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/12416c1f-b6f9-404f-b66c-c3c84baa588c.webp" alt="Swastik Dalda  Ghee Per Box /10Ltr" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/12416c1f-b6f9-404f-b66c-c3c84baa588c.webp" alt="Swastik Dalda  Ghee Per Box /10Ltr"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Pure Oil/Ghee</span>
           </div>
           <div class="ko-product-info">
-            <h3 class="ko-product-name">Swastik Dalda  Ghee Per Box /10Ltr</h3>
+            <h3 class="ko-product-name">Swastik Dalda Ghee Per Box /10Ltr</h3>
           </div>
         </div>
         <div class="ko-product-card fade-in" data-category="oil-ghee">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/03b8977d-9e77-4699-a8b1-c44de781adcf.webp" alt="Family Mustard oil Per Box / 10ltr" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/03b8977d-9e77-4699-a8b1-c44de781adcf.webp" alt="Family Mustard oil Per Box / 10ltr"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Pure Oil/Ghee</span>
           </div>
           <div class="ko-product-info">
@@ -1082,7 +1243,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="oil-ghee">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/25bc9576-b4d5-436c-b504-d6617929582c.webp" alt="Sunflower Oil Per Box / 10 Ltr" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/25bc9576-b4d5-436c-b504-d6617929582c.webp" alt="Sunflower Oil Per Box / 10 Ltr"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Pure Oil/Ghee</span>
           </div>
           <div class="ko-product-info">
@@ -1091,7 +1253,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="oil-ghee">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/bf54cf1b-6298-4c97-b7a2-252276a53a16.webp" alt="ABC Sunflower Oil Per box / 10 Ltr" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/bf54cf1b-6298-4c97-b7a2-252276a53a16.webp" alt="ABC Sunflower Oil Per box / 10 Ltr"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Pure Oil/Ghee</span>
           </div>
           <div class="ko-product-info">
@@ -1100,16 +1263,18 @@
         </div>
         <div class="ko-product-card fade-in" data-category="oil-ghee">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/648d1980-b15b-45d4-aa53-bb2a8cc37058.webp" alt="Dhara Health  Sunflower Oil  Per Ltr" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/648d1980-b15b-45d4-aa53-bb2a8cc37058.webp"
+              alt="Dhara Health  Sunflower Oil  Per Ltr" width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Pure Oil/Ghee</span>
           </div>
           <div class="ko-product-info">
-            <h3 class="ko-product-name">Dhara Health  Sunflower Oil  Per Ltr</h3>
+            <h3 class="ko-product-name">Dhara Health Sunflower Oil Per Ltr</h3>
           </div>
         </div>
         <div class="ko-product-card fade-in" data-category="oil-ghee">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/0a3e1bac-66cd-48e6-9feb-b3f8fab0644c.webp" alt="Amrit Sunflower Oil Per box / (10 Ltr)" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/0a3e1bac-66cd-48e6-9feb-b3f8fab0644c.webp"
+              alt="Amrit Sunflower Oil Per box / (10 Ltr)" width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Pure Oil/Ghee</span>
           </div>
           <div class="ko-product-info">
@@ -1118,7 +1283,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="oil-ghee">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/3f361b05-ea43-4fd1-939a-9477bf52fca0.webp" alt="Sunflower Oil Per Box / 10 Ltr" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/3f361b05-ea43-4fd1-939a-9477bf52fca0.webp" alt="Sunflower Oil Per Box / 10 Ltr"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Pure Oil/Ghee</span>
           </div>
           <div class="ko-product-info">
@@ -1127,7 +1293,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="oil-ghee">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/6e2f02b2-92c3-4c49-9698-2526e027bb8b.webp" alt="Meizan Sunflower Oil 2 Ltr" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/6e2f02b2-92c3-4c49-9698-2526e027bb8b.webp" alt="Meizan Sunflower Oil 2 Ltr"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Pure Oil/Ghee</span>
           </div>
           <div class="ko-product-info">
@@ -1136,7 +1303,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="oil-ghee">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/27e99d5e-4d13-4597-8ace-d2f0b6451d4d.webp" alt="Meizan Sunflower Oil 5 Ltr" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/27e99d5e-4d13-4597-8ace-d2f0b6451d4d.webp" alt="Meizan Sunflower Oil 5 Ltr"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Pure Oil/Ghee</span>
           </div>
           <div class="ko-product-info">
@@ -1147,34 +1315,38 @@
         <!-- ================= 4. ATTA & FLOUR (पिठो तथा मैदा) ================= -->
         <div class="ko-product-card fade-in" data-category="flour">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/a5a22312-2fb5-4671-9a1f-dad4b7f9e7c4.webp" alt="Gyan 5 kg  Chakki Atta / Per Bora (10 Pkt)" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/a5a22312-2fb5-4671-9a1f-dad4b7f9e7c4.webp"
+              alt="Gyan 5 kg  Chakki Atta / Per Bora (10 Pkt)" width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Fresh Atta/Maida</span>
           </div>
           <div class="ko-product-info">
-            <h3 class="ko-product-name">Gyan 5 kg  Chakki Atta / Per Bora (10 Pkt)</h3>
+            <h3 class="ko-product-name">Gyan 5 kg Chakki Atta / Per Bora (10 Pkt)</h3>
           </div>
         </div>
         <div class="ko-product-card fade-in" data-category="flour">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/a4e55fdb-a687-4d4d-8908-e430a9dc391a.webp" alt="Hulas Chakki Atta 5kg  Per Bora( 10 Pkt)" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/a4e55fdb-a687-4d4d-8908-e430a9dc391a.webp"
+              alt="Hulas Chakki Atta 5kg  Per Bora( 10 Pkt)" width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Fresh Atta/Maida</span>
           </div>
           <div class="ko-product-info">
-            <h3 class="ko-product-name">Hulas Chakki Atta 5kg  Per Bora( 10 Pkt)</h3>
+            <h3 class="ko-product-name">Hulas Chakki Atta 5kg Per Bora( 10 Pkt)</h3>
           </div>
         </div>
         <div class="ko-product-card fade-in" data-category="flour">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/1b863208-e7ca-46f2-8533-1c7319f67cc6.webp" alt="Hulas Chakki Atta 2kg  Per Bora ( 20 Pkt)" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/1b863208-e7ca-46f2-8533-1c7319f67cc6.webp"
+              alt="Hulas Chakki Atta 2kg  Per Bora ( 20 Pkt)" width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Fresh Atta/Maida</span>
           </div>
           <div class="ko-product-info">
-            <h3 class="ko-product-name">Hulas Chakki Atta 2kg  Per Bora ( 20 Pkt)</h3>
+            <h3 class="ko-product-name">Hulas Chakki Atta 2kg Per Bora ( 20 Pkt)</h3>
           </div>
         </div>
         <div class="ko-product-card fade-in" data-category="flour">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/c3be3a56-fada-4a3a-963c-e003fe948921.webp" alt="Gyan Atta 50 kg ( Khulla ) Per Bora" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/c3be3a56-fada-4a3a-963c-e003fe948921.webp"
+              alt="Gyan Atta 50 kg ( Khulla ) Per Bora" width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Fresh Atta/Maida</span>
           </div>
           <div class="ko-product-info">
@@ -1183,7 +1355,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="flour">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/0a88c86e-6b57-40ca-b112-42b507dd7f02.webp" alt="Bansi Premium Maida 50 kg ( Khulla )" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/0a88c86e-6b57-40ca-b112-42b507dd7f02.webp"
+              alt="Bansi Premium Maida 50 kg ( Khulla )" width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Fresh Atta/Maida</span>
           </div>
           <div class="ko-product-info">
@@ -1192,16 +1365,18 @@
         </div>
         <div class="ko-product-card fade-in" data-category="flour">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/7e44fb77-aa00-480a-8cb2-75efac8d0841.webp" alt="Khulla Maida 50 kg  Per Bora" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/7e44fb77-aa00-480a-8cb2-75efac8d0841.webp" alt="Khulla Maida 50 kg  Per Bora"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Fresh Atta/Maida</span>
           </div>
           <div class="ko-product-info">
-            <h3 class="ko-product-name">Khulla Maida 50 kg  Per Bora</h3>
+            <h3 class="ko-product-name">Khulla Maida 50 kg Per Bora</h3>
           </div>
         </div>
         <div class="ko-product-card fade-in" data-category="flour">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/1994e6cd-f5c4-42bd-bf40-a301929e7849.webp" alt="Aata 50 Kg ( Khulla )" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/1994e6cd-f5c4-42bd-bf40-a301929e7849.webp" alt="Aata 50 Kg ( Khulla )" width="400"
+              height="400" loading="lazy">
             <span class="product-badge badge-popular">Fresh Atta/Maida</span>
           </div>
           <div class="ko-product-info">
@@ -1210,7 +1385,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="flour">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/fb4cfc83-7b40-4dc3-9789-bb6ce4bf4d2b.webp" alt="Moong Chaata Per Kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/fb4cfc83-7b40-4dc3-9789-bb6ce4bf4d2b.webp" alt="Moong Chaata Per Kg" width="400"
+              height="400" loading="lazy">
             <span class="product-badge badge-popular">Fresh Atta/Maida</span>
           </div>
           <div class="ko-product-info">
@@ -1219,7 +1395,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="flour">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/4d8bf3b9-dfdb-40c9-b0d1-a41e3a2137dd.webp" alt="Moong Chaata Per Kg ( Juneli Brand )" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/4d8bf3b9-dfdb-40c9-b0d1-a41e3a2137dd.webp"
+              alt="Moong Chaata Per Kg ( Juneli Brand )" width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Fresh Atta/Maida</span>
           </div>
           <div class="ko-product-info">
@@ -1228,7 +1405,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="flour">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/c93a0da0-1702-46d8-adef-b1e12b14e5c3.webp" alt="Gyan Chakki Atta 2 kg Per Bora (25 pkt)" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/c93a0da0-1702-46d8-adef-b1e12b14e5c3.webp"
+              alt="Gyan Chakki Atta 2 kg Per Bora (25 pkt)" width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Fresh Atta/Maida</span>
           </div>
           <div class="ko-product-info">
@@ -1239,7 +1417,8 @@
         <!-- ================= 5. SUGAR & SALT (चिनी तथा नुन) ================= -->
         <div class="ko-product-card fade-in" data-category="sugar-salt">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/af59e529-11a4-4c1e-9403-7218acc85d7d.webp" alt="Aayo Noon Lodised Salt 50kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/af59e529-11a4-4c1e-9403-7218acc85d7d.webp" alt="Aayo Noon Lodised Salt 50kg"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Essential</span>
           </div>
           <div class="ko-product-info">
@@ -1248,7 +1427,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="sugar-salt">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/c451761e-924c-4a89-817a-e794a2db9d68.webp" alt="Sugar 50kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/c451761e-924c-4a89-817a-e794a2db9d68.webp" alt="Sugar 50kg" width="400"
+              height="400" loading="lazy">
             <span class="product-badge badge-popular">Essential</span>
           </div>
           <div class="ko-product-info">
@@ -1259,7 +1439,8 @@
         <!-- ================= 6. SNACKS & NOODLES (खाजा तथा चाउचाउ) ================= -->
         <div class="ko-product-card fade-in" data-category="snacks">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/af80ac3d-d225-43ea-b103-7f791e5aef22.webp" alt="Wai Wai Chicken Jumbo Noodles" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/af80ac3d-d225-43ea-b103-7f791e5aef22.webp" alt="Wai Wai Chicken Jumbo Noodles"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Crunchy Snack</span>
           </div>
           <div class="ko-product-info">
@@ -1268,16 +1449,18 @@
         </div>
         <div class="ko-product-card fade-in" data-category="snacks">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/dd57f306-20d7-41db-9382-75b5eae77efd.webp" alt="Wai Wai Chicken Regular Noodles   Per Box" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/dd57f306-20d7-41db-9382-75b5eae77efd.webp"
+              alt="Wai Wai Chicken Regular Noodles   Per Box" width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Crunchy Snack</span>
           </div>
           <div class="ko-product-info">
-            <h3 class="ko-product-name">Wai Wai Chicken Regular Noodles   Per Box</h3>
+            <h3 class="ko-product-name">Wai Wai Chicken Regular Noodles Per Box</h3>
           </div>
         </div>
         <div class="ko-product-card fade-in" data-category="snacks">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/8bfb8961-2618-4a69-a23c-377a5849bc8c.webp" alt="Wai Wai Quick Pizza Noodles / Per Box" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/8bfb8961-2618-4a69-a23c-377a5849bc8c.webp"
+              alt="Wai Wai Quick Pizza Noodles / Per Box" width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Crunchy Snack</span>
           </div>
           <div class="ko-product-info">
@@ -1286,16 +1469,18 @@
         </div>
         <div class="ko-product-card fade-in" data-category="snacks">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/e9f71433-3bf6-406e-84a1-af1d3858143f.webp" alt="Wai Wai Quick  Veg Noodles / Per Box" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/e9f71433-3bf6-406e-84a1-af1d3858143f.webp"
+              alt="Wai Wai Quick  Veg Noodles / Per Box" width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Crunchy Snack</span>
           </div>
           <div class="ko-product-info">
-            <h3 class="ko-product-name">Wai Wai Quick  Veg Noodles / Per Box</h3>
+            <h3 class="ko-product-name">Wai Wai Quick Veg Noodles / Per Box</h3>
           </div>
         </div>
         <div class="ko-product-card fade-in" data-category="snacks">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/54cac1cd-0057-4c71-9d6f-cc93998d7b66.webp" alt="Current Noodles Hot and Spicy / Per Box" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/54cac1cd-0057-4c71-9d6f-cc93998d7b66.webp"
+              alt="Current Noodles Hot and Spicy / Per Box" width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Crunchy Snack</span>
           </div>
           <div class="ko-product-info">
@@ -1304,7 +1489,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="snacks">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/1e5d34c1-9700-4d84-bc76-91b6dbd3b062.webp" alt="Pop Corn ( Murali Makai ) Per Kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/1e5d34c1-9700-4d84-bc76-91b6dbd3b062.webp" alt="Pop Corn ( Murali Makai ) Per Kg"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Crunchy Snack</span>
           </div>
           <div class="ko-product-info">
@@ -1313,7 +1499,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="snacks">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/f4b57457-c31a-455b-bf90-eb1aab92b598.webp" alt="Khajurico Puff Regular Per Box" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/f4b57457-c31a-455b-bf90-eb1aab92b598.webp" alt="Khajurico Puff Regular Per Box"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Crunchy Snack</span>
           </div>
           <div class="ko-product-info">
@@ -1322,7 +1509,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="snacks">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/41d00094-b325-4f44-80f5-e7bb78177b71.webp" alt="Khajurico Puffino Sesame Bar Per Box" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/41d00094-b325-4f44-80f5-e7bb78177b71.webp"
+              alt="Khajurico Puffino Sesame Bar Per Box" width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Crunchy Snack</span>
           </div>
           <div class="ko-product-info">
@@ -1331,7 +1519,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="snacks">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/f8e4d8a6-6c6a-45d3-b5db-c0cc8221e34a.webp" alt="Khajurico Vitamilk Biscuit Per Box" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/f8e4d8a6-6c6a-45d3-b5db-c0cc8221e34a.webp" alt="Khajurico Vitamilk Biscuit Per Box"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Crunchy Snack</span>
           </div>
           <div class="ko-product-info">
@@ -1340,7 +1529,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="snacks">
           <div class="ko-product-img-wrapper">
-            <img src="images/brand-2pm-noodles.jpg" alt="2 PM Instant Noodles (Pack / Carton)" width="400" height="400" loading="lazy">
+            <img src="images/brand-2pm-noodles.jpg" alt="2 PM Instant Noodles (Pack / Carton)" width="400" height="400"
+              loading="lazy">
             <span class="product-badge badge-popular">Spicy</span>
           </div>
           <div class="ko-product-info">
@@ -1349,7 +1539,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="snacks">
           <div class="ko-product-img-wrapper">
-            <img src="images/brand-rara-noodles.jpg" alt="Rara Classic Instant White Noodles" width="400" height="400" loading="lazy">
+            <img src="images/brand-rara-noodles.jpg" alt="Rara Classic Instant White Noodles" width="400" height="400"
+              loading="lazy">
             <span class="product-badge badge-popular">Classic</span>
           </div>
           <div class="ko-product-info">
@@ -1358,7 +1549,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="snacks">
           <div class="ko-product-img-wrapper">
-            <img src="images/prod-snacks.jpg" alt="Nepali Dalmoth & Namkeen Mix (500g)" width="400" height="400" loading="lazy">
+            <img src="images/prod-snacks.jpg" alt="Nepali Dalmoth & Namkeen Mix (500g)" width="400" height="400"
+              loading="lazy">
             <span class="product-badge badge-popular">Nepali Snack</span>
           </div>
           <div class="ko-product-info">
@@ -1367,7 +1559,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="snacks">
           <div class="ko-product-img-wrapper">
-            <img src="images/brand-lays.png" alt="Lay's Classic Salted / Magic Masala (Pack)" width="400" height="400" loading="lazy">
+            <img src="images/brand-lays.png" alt="Lay's Classic Salted / Magic Masala (Pack)" width="400" height="400"
+              loading="lazy">
             <span class="product-badge badge-popular">Crispy</span>
           </div>
           <div class="ko-product-info">
@@ -1376,7 +1569,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="snacks">
           <div class="ko-product-img-wrapper">
-            <img src="images/brand-kurkure.png" alt="Kurkure Masala Munch (Pack)" width="400" height="400" loading="lazy">
+            <img src="images/brand-kurkure.png" alt="Kurkure Masala Munch (Pack)" width="400" height="400"
+              loading="lazy">
             <span class="product-badge badge-popular">Crunchy</span>
           </div>
           <div class="ko-product-info">
@@ -1385,7 +1579,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="snacks">
           <div class="ko-product-img-wrapper">
-            <img src="images/brand-doritos.jpg" alt="Doritos Nacho Cheese Tortilla Chips (Pack)" width="400" height="400" loading="lazy">
+            <img src="images/brand-doritos.jpg" alt="Doritos Nacho Cheese Tortilla Chips (Pack)" width="400"
+              height="400" loading="lazy">
             <span class="product-badge badge-popular">Cheesy</span>
           </div>
           <div class="ko-product-info">
@@ -1394,7 +1589,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="snacks">
           <div class="ko-product-img-wrapper">
-            <img src="images/prod-snacks.jpg" alt="Himalayan Churpi / Hard Cheese (250g / 500g)" width="400" height="400" loading="lazy">
+            <img src="images/prod-snacks.jpg" alt="Himalayan Churpi / Hard Cheese (250g / 500g)" width="400"
+              height="400" loading="lazy">
             <span class="product-badge badge-popular">Authentic</span>
           </div>
           <div class="ko-product-info">
@@ -1405,7 +1601,8 @@
         <!-- ================= 7. CHOCOLATES (चकलेट) ================= -->
         <div class="ko-product-card fade-in" data-category="chocolates">
           <div class="ko-product-img-wrapper">
-            <img src="images/brand-chocofun.png" alt="Chocofun Wafer Bar (Box / Single)" width="400" height="400" loading="lazy">
+            <img src="images/brand-chocofun.png" alt="Chocofun Wafer Bar (Box / Single)" width="400" height="400"
+              loading="lazy">
             <span class="product-badge badge-popular">Nepali Favorite</span>
           </div>
           <div class="ko-product-info">
@@ -1414,7 +1611,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="chocolates">
           <div class="ko-product-img-wrapper">
-            <img src="images/brand-amul-dark.jpg" alt="Amul 55% Dark Chocolate Bar (150g)" width="400" height="400" loading="lazy">
+            <img src="images/brand-amul-dark.jpg" alt="Amul 55% Dark Chocolate Bar (150g)" width="400" height="400"
+              loading="lazy">
             <span class="product-badge badge-popular">Dark Rich</span>
           </div>
           <div class="ko-product-info">
@@ -1423,7 +1621,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="chocolates">
           <div class="ko-product-img-wrapper">
-            <img src="images/brand-dairymilk-silk.jpg" alt="Cadbury Dairy Milk Silk Chocolate (150g)" width="400" height="400" loading="lazy">
+            <img src="images/brand-dairymilk-silk.jpg" alt="Cadbury Dairy Milk Silk Chocolate (150g)" width="400"
+              height="400" loading="lazy">
             <span class="product-badge badge-popular">Silk Smooth</span>
           </div>
           <div class="ko-product-info">
@@ -1432,7 +1631,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="chocolates">
           <div class="ko-product-img-wrapper">
-            <img src="images/brand-kitkat.jpg" alt="Nestlé KitKat 4-Finger Chocolate Bar (Pack)" width="400" height="400" loading="lazy">
+            <img src="images/brand-kitkat.jpg" alt="Nestlé KitKat 4-Finger Chocolate Bar (Pack)" width="400"
+              height="400" loading="lazy">
             <span class="product-badge badge-popular">Crisp Wafer</span>
           </div>
           <div class="ko-product-info">
@@ -1441,7 +1641,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="chocolates">
           <div class="ko-product-img-wrapper">
-            <img src="images/brand-milkybar.png" alt="Nestlé Milkybar White Chocolate (Pack)" width="400" height="400" loading="lazy">
+            <img src="images/brand-milkybar.png" alt="Nestlé Milkybar White Chocolate (Pack)" width="400" height="400"
+              loading="lazy">
             <span class="product-badge badge-popular">Milky Treat</span>
           </div>
           <div class="ko-product-info">
@@ -1450,7 +1651,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="chocolates">
           <div class="ko-product-img-wrapper">
-            <img src="images/brand-snickers.jpg" alt="Snickers Peanut Caramel Chocolate Bar (50g)" width="400" height="400" loading="lazy">
+            <img src="images/brand-snickers.jpg" alt="Snickers Peanut Caramel Chocolate Bar (50g)" width="400"
+              height="400" loading="lazy">
             <span class="product-badge badge-popular">Peanut Bar</span>
           </div>
           <div class="ko-product-info">
@@ -1461,7 +1663,8 @@
         <!-- ================= 8. BEVERAGES & TEA (पेय पदार्थ तथा चिया) ================= -->
         <div class="ko-product-card fade-in" data-category="beverages">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/92a3d189-df66-4a66-b88d-f2905651a1d8.webp" alt="Sai Kripa Gold Tea 1kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/92a3d189-df66-4a66-b88d-f2905651a1d8.webp" alt="Sai Kripa Gold Tea 1kg" width="400"
+              height="400" loading="lazy">
             <span class="product-badge badge-popular">Premium Tea</span>
           </div>
           <div class="ko-product-info">
@@ -1470,7 +1673,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="beverages">
           <div class="ko-product-img-wrapper">
-            <img src="images/sanchit/19479a5a-243c-43f4-a695-718795ca3d31.webp" alt="Tokla Tea 1kg" width="400" height="400" loading="lazy">
+            <img src="images/sanchit/19479a5a-243c-43f4-a695-718795ca3d31.webp" alt="Tokla Tea 1kg" width="400"
+              height="400" loading="lazy">
             <span class="product-badge badge-popular">Premium Tea</span>
           </div>
           <div class="ko-product-info">
@@ -1479,7 +1683,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="beverages">
           <div class="ko-product-img-wrapper">
-            <img src="images/brand-cocacola.jpg" alt="Coca-Cola / Sprite / Fanta (2.25L Bottle)" width="400" height="400" loading="lazy">
+            <img src="images/brand-cocacola.jpg" alt="Coca-Cola / Sprite / Fanta (2.25L Bottle)" width="400"
+              height="400" loading="lazy">
             <span class="product-badge badge-popular">Chilled Drink</span>
           </div>
           <div class="ko-product-info">
@@ -1488,7 +1693,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="beverages">
           <div class="ko-product-img-wrapper">
-            <img src="images/brand-real-juice.jpg" alt="Real 100% Fruit Juice / Frooti (1L Pack)" width="400" height="400" loading="lazy">
+            <img src="images/brand-real-juice.jpg" alt="Real 100% Fruit Juice / Frooti (1L Pack)" width="400"
+              height="400" loading="lazy">
             <span class="product-badge badge-popular">Real Juice</span>
           </div>
           <div class="ko-product-info">
@@ -1497,7 +1703,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="beverages">
           <div class="ko-product-img-wrapper">
-            <img src="images/brand-redbull.jpg" alt="Red Bull Energy Drink (250ml Can)" width="400" height="400" loading="lazy">
+            <img src="images/brand-redbull.jpg" alt="Red Bull Energy Drink (250ml Can)" width="400" height="400"
+              loading="lazy">
             <span class="product-badge badge-popular">Energy Boost</span>
           </div>
           <div class="ko-product-info">
@@ -1508,7 +1715,8 @@
         <!-- ================= 9. ALCOHOLIC DRINKS (रक्सी तथा बियर) ================= -->
         <div class="ko-product-card fade-in" data-category="liquor">
           <div class="ko-product-img-wrapper">
-            <img src="images/brand-khukuri-rum.png" alt="Khukuri Coronation Rum (750ml Dagger Bottle)" width="400" height="400" loading="lazy">
+            <img src="images/brand-khukuri-rum.png" alt="Khukuri Coronation Rum (750ml Dagger Bottle)" width="400"
+              height="400" loading="lazy">
             <span class="product-badge badge-popular">Legendary Rum</span>
           </div>
           <div class="ko-product-info">
@@ -1517,7 +1725,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="liquor">
           <div class="ko-product-img-wrapper">
-            <img src="images/brand-old-durbar.png" alt="Old Durbar Black Chimney Whisky (750ml)" width="400" height="400" loading="lazy">
+            <img src="images/brand-old-durbar.png" alt="Old Durbar Black Chimney Whisky (750ml)" width="400"
+              height="400" loading="lazy">
             <span class="product-badge badge-popular">Smooth Blend</span>
           </div>
           <div class="ko-product-info">
@@ -1526,7 +1735,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="liquor">
           <div class="ko-product-img-wrapper">
-            <img src="images/brand-nepal-ice.png" alt="Nepal Ice Beer / Gorkha / Tuborg (650ml / 500ml can)" width="400" height="400" loading="lazy">
+            <img src="images/brand-nepal-ice.png" alt="Nepal Ice Beer / Gorkha / Tuborg (650ml / 500ml can)" width="400"
+              height="400" loading="lazy">
             <span class="product-badge badge-popular">Chilled Beer</span>
           </div>
           <div class="ko-product-info">
@@ -1535,7 +1745,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="liquor">
           <div class="ko-product-img-wrapper">
-            <img src="images/brand-ruslan-vodka.png" alt="Ruslan Vodka (750ml bottle)" width="400" height="400" loading="lazy">
+            <img src="images/brand-ruslan-vodka.png" alt="Ruslan Vodka (750ml bottle)" width="400" height="400"
+              loading="lazy">
             <span class="product-badge badge-popular">Pure Vodka</span>
           </div>
           <div class="ko-product-info">
@@ -1546,7 +1757,8 @@
         <!-- ================= 10. SANITARY (सरसफाइ) ================= -->
         <div class="ko-product-card fade-in" data-category="sanitary">
           <div class="ko-product-img-wrapper">
-            <img src="images/brand-whisper.jpg" alt="Whisper / Stayfree Sanitary Pads (1 pack XL / Regular)" width="400" height="400" loading="lazy">
+            <img src="images/brand-whisper.jpg" alt="Whisper / Stayfree Sanitary Pads (1 pack XL / Regular)" width="400"
+              height="400" loading="lazy">
             <span class="product-badge badge-popular">Hygiene</span>
           </div>
           <div class="ko-product-info">
@@ -1555,7 +1767,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="sanitary">
           <div class="ko-product-img-wrapper">
-            <img src="images/brand-dettol.jpg" alt="Dettol / Lifebuoy Bar Soap (Pack of 4 / Single)" width="400" height="400" loading="lazy">
+            <img src="images/brand-dettol.jpg" alt="Dettol / Lifebuoy Bar Soap (Pack of 4 / Single)" width="400"
+              height="400" loading="lazy">
             <span class="product-badge badge-popular">Antibacterial</span>
           </div>
           <div class="ko-product-info">
@@ -1564,7 +1777,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="sanitary">
           <div class="ko-product-img-wrapper">
-            <img src="images/brand-colgate.jpg" alt="Closeup / Colgate Toothpaste (150g tube)" width="400" height="400" loading="lazy">
+            <img src="images/brand-colgate.jpg" alt="Closeup / Colgate Toothpaste (150g tube)" width="400" height="400"
+              loading="lazy">
             <span class="product-badge badge-popular">Oral Care</span>
           </div>
           <div class="ko-product-info">
@@ -1573,7 +1787,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="sanitary">
           <div class="ko-product-img-wrapper">
-            <img src="images/daraz-toilet-paper.jpg" alt="Toilet Paper Rolls (4-pack / 10-pack)" width="400" height="400" loading="lazy">
+            <img src="images/daraz-toilet-paper.jpg" alt="Toilet Paper Rolls (4-pack / 10-pack)" width="400"
+              height="400" loading="lazy">
             <span class="product-badge badge-popular">Essential</span>
           </div>
           <div class="ko-product-info">
@@ -1584,7 +1799,8 @@
         <!-- ================= 11. LPG GAS (ग्यास) ================= -->
         <div class="ko-product-card fade-in" data-category="gas">
           <div class="ko-product-img-wrapper">
-            <img src="images/brand-nepal-gas.jpg" alt="LPG Gas Cylinder - Nepal Gas, STC (14.2 kg)" width="400" height="400" loading="lazy">
+            <img src="images/brand-nepal-gas.jpg" alt="LPG Gas Cylinder - Nepal Gas, STC (14.2 kg)" width="400"
+              height="400" loading="lazy">
             <span class="product-badge badge-popular">Exchange</span>
           </div>
           <div class="ko-product-info">
@@ -1593,7 +1809,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="gas">
           <div class="ko-product-img-wrapper">
-            <img src="images/daraz-gas-lighter.jpg" alt="Stainless Steel Gas Lighter (1 piece)" width="400" height="400" loading="lazy">
+            <img src="images/daraz-gas-lighter.jpg" alt="Stainless Steel Gas Lighter (1 piece)" width="400" height="400"
+              loading="lazy">
             <span class="product-badge badge-popular">Kitchen Essential</span>
           </div>
           <div class="ko-product-info">
@@ -1604,7 +1821,8 @@
         <!-- ================= 12. VEGETABLES (तरकारी) ================= -->
         <div class="ko-product-card fade-in" data-category="vegetables">
           <div class="ko-product-img-wrapper">
-            <img src="images/vegetables.png" alt="Potato / Aalu - Red & White (1 kg)" width="400" height="400" loading="lazy">
+            <img src="images/vegetables.png" alt="Potato / Aalu - Red & White (1 kg)" width="400" height="400"
+              loading="lazy">
             <span class="product-badge badge-popular">Daily Fresh</span>
           </div>
           <div class="ko-product-info">
@@ -1631,7 +1849,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="vegetables">
           <div class="ko-product-img-wrapper">
-            <img src="images/prod-spinach.jpg" alt="Cauliflower (Kauli) / Cabbage (Banda) - 1 kg" width="400" height="400" loading="lazy">
+            <img src="images/prod-spinach.jpg" alt="Cauliflower (Kauli) / Cabbage (Banda) - 1 kg" width="400"
+              height="400" loading="lazy">
             <span class="product-badge badge-popular">Farm Harvest</span>
           </div>
           <div class="ko-product-info">
@@ -1642,7 +1861,8 @@
         <!-- ================= 13. FRUITS (फलफूल) ================= -->
         <div class="ko-product-card fade-in" data-category="fruits">
           <div class="ko-product-img-wrapper">
-            <img src="images/prod-apples.jpg" alt="Apple / Syau (1 kg - Fuji / Mustang)" width="400" height="400" loading="lazy">
+            <img src="images/prod-apples.jpg" alt="Apple / Syau (1 kg - Fuji / Mustang)" width="400" height="400"
+              loading="lazy">
             <span class="product-badge badge-popular">Fresh Apple</span>
           </div>
           <div class="ko-product-info">
@@ -1660,7 +1880,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="fruits">
           <div class="ko-product-img-wrapper">
-            <img src="images/fruits.png" alt="Orange (Suntala) / Mango (Aap) - 1 kg" width="400" height="400" loading="lazy">
+            <img src="images/fruits.png" alt="Orange (Suntala) / Mango (Aap) - 1 kg" width="400" height="400"
+              loading="lazy">
             <span class="product-badge badge-popular">Seasonal Fruit</span>
           </div>
           <div class="ko-product-info">
@@ -1671,7 +1892,8 @@
         <!-- ================= 14. DRY FRUITS (ड्राई फ्रुट्स) ================= -->
         <div class="ko-product-card fade-in" data-category="dry-fruits">
           <div class="ko-product-img-wrapper">
-            <img src="images/daraz-kaju-cashew.jpg" alt="Kaju / Cashew Nuts (250g / 500g packet)" width="400" height="400" loading="lazy">
+            <img src="images/daraz-kaju-cashew.jpg" alt="Kaju / Cashew Nuts (250g / 500g packet)" width="400"
+              height="400" loading="lazy">
             <span class="product-badge badge-popular">Premium Kaju</span>
           </div>
           <div class="ko-product-info">
@@ -1680,7 +1902,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="dry-fruits">
           <div class="ko-product-img-wrapper">
-            <img src="images/daraz-badam-almond.jpg" alt="Badam / Almonds (250g / 500g packet)" width="400" height="400" loading="lazy">
+            <img src="images/daraz-badam-almond.jpg" alt="Badam / Almonds (250g / 500g packet)" width="400" height="400"
+              loading="lazy">
             <span class="product-badge badge-popular">California Almond</span>
           </div>
           <div class="ko-product-info">
@@ -1689,7 +1912,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="dry-fruits">
           <div class="ko-product-img-wrapper">
-            <img src="images/daraz-kismis-raisin.jpg" alt="Raisins / Kismis (250g / 500g packet)" width="400" height="400" loading="lazy">
+            <img src="images/daraz-kismis-raisin.jpg" alt="Raisins / Kismis (250g / 500g packet)" width="400"
+              height="400" loading="lazy">
             <span class="product-badge badge-popular">Golden Kismis</span>
           </div>
           <div class="ko-product-info">
@@ -1698,7 +1922,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="dry-fruits">
           <div class="ko-product-img-wrapper">
-            <img src="images/daraz-okhar-walnut.jpg" alt="Okhar / Walnuts (250g / 500g packet)" width="400" height="400" loading="lazy">
+            <img src="images/daraz-okhar-walnut.jpg" alt="Okhar / Walnuts (250g / 500g packet)" width="400" height="400"
+              loading="lazy">
             <span class="product-badge badge-popular">Walnut Kernels</span>
           </div>
           <div class="ko-product-info">
@@ -1707,7 +1932,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="dry-fruits">
           <div class="ko-product-img-wrapper">
-            <img src="images/daraz-pesta-pista.jpg" alt="Pesta / Pistachios (250g / 500g packet)" width="400" height="400" loading="lazy">
+            <img src="images/daraz-pesta-pista.jpg" alt="Pesta / Pistachios (250g / 500g packet)" width="400"
+              height="400" loading="lazy">
             <span class="product-badge badge-popular">Salted Pistachio</span>
           </div>
           <div class="ko-product-info">
@@ -1718,7 +1944,8 @@
         <!-- ================= 15. ICE CREAM (आइसक्रिम) ================= -->
         <div class="ko-product-card fade-in" data-category="ice-cream">
           <div class="ko-product-img-wrapper">
-            <img src="images/prod-icecream.jpg" alt="Nd's / Snowfun Vanilla & Chocolate Tub (1 Litre)" width="400" height="400" loading="lazy">
+            <img src="images/prod-icecream.jpg" alt="Nd's / Snowfun Vanilla & Chocolate Tub (1 Litre)" width="400"
+              height="400" loading="lazy">
             <span class="product-badge badge-popular">Family Tub</span>
           </div>
           <div class="ko-product-info">
@@ -1727,7 +1954,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="ice-cream">
           <div class="ko-product-img-wrapper">
-            <img src="images/prod-icecream.jpg" alt="Waffle Cone Ice Cream (Chocolate / Butterscotch)" width="400" height="400" loading="lazy">
+            <img src="images/prod-icecream.jpg" alt="Waffle Cone Ice Cream (Chocolate / Butterscotch)" width="400"
+              height="400" loading="lazy">
             <span class="product-badge badge-popular">Crispy Cone</span>
           </div>
           <div class="ko-product-info">
@@ -1736,7 +1964,8 @@
         </div>
         <div class="ko-product-card fade-in" data-category="ice-cream">
           <div class="ko-product-img-wrapper">
-            <img src="images/prod-icecream.jpg" alt="Chocobar / Kulfi Ice Cream Sticks (Single / Multi-pack)" width="400" height="400" loading="lazy">
+            <img src="images/prod-icecream.jpg" alt="Chocobar / Kulfi Ice Cream Sticks (Single / Multi-pack)"
+              width="400" height="400" loading="lazy">
             <span class="product-badge badge-popular">Chilled Bar</span>
           </div>
           <div class="ko-product-info">
@@ -1749,7 +1978,8 @@
       <div class="no-products-found" id="no-products-found" style="display: none;">
         <div class="no-products-icon">🔍</div>
         <h3 class="no-products-title">No Product Found</h3>
-        <p class="no-products-desc">We couldn't find any products matching "<span id="searched-query-text"></span>". Try searching with another keyword or explore our full collection.</p>
+        <p class="no-products-desc">We couldn't find any products matching "<span id="searched-query-text"></span>". Try
+          searching with another keyword or explore our full collection.</p>
         <button class="btn btn-primary" id="btn-reset-search">View All Products</button>
       </div>
 
@@ -1774,20 +2004,23 @@
     <div class="container">
       <div class="section-header fade-in">
         <h2 class="section-title">Why Choose <span class="text-green">Pramila Store</span></h2>
-        <p class="section-subtitle">We believe in quality, freshness, and building lasting relationships with our community.</p>
+        <p class="section-subtitle">We believe in quality, freshness, and building lasting relationships with our
+          community.</p>
       </div>
 
       <div class="features-grid">
         <div class="feature-card fade-in">
           <div class="feature-icon">🌾</div>
           <h3>Farm Fresh Daily</h3>
-          <p>We source our fruits and vegetables directly from local farms, ensuring you get the freshest produce every morning.</p>
+          <p>We source our fruits and vegetables directly from local farms, ensuring you get the freshest produce every
+            morning.</p>
         </div>
 
         <div class="feature-card fade-in">
           <div class="feature-icon">💰</div>
           <h3>Best Prices</h3>
-          <p>We keep our prices competitive and affordable so you never have to compromise on quality for your family.</p>
+          <p>We keep our prices competitive and affordable so you never have to compromise on quality for your family.
+          </p>
         </div>
 
         <div class="feature-card fade-in">
@@ -1799,7 +2032,8 @@
         <div class="feature-card fade-in">
           <div class="feature-icon">📦</div>
           <h3>Wide Selection</h3>
-          <p>From daily staples to specialty items, we stock everything you need under one roof — over 500+ products.</p>
+          <p>From daily staples to specialty items, we stock everything you need under one roof — over 500+ products.
+          </p>
         </div>
       </div>
     </div>
@@ -1810,7 +2044,8 @@
     <div class="container">
       <div class="offers-content">
         <h2>🎉 Daily Deals & Festival Offers</h2>
-        <p>We love celebrating with our community! Visit us for special discounts during Dashain, Tihar, and other festivals. New deals available every week!</p>
+        <p>We love celebrating with our community! Visit us for special discounts during Dashain, Tihar, and other
+          festivals. New deals available every week!</p>
         <a href="#location" class="btn btn-white" id="offers-visit-btn">
           Visit Us Today
         </a>
@@ -1823,13 +2058,15 @@
     <div class="container">
       <div class="section-header fade-in">
         <h2 class="section-title">What Our <span class="text-green">Customers</span> Say</h2>
-        <p class="section-subtitle">Don't just take our word for it — hear from the families who shop with us every day.</p>
+        <p class="section-subtitle">Don't just take our word for it — hear from the families who shop with us every day.
+        </p>
       </div>
 
       <div class="testimonials-grid">
         <div class="testimonial-card fade-in" id="testimonial-1">
           <div class="testimonial-stars">★★★★★</div>
-          <blockquote>"Pramila Store is our go-to for everything. The vegetables are always so fresh, and didi always gives us the best prices. We wouldn't shop anywhere else!"</blockquote>
+          <blockquote>"Pramila Store is our go-to for everything. The vegetables are always so fresh, and didi always
+            gives us the best prices. We wouldn't shop anywhere else!"</blockquote>
           <div class="testimonial-author">
             <div class="testimonial-avatar">S</div>
             <div class="testimonial-author-info">
@@ -1841,7 +2078,8 @@
 
         <div class="testimonial-card fade-in" id="testimonial-2">
           <div class="testimonial-stars">★★★★★</div>
-          <blockquote>"I moved to the area recently and Pramila Store made me feel at home. Great selection of spices and they always have everything I need for cooking!"</blockquote>
+          <blockquote>"I moved to the area recently and Pramila Store made me feel at home. Great selection of spices
+            and they always have everything I need for cooking!"</blockquote>
           <div class="testimonial-author">
             <div class="testimonial-avatar">R</div>
             <div class="testimonial-author-info">
@@ -1853,7 +2091,8 @@
 
         <div class="testimonial-card fade-in" id="testimonial-3">
           <div class="testimonial-stars">★★★★★</div>
-          <blockquote>"The quality of dairy products here is unmatched. Fresh paneer and dahi every single day! My family loves shopping at Pramila Store."</blockquote>
+          <blockquote>"The quality of dairy products here is unmatched. Fresh paneer and dahi every single day! My
+            family loves shopping at Pramila Store."</blockquote>
           <div class="testimonial-author">
             <div class="testimonial-avatar">A</div>
             <div class="testimonial-author-info">
@@ -1906,17 +2145,15 @@
             <div class="info-icon">🚗</div>
             <div class="info-details">
               <h4>Getting Here</h4>
-              <p>Located on the main road at Maharjan Chowk. Easy access from Imadol ring road. Parking available nearby.</p>
+              <p>Located on the main road at Maharjan Chowk. Easy access from Imadol ring road. Parking available
+                nearby.</p>
             </div>
           </div>
         </div>
 
         <div class="map-wrapper" id="map-container">
-          <iframe
-            src="https://www.google.com/maps?q=Pramila+Store,+Imadol,+Lalitpur,+Nepal&output=embed"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+          <iframe src="https://www.google.com/maps?q=Pramila+Store,+Imadol,+Lalitpur,+Nepal&output=embed"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
             title="Pramila Store location map — Maharjan Chowk, Imadol-03, Lalitpur">
           </iframe>
         </div>
@@ -1936,11 +2173,43 @@
               <span class="logo-tagline">Fresh Groceries & Essentials</span>
             </div>
           </a>
-          <p>Your trusted neighborhood grocery store at Maharjan Chowk, Imadol-03. Serving our community with fresh, quality products every day.</p>
+          <p>Your trusted neighborhood grocery store at Maharjan Chowk, Imadol-03. Serving our community with fresh,
+            quality products every day.</p>
           <div class="footer-social">
-            <a href="#" class="social-link" aria-label="Facebook" id="social-facebook">📘</a>
-            <a href="#" class="social-link" aria-label="Instagram" id="social-instagram">📷</a>
-            <a href="#" class="social-link" aria-label="WhatsApp" id="social-whatsapp">💬</a>
+            <a href="https://www.facebook.com/profile.php?id=61593646409341" target="_blank" rel="noopener noreferrer"
+              class="social-link social-link-fb" aria-label="Facebook" id="social-facebook"
+              title="Facebook (@pramilastore)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
+            </a>
+            <a href="https://www.tiktok.com/@pramilastore" target="_blank" rel="noopener noreferrer"
+              class="social-link social-link-tiktok" aria-label="TikTok @pramilastore" id="social-tiktok"
+              title="TikTok (@pramilastore)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.298-.002.595.042.88.13V9.4a6.33 6.33 0 0 0-1-.08A6.34 6.34 0 0 0 3 15.66a6.34 6.34 0 0 0 10.86 4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-3.04-1.52V6.69z" />
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/pramila.store?igsi=MXByanNiZXgwYXE5" target="_blank" rel="noopener noreferrer"
+              class="social-link social-link-ig" aria-label="Instagram @pramila.store" id="social-instagram"
+              title="Instagram (@pramila.store)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+            <a href="https://wa.me/9779813160679?text=Namaste%20Pramila%20Store!%20I%20would%20like%20to%20place%20an%20order."
+              target="_blank" rel="noopener noreferrer" class="social-link social-link-wa" aria-label="WhatsApp"
+              id="social-whatsapp" title="WhatsApp (+977 9813160679)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
+            </a>
           </div>
         </div>
 
@@ -1979,10 +2248,78 @@
     </div>
   </footer>
 
+  <!-- ============ INTERACTIVE DIRECT WHATSAPP CHAT WIDGET ============ -->
+  <div class="wa-floating-container" id="wa-floating-container">
+    <!-- Chat Card Popup -->
+    <div class="wa-chat-card" id="wa-chat-card">
+      <div class="wa-card-header">
+        <div class="wa-header-avatar-box">
+          <img src="images/logo.png" alt="Pramila Store Avatar" class="wa-avatar-img">
+          <span class="wa-online-status" title="Online"></span>
+        </div>
+        <div class="wa-header-text">
+          <h4 class="wa-store-title">Pramila Store</h4>
+          <span class="wa-store-sub"><span class="wa-pulse-dot"></span> Online • Maharjan Chowk, Imadol</span>
+        </div>
+        <button class="wa-card-close" id="wa-card-close" aria-label="Close chat">✕</button>
+      </div>
+
+      <div class="wa-card-body">
+        <div class="wa-msg-bubble">
+          <p class="wa-bubble-greeting">Namaste! 🙏 Welcome to Pramila Store.</p>
+          <p class="wa-bubble-sub">How can we assist your grocery needs today? Choose a quick option or send us a custom
+            message below:</p>
+          <span class="wa-bubble-time" id="wa-bubble-time">Just now</span>
+        </div>
+
+        <!-- Quick Action Prompt Chips -->
+        <div class="wa-quick-chips">
+          <button class="wa-chip"
+            data-msg="Namaste! I would like to inquire about today's fresh vegetables and fruits.">🥬 Fresh Vegetables &
+            Fruits</button>
+          <button class="wa-chip"
+            data-msg="Namaste! I need to order a 20kg/25kg Rice sack & Dal. Is delivery available?">🍚 Rice & Grocery
+            Order</button>
+          <button class="wa-chip" data-msg="Namaste! I need an LPG Gas Cylinder (Nepal Gas) exchange.">🔥 LPG Gas
+            Cylinder</button>
+          <button class="wa-chip"
+            data-msg="Namaste! What are the store opening hours and location at Maharjan Chowk?">📍 Store Hours &
+            Location</button>
+        </div>
+      </div>
+
+      <div class="wa-card-footer">
+        <div class="wa-input-row">
+          <textarea id="wa-custom-input" placeholder="Type your message to Pramila Store..." rows="2"></textarea>
+          <button class="wa-send-btn" id="wa-send-btn" aria-label="Send WhatsApp message">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13" />
+              <polygon points="22 2 15 22 11 13 2 9 22 2" />
+            </svg>
+          </button>
+        </div>
+        <span class="wa-footer-hint">Direct live chat with Pramila Store (+977 9813160679)</span>
+      </div>
+    </div>
+
+    <!-- Floating Toggle Button -->
+    <button class="wa-launcher-btn" id="wa-launcher-btn" aria-label="Open WhatsApp Chat"
+      title="Chat with Pramila Store on WhatsApp">
+      <span class="wa-pulse-ring"></span>
+      <svg class="wa-icon-main" width="32" height="32" viewBox="0 0 24 24" fill="white">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+      </svg>
+      <span class="wa-launcher-label">Chat with Us</span>
+    </button>
+  </div>
+
   <!-- ============ SCROLL TO TOP ============ -->
   <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">↑</button>
 
   <!-- ============ JAVASCRIPT ============ -->
   <script src="script.js"></script>
 </body>
+
 </html>
