@@ -1,6 +1,6 @@
 /* ============================================
    PRAMILA STORE — Interactive Behaviors
-   Kathmandu Organics Product Catalog & WhatsApp Cart
+   Pramila Store Product Catalog & WhatsApp Cart
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', () => {

@@ -3,8 +3,6 @@
    Clean, professional grocery store design
    ============================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap');
-
 /* --- Design Tokens --- */
 :root {
   /* Colors — Clean green & white palette */
@@ -484,23 +482,27 @@ ul, ol {
    ============================================ */
 .hero {
   position: relative;
-  min-height: 500px;
-  max-height: 700px;
-  height: clamp(500px, 52vw, 680px);
+  min-height: 260px;
+  max-height: 420px;
+  height: clamp(260px, 30vw, 400px);
   display: flex;
   align-items: center;
   overflow: hidden;
   margin-top: var(--header-height);
-  background: #041f17;
+  background: #010b0a;
 }
 
 .hero-bg {
   position: absolute;
   inset: 0;
+  width: 100%;
+  height: 100%;
   z-index: 0;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  background: #010b0a;
+  overflow: hidden;
 }
 
 .hero-bg img {
@@ -508,6 +510,7 @@ ul, ol {
   height: 100%;
   object-fit: contain;
   object-position: right center;
+  display: block;
 }
 
 .hero-bg::after {
@@ -516,9 +519,10 @@ ul, ol {
   inset: 0;
   background: linear-gradient(
     90deg,
-    rgba(4, 31, 23, 0.45) 0%,
-    rgba(4, 31, 23, 0.15) 45%,
-    rgba(0, 0, 0, 0) 80%
+    #010b0a 0%,
+    rgba(1, 11, 10, 0.92) 30%,
+    rgba(1, 11, 10, 0.4) 55%,
+    transparent 78%
   );
   pointer-events: none;
 }
@@ -529,16 +533,17 @@ ul, ol {
 }
 
 .hero-content {
-  max-width: 560px;
+  max-width: 500px;
+  padding: var(--space-xs) 0;
 }
 
 .hero-title {
   font-family: var(--font-display);
-  font-size: clamp(1.8rem, 3.8vw, 2.6rem);
+  font-size: clamp(1.25rem, 2.1vw, 1.75rem);
   font-weight: 800;
   color: white;
-  line-height: 1.25;
-  margin-bottom: var(--space-md);
+  line-height: 1.2;
+  margin-bottom: 6px;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
 }
 
@@ -548,17 +553,23 @@ ul, ol {
 }
 
 .hero-description {
-  font-size: 1.08rem;
+  font-size: 0.92rem;
   color: rgba(255, 255, 255, 0.92);
-  margin-bottom: var(--space-xl);
-  line-height: 1.5;
+  margin-bottom: 14px;
+  line-height: 1.4;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero-actions {
   display: flex;
-  gap: var(--space-md);
+  gap: 10px;
   flex-wrap: wrap;
+}
+
+.hero-actions .btn {
+  padding: 0.5rem 1.25rem;
+  font-size: 0.85rem;
+  min-height: 38px;
 }
 
 /* ============================================
@@ -1009,7 +1020,7 @@ ul, ol {
 }
 
 /* ============================================
-   PRODUCT SHOWCASE (KATHMANDU ORGANICS STYLE)
+   PRODUCT SHOWCASE (PRAMILA STORE STYLE)
    ============================================ */
 .product-gallery-section {
   padding: var(--space-2xl) 0 var(--space-4xl);
@@ -1463,10 +1474,49 @@ ul, ol {
   line-height: 1.5;
 }
 
+.plus-code {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: var(--color-primary-dark);
+  background: var(--green-50);
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  margin-top: 4px;
+  font-weight: 600;
+}
+
+.location-phone-link {
+  color: var(--color-primary-dark);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.02rem;
+  transition: color 0.2s ease;
+}
+
+.location-phone-link:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.location-actions-row {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  margin-top: var(--space-xl);
+  padding-top: var(--space-md);
+  border-top: 1px dashed var(--color-border);
+}
+
+.location-actions-row .btn {
+  padding: 0.6rem 1.3rem;
+  font-size: 0.88rem;
+}
+
 .map-wrapper {
   border-radius: var(--radius-lg);
   overflow: hidden;
-  height: 400px;
+  height: 440px;
+  min-height: 380px;
   border: 1px solid var(--color-border);
   box-shadow: var(--shadow-md);
 }
@@ -1755,41 +1805,49 @@ ul, ol {
 
   /* Hero mobile */
   .hero {
-    height: 56vh;
-    min-height: 380px;
+    height: auto;
+    min-height: 220px;
+    padding: var(--space-md) 0;
     margin-top: var(--top-bar-height);
+    background: #010b0a;
   }
 
   .hero-bg img {
-    object-position: 85% center;
+    object-fit: cover;
+    object-position: 80% center;
   }
 
   .hero-bg::after {
     background: linear-gradient(
       180deg,
-      rgba(10, 24, 15, 0.72) 0%,
-      rgba(10, 24, 15, 0.45) 50%,
-      rgba(10, 24, 15, 0.75) 100%
+      rgba(1, 11, 10, 0.85) 0%,
+      rgba(1, 11, 10, 0.5) 50%,
+      rgba(1, 11, 10, 0.88) 100%
     );
   }
 
   .hero-title {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    line-height: 1.22;
+    margin-bottom: 4px;
   }
 
   .hero-description {
-    font-size: 0.9rem;
+    font-size: 0.84rem;
+    margin-bottom: 12px;
   }
 
   .hero-actions {
-    flex-direction: column;
-    gap: var(--space-sm);
+    flex-direction: row;
+    gap: 8px;
   }
 
-  .btn {
-    width: 100%;
-    justify-content: center;
-    min-height: 48px;
+  .hero-actions .btn {
+    width: auto;
+    flex: 1;
+    min-height: 38px;
+    padding: 0.45rem 0.9rem;
+    font-size: 0.82rem;
   }
 
   /* Stats mobile */
@@ -1936,7 +1994,7 @@ ul, ol {
   }
 
   .hero-title {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
   }
 
   .section-title {

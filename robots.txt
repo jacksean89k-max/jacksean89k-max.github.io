@@ -1,0 +1,5 @@
+# robots.txt for Pramila Store
+User-agent: *
+Allow: /
+
+Sitemap: https://pramilastore.com.np/sitemap.xml
