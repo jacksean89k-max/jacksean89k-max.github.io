@@ -140,30 +140,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
   fadeElements.forEach(el => fadeObserver.observe(el));
 
-  // ---- Active nav link highlighting on scroll ----
+  // ---- Active nav link highlighting using IntersectionObserver (Zero Forced Reflow) ----
   const sections = document.querySelectorAll('section[id]');
   const navLinkElements = document.querySelectorAll('.nav-links a');
 
-  const highlightNav = () => {
-    const scrollY = window.scrollY + 150;
-
-    sections.forEach(section => {
-      const top = section.offsetTop;
-      const height = section.offsetHeight;
-      const id = section.getAttribute('id');
-
-      if (scrollY >= top && scrollY < top + height) {
+  const navObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.getAttribute('id');
         navLinkElements.forEach(link => {
-          link.classList.remove('nav-active');
           if (link.getAttribute('href') === `#${id}`) {
             link.classList.add('nav-active');
+          } else {
+            link.classList.remove('nav-active');
           }
         });
       }
     });
-  };
+  }, {
+    rootMargin: '-20% 0px -70% 0px',
+    threshold: 0
+  });
 
-  window.addEventListener('scroll', highlightNav, { passive: true });
+  sections.forEach(section => navObserver.observe(section));
 
   // ---- Animate stat numbers ----
   const statNumbers = document.querySelectorAll('.stat-number');

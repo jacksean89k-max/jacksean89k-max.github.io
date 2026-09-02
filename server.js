@@ -17,8 +17,17 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Serve static frontend assets
-app.use(express.static(path.join(__dirname)));
+// Serve static frontend assets with efficient cache lifetimes
+app.use(express.static(path.join(__dirname), {
+  maxAge: '7d',
+  setHeaders: (res, filePath) => {
+    if (filePath.endsWith('.html')) {
+      res.setHeader('Cache-Control', 'public, max-age=3600');
+    } else if (filePath.match(/\.(jpg|jpeg|png|webp|svg|ico|css|js|woff2)$/i)) {
+      res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
+    }
+  }
+}));
 
 // ============================================
 // JSON DATABASE HELPERS

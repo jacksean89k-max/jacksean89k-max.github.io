@@ -40,10 +40,14 @@
   <meta name="twitter:description" content="Your trusted neighborhood grocery store at Maharjan-chowk, imadol-03, Lalitpur.">
   <meta name="twitter:image" content="https://pramilastore.com.np/images/hero-banner.jpg">
 
-  <!-- Preconnect and Google Fonts -->
+  <!-- Preconnect and Google Fonts with Non-Blocking Asynchronous Loading -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap">
+  </noscript>
 
   <link rel="stylesheet" href="styles.css">
 
@@ -207,8 +211,8 @@
   <section class="hero" id="home">
     <div class="hero-bg">
       <img src="images/hero-banner.jpg"
-        alt="Pramila Store — authentic fresh grocery store with fruits, vegetables, lentils, and pantry essentials in Maharjan-chowk, imadol-03"
-        width="1920" height="1080" loading="eager" fetchpriority="high">
+        alt="Pramila Store — authentic fresh grocery store with fruits, vegetables, lentils, and pantry essentials in Maharjan-Chowk, Imadol-03"
+        width="1376" height="768" loading="eager" fetchpriority="high">
     </div>
 
     <div class="container">
@@ -2372,7 +2376,7 @@
   <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">↑</button>
 
   <!-- ============ JAVASCRIPT ============ -->
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 
 </html>
