@@ -162,11 +162,50 @@
     "price": 270,
     "unit": "bottle",
     "badge": "Chilled",
-    "image": "images/prod-beverages.jpg",
+    "image": "images/brand-cocacola.jpg",
     "inStock": true,
     "description": "Refreshing carbonated cold beverages.",
     "createdAt": "2026-08-31T11:45:00.000Z",
-    "updatedAt": "2026-08-31T11:45:00.000Z"
+    "updatedAt": "2026-09-01T17:40:00.000Z"
+  },
+  {
+    "id": "prod_13b",
+    "name": "Tokla CTC Tea (1kg Pkt)",
+    "category": "tea-coffee",
+    "price": 480,
+    "unit": "packet",
+    "badge": "Nepali CTC",
+    "image": "images/brand-tokla-tea.jpg",
+    "inStock": true,
+    "description": "Authentic aromatic Nepali CTC garden tea.",
+    "createdAt": "2026-09-01T17:40:00.000Z",
+    "updatedAt": "2026-09-01T17:40:00.000Z"
+  },
+  {
+    "id": "prod_13c",
+    "name": "Nescafé Classic Instant Coffee (100g Jar)",
+    "category": "tea-coffee",
+    "price": 385,
+    "unit": "jar",
+    "badge": "Rich & Bold",
+    "image": "images/prod-nescafe-coffee.jpg",
+    "inStock": true,
+    "description": "100% pure instant coffee with rich aroma and bold taste.",
+    "createdAt": "2026-09-01T17:40:00.000Z",
+    "updatedAt": "2026-09-01T17:40:00.000Z"
+  },
+  {
+    "id": "prod_13d",
+    "name": "Nescafé Gold Blend Instant Coffee (50 gm)",
+    "category": "tea-coffee",
+    "price": 1250,
+    "unit": "jar",
+    "badge": "Gold Roast",
+    "image": "images/prod-nescafe-gold.jpg",
+    "inStock": true,
+    "description": "Crafted by coffee experts with carefully selected Arabica and Robusta beans for rich aroma and smooth taste.",
+    "createdAt": "2026-09-01T17:48:00.000Z",
+    "updatedAt": "2026-09-01T17:48:00.000Z"
   },
   {
     "id": "prod_14",
